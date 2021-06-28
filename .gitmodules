@@ -22,3 +22,6 @@
 [submodule "pack/tpope/start/eunuch"]
 	path = pack/tpope/start/eunuch
 	url = git@github.com:tpope/vim-eunuch.git
+[submodule "pack/preservim/start/nerdtree"]
+	path = pack/preservim/start/nerdtree
+	url = git@github.com:preservim/nerdtree.git
