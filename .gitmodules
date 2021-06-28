@@ -4,3 +4,6 @@
 [submodule "pack/vimwiki/start/vimwiki"]
 	path = pack/vimwiki/start/vimwiki
 	url = git@github.com:vimwiki/vimwiki.git
+[submodule "pack/tpope/start/commentary"]
+	path = pack/tpope/start/commentary
+	url = git@github.com:tpope/vim-commentary.git
