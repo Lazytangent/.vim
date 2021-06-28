@@ -128,6 +128,10 @@ cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
+
+" NERDTree Mappings {{{2
+nnoremap <leader>nn :NERDTreeFocus<cr>
+" }}}
 " }}}
 
 " Commands {{{
