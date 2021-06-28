@@ -1,0 +1,6 @@
+[submodule "pack/jiangmiao/start/auto-pairs"]
+	path = pack/jiangmiao/start/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "pack/vimwiki/start/vimwiki"]
+	path = pack/vimwiki/start/vimwiki
+	url = git@github.com:vimwiki/vimwiki.git
