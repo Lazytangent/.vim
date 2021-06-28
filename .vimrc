@@ -180,5 +180,20 @@ autocmd FileType go setlocal shiftwidth=4 softtabstop=4
 autocmd FileType gitcommit setlocal textwidth=72
 " }}}
 
+" Plugin Autocmds {{{3
+" NERDTree {{{4
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" }}}
+" }}}
+
+" }}}
+" }}}
+
+" Plugin variables {{{
+" NERDTree {{{2
+let g:NERDTreeWinPos = "right"
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " }}}
 " }}}
