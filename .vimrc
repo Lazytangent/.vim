@@ -100,6 +100,7 @@ noremap \ ,
 
 nnoremap <leader>w :w<cr>
 nnoremap <localleader>wq :wq<cr>
+nnoremap <localleader>fs :w<cr>
 nnoremap <localleader>o o<Esc>
 nnoremap <localleader>O O<Esc>
 nnoremap <localleader>ct :!ctags -R .<cr><cr>
