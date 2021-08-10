@@ -26,7 +26,7 @@ set mat=2
 set number
 set relativenumber
 set numberwidth=5
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set list
 set listchars=tab:▶\ ,trail:▦
 
