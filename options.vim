@@ -68,6 +68,9 @@ set splitbelow
 set textwidth=80
 set formatoptions+=t
 
+set shiftround
+set grepprg=ag
+
 try
   set undodir=~/.vim/temp_dirs/undodir
   set undofile
