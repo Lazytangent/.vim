@@ -34,8 +34,12 @@ cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
-" NERDTree Mappings {{{2
+" NERDTree Mappings {{{
 nnoremap <leader>nn :NERDTreeFocus<cr>
+" }}}
+
+" Fzf.vim Mappings {{{
+nnoremap <leader>fz <cmd>FZF<cr>
 " }}}
 
 " Commands {{{

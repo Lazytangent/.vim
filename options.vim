@@ -74,7 +74,13 @@ try
 catch
 endtry
 
+" NERDTree Settings {{{
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
+" }}}
+
+" FZF {{{
+
+" }}}
