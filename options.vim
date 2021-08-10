@@ -68,6 +68,12 @@ set splitbelow
 set textwidth=80
 set formatoptions+=t
 
+try
+  set undodir=~/.vim/temp_dirs/undodir
+  set undofile
+catch
+endtry
+
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
