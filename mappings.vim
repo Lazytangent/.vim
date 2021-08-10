@@ -40,6 +40,13 @@ nnoremap <leader>nn :NERDTreeFocus<cr>
 
 " Fzf.vim Mappings {{{
 nnoremap <leader>fz <cmd>FZF<cr>
+nnoremap <leader>ff <cmd>Files<cr>
+nnoremap <leader>fb <cmd>Buffers<cr>
+nnoremap <leader>fa :Ag<space>
+nnoremap <leader>fr :Rg<space>
+nnoremap <leader>ft :Tags<space>
+nnoremap <leader>fh <cmd>History<cr>
+nnoremap <leader>fc <cmd>Commands<cr>
 " }}}
 
 " Commands {{{
