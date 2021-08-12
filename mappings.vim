@@ -34,6 +34,8 @@ cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+nnoremap <C-L><C-R> :call ExecuteFile()<cr>
+
 " NERDTree Mappings {{{
 nnoremap <leader>nn :NERDTreeFocus<cr>
 " }}}

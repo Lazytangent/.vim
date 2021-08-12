@@ -71,6 +71,9 @@ set formatoptions+=t
 set shiftround
 set grepprg=ag
 
+set omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,noselect
+
 try
   set undodir=~/.vim/temp_dirs/undodir
   set undofile
