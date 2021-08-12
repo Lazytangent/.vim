@@ -59,8 +59,11 @@ nnoremap <localleader>gp <cmd>Git push<cr>
 nnoremap <localleader>gl <cmd>Git pull<cr>
 " }}}
 
+" Emmet Vim Mappings {{{
+
+" }}}
+
 " Commands {{{
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! MakeTags !ctags -R .
 " }}}
-

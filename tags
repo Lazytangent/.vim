@@ -128,6 +128,7 @@ $q	mappings.vim	/^cnoremap $q <C-\\>eDeleteTillSlash()<cr>$/;"	m
 <C-G>S	pack/tpope/start/surround/plugin/surround.vim	/^    imap      <C-G>S <Plug>ISurround$/;"	m
 <C-G>s	pack/tpope/start/surround/plugin/surround.vim	/^    imap      <C-G>s <Plug>Isurround$/;"	m
 <C-K>	mappings.vim	/^cnoremap <C-K> <C-U>$/;"	m
+<C-L><C-R>	mappings.vim	/^nnoremap <C-L><C-R> :call ExecuteFile()<cr>$/;"	m
 <C-N>	mappings.vim	/^cnoremap <C-N> <Down>$/;"	m
 <C-N>	pack/tpope/start/fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> <C-N> :<C-U>execute <SID>NextItem(v:count1)<CR>$/;"	m
 <C-P>	mappings.vim	/^cnoremap <C-P> <Up>$/;"	m
@@ -502,6 +503,9 @@ ESC	pack/junegunn/start/fzf/src/tui/tui.go	/^	ESC$/;"	c	package:tui
 EXIT	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH EXIT STATUS$/;"	s	title:fzf
 EXTENDED	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH EXTENDED SEARCH MODE$/;"	s	title:fzf
 EditBookmarks	pack/preservim/start/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 EditBookmarks call g:NERDTreeBookmark.Edit()$/;"	c
+Emmet	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  command! -nargs=1 Emmet call emmet#expandAbbr(4, <q-args>)$/;"	c
+EmmetInstall	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^command! -nargs=0 -bar EmmetInstall call <SID>install_plugin(get(g:, 'user_emmet_mode', 'a'), 1)$/;"	c
+EmmetUnitTest	pack/mattn/start/emmet-vim/unittest.vim	/^command! -bang -nargs=* -complete=customlist,<SID>emmet_unittest_complete EmmetUnitTest call s:d/;"	c
 EmptyMerger	pack/junegunn/start/fzf/src/merger.go	/^var EmptyMerger = NewMerger(nil, [][]Result{}, false, false)$/;"	v	package:fzf
 EmptyTheme	pack/junegunn/start/fzf/src/tui/tui.go	/^func EmptyTheme() *ColorTheme {$/;"	f	package:tui	typeref:typename:*ColorTheme
 Enclose	pack/junegunn/start/fzf/src/tui/light.go	/^func (w *LightWindow) Enclose(y int, x int) bool {$/;"	f	struct:tui.LightWindow	typeref:typename:bool
@@ -546,7 +550,7 @@ ExecCommand	pack/junegunn/start/fzf/src/util/util_unix.go	/^func ExecCommand(com
 ExecCommand	pack/junegunn/start/fzf/src/util/util_windows.go	/^func ExecCommand(command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
 ExecCommandWith	pack/junegunn/start/fzf/src/util/util_unix.go	/^func ExecCommandWith(shell string, command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
 ExecCommandWith	pack/junegunn/start/fzf/src/util/util_windows.go	/^func ExecCommandWith(_shell string, command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
-ExecuteFile	plugin/RunCode.vim	/^function ExecuteFile()$/;"	f
+ExecuteFile	plugin/run_code.vim	/^function ExecuteFile()$/;"	f
 Executing external programs	pack/junegunn/start/fzf/README.md	/^### Executing external programs$/;"	S	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Advanced topics
 Exit0	pack/junegunn/start/fzf/src/options.go	/^	Exit0       bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 Expect	pack/junegunn/start/fzf/src/options.go	/^	Expect      map[tui.Event]string$/;"	m	struct:fzf.Options	typeref:typename:map[tui.Event]string
@@ -974,6 +978,7 @@ Right	pack/junegunn/start/fzf/src/tui/tui.go	/^	Right$/;"	c	package:tui
 RightClick	pack/junegunn/start/fzf/src/tui/tui.go	/^	RightClick$/;"	c	package:tui
 Ripgrep integration	pack/junegunn/start/fzf/ADVANCED.md	/^Ripgrep integration$/;"	s	chapter:Advanced fzf examples
 Run	pack/junegunn/start/fzf/src/core.go	/^func Run(opts *Options, version string, revision string) {$/;"	f	package:fzf
+RunShellCommand	plugin/run_code.vim	/^function RunShellCommand(cmdline)$/;"	f
 Rune	pack/junegunn/start/fzf/src/tui/tui.go	/^	Rune EventType = iota$/;"	c	package:tui	typeref:type:EventType
 RunesToChars	pack/junegunn/start/fzf/src/util/chars.go	/^func RunesToChars(runes []rune) Chars {$/;"	f	package:util	typeref:typename:Chars
 RunesWidth	pack/junegunn/start/fzf/src/util/util.go	/^func RunesWidth(runes []rune, prefixWidth int, tabstop int, limit int) (int, int) {$/;"	f	package:util	typeref:typename:(int, int)
@@ -1196,6 +1201,7 @@ Y	pack/junegunn/start/fzf/src/tui/tui.go	/^	Y() int$/;"	n	interface:tui.Window	t
 \\	mappings.vim	/^noremap \\ ,$/;"	m
 ]	pack/junegunn/start/fzf/shell/completion.bash	/^  if [ "$(type -t _fzf_comprun 2>&1)" = function ]; then$/;"	f
 ]]	pack/junegunn/start/fzf/shell/completion.zsh	/^  if [[ "$(type _fzf_comprun 2>&1)" =~ function ]]; then$/;"	f
+___emmet_setup___	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^augroup ___emmet_setup___$/;"	a
 __fsel	pack/junegunn/start/fzf/shell/key-bindings.zsh	/^__fsel() {$/;"	f
 __fzf_cd__	pack/junegunn/start/fzf/shell/key-bindings.bash	/^__fzf_cd__() {$/;"	f
 __fzf_comprun	pack/junegunn/start/fzf/shell/completion.bash	/^__fzf_comprun() {$/;"	f
@@ -1333,6 +1339,7 @@ algo	pack/junegunn/start/fzf/src/algo/algo.go	/^package algo$/;"	p
 algo	pack/junegunn/start/fzf/src/algo/algo_test.go	/^package algo$/;"	p
 algo	pack/junegunn/start/fzf/src/algo/normalize.go	/^package algo$/;"	p
 all	pack/junegunn/start/fzf/Makefile	/^all: target\/$(BINARY)$/;"	t
+all	pack/mattn/start/emmet-vim/Makefile	/^all : emmet-vim.zip$/;"	t
 alloc16	pack/junegunn/start/fzf/src/algo/algo.go	/^func alloc16(offset int, slab *util.Slab, size int) (int, []int16) {$/;"	f	package:algo	typeref:typename:(int, []int16)
 alloc32	pack/junegunn/start/fzf/src/algo/algo.go	/^func alloc32(offset int, slab *util.Slab, size int) (int, []int32) {$/;"	f	package:algo	typeref:typename:(int, []int32)
 ansi	pack/junegunn/start/fzf/src/terminal.go	/^	ansi         bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
@@ -1538,6 +1545,191 @@ ds	pack/tpope/start/surround/plugin/surround.vim	/^  nmap ds  <Plug>Dsurround$/;
 dupeTheme	pack/junegunn/start/fzf/src/options.go	/^func dupeTheme(theme *tui.ColorTheme) *tui.ColorTheme {$/;"	f	package:fzf	typeref:typename:*tui.ColorTheme
 eachLine	pack/junegunn/start/fzf/src/terminal.go	/^type eachLine struct {$/;"	s	package:fzf
 ellipsis	pack/junegunn/start/fzf/src/terminal.go	/^const ellipsis string = ".."$/;"	c	package:fzf	typeref:typename:string
+emmet#anchorizeURL	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#anchorizeURL(flag) abort$/;"	f
+emmet#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#balanceTag(flag) range abort$/;"	f
+emmet#codePretty	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#codePretty() range abort$/;"	f
+emmet#completeTag	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#completeTag(findstart, base) abort$/;"	f
+emmet#expandAbbr	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#expandAbbr(mode, abbr) range abort$/;"	f
+emmet#expandAbbrIntelligent	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#expandAbbrIntelligent(feedkey) abort$/;"	f
+emmet#expandCursorExpr	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#expandCursorExpr(expand, mode) abort$/;"	f
+emmet#expandDollarExpr	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#expandDollarExpr(expand) abort$/;"	f
+emmet#expandWord	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#expandWord(abbr, type, orig) abort$/;"	f
+emmet#getBaseType	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getBaseType(type) abort$/;"	f
+emmet#getDollarExprs	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getDollarExprs(expand) abort$/;"	f
+emmet#getDollarValueByKey	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getDollarValueByKey(key) abort$/;"	f
+emmet#getExpandos	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getExpandos(type, key) abort$/;"	f
+emmet#getFileType	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getFileType(...) abort$/;"	f
+emmet#getFilters	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getFilters(type) abort$/;"	f
+emmet#getIndentation	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getIndentation(...) abort$/;"	f
+emmet#getResource	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getResource(type, name, default) abort$/;"	f
+emmet#getSettings	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getSettings() abort$/;"	f
+emmet#getSnippets	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#getSnippets(type) abort$/;"	f
+emmet#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#imageEncode() abort$/;"	f
+emmet#imageSize	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#imageSize() abort$/;"	f
+emmet#isExpandable	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#isExpandable() abort$/;"	f
+emmet#isExtends	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#isExtends(type, extend) abort$/;"	f
+emmet#lang#css#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#balanceTag(flag) range abort$/;"	f
+emmet#lang#css#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#findTokens(str) abort$/;"	f
+emmet#lang#css#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#imageEncode() abort$/;"	f
+emmet#lang#css#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#imageSize() abort$/;"	f
+emmet#lang#css#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#mergeLines() abort$/;"	f
+emmet#lang#css#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#moveNextPrev(flag) abort$/;"	f
+emmet#lang#css#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#css#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#css#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#parseTag(tag) abort$/;"	f
+emmet#lang#css#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#removeTag() abort$/;"	f
+emmet#lang#css#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#splitJoinTag() abort$/;"	f
+emmet#lang#css#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#toString(settings, current, type, inline, filters, itemno, indent) abor/;"	f
+emmet#lang#css#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/css.vim	/^function! emmet#lang#css#toggleComment() abort$/;"	f
+emmet#lang#elm#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#balanceTag(flag) range abort$/;"	f
+emmet#lang#elm#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#findTokens(str) abort$/;"	f
+emmet#lang#elm#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#imageEncode() abort$/;"	f
+emmet#lang#elm#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#mergeLines() abort$/;"	f
+emmet#lang#elm#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#moveNextPrev(flag) abort$/;"	f
+emmet#lang#elm#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#elm#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#elm#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#parseTag(tag) abort$/;"	f
+emmet#lang#elm#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#removeTag() abort$/;"	f
+emmet#lang#elm#renderNode	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#renderNode(node)$/;"	f
+emmet#lang#elm#renderParam	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#renderParam(param)$/;"	f
+emmet#lang#elm#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#splitJoinTag() abort$/;"	f
+emmet#lang#elm#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#toString(settings, current, type, inline, filters, itemno, indent) abor/;"	f
+emmet#lang#elm#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/elm.vim	/^function! emmet#lang#elm#toggleComment() abort$/;"	f
+emmet#lang#exists	pack/mattn/start/emmet-vim/autoload/emmet/lang.vim	/^function! emmet#lang#exists(type) abort$/;"	f
+emmet#lang#getExtends	pack/mattn/start/emmet-vim/autoload/emmet/lang.vim	/^function! emmet#lang#getExtends(type) abort$/;"	f
+emmet#lang#haml#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#balanceTag(flag) range abort$/;"	f
+emmet#lang#haml#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#findTokens(str) abort$/;"	f
+emmet#lang#haml#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#imageEncode() abort$/;"	f
+emmet#lang#haml#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#imageSize() abort$/;"	f
+emmet#lang#haml#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#mergeLines() abort$/;"	f
+emmet#lang#haml#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#moveNextPrev(flag) abort$/;"	f
+emmet#lang#haml#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#haml#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#haml#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#parseTag(tag) abort$/;"	f
+emmet#lang#haml#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#removeTag() abort$/;"	f
+emmet#lang#haml#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#splitJoinTag() abort$/;"	f
+emmet#lang#haml#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#haml#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/haml.vim	/^function! emmet#lang#haml#toggleComment() abort$/;"	f
+emmet#lang#html#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#balanceTag(flag) range abort$/;"	f
+emmet#lang#html#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#findTokens(str) abort$/;"	f
+emmet#lang#html#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#imageEncode() abort$/;"	f
+emmet#lang#html#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#imageSize() abort$/;"	f
+emmet#lang#html#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#mergeLines() abort$/;"	f
+emmet#lang#html#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#moveNextPrev(flag) abort$/;"	f
+emmet#lang#html#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#html#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#html#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#parseTag(tag) abort$/;"	f
+emmet#lang#html#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#removeTag() abort$/;"	f
+emmet#lang#html#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#splitJoinTag() abort$/;"	f
+emmet#lang#html#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#html#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! emmet#lang#html#toggleComment() abort$/;"	f
+emmet#lang#jade#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#balanceTag(flag) range abort$/;"	f
+emmet#lang#jade#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#findTokens(str) abort$/;"	f
+emmet#lang#jade#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#imageEncode() abort$/;"	f
+emmet#lang#jade#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#imageSize() abort$/;"	f
+emmet#lang#jade#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#mergeLines() abort$/;"	f
+emmet#lang#jade#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#moveNextPrev(flag) abort$/;"	f
+emmet#lang#jade#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#jade#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#jade#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#parseTag(tag) abort$/;"	f
+emmet#lang#jade#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#removeTag() abort$/;"	f
+emmet#lang#jade#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#splitJoinTag() abort$/;"	f
+emmet#lang#jade#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#jade#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/jade.vim	/^function! emmet#lang#jade#toggleComment() abort$/;"	f
+emmet#lang#less#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#balanceTag(flag) range abort$/;"	f
+emmet#lang#less#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#findTokens(str) abort$/;"	f
+emmet#lang#less#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#imageEncode() abort$/;"	f
+emmet#lang#less#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#imageSize() abort$/;"	f
+emmet#lang#less#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#mergeLines() abort$/;"	f
+emmet#lang#less#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#moveNextPrev(flag) abort$/;"	f
+emmet#lang#less#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#less#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#less#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#parseTag(tag) abort$/;"	f
+emmet#lang#less#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#removeTag() abort$/;"	f
+emmet#lang#less#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#splitJoinTag() abort$/;"	f
+emmet#lang#less#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#less#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/less.vim	/^function! emmet#lang#less#toggleComment() abort$/;"	f
+emmet#lang#sass#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#balanceTag(flag) range abort$/;"	f
+emmet#lang#sass#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#findTokens(str) abort$/;"	f
+emmet#lang#sass#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#imageEncode() abort$/;"	f
+emmet#lang#sass#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#imageSize() abort$/;"	f
+emmet#lang#sass#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#mergeLines() abort$/;"	f
+emmet#lang#sass#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#moveNextPrev(flag) abort$/;"	f
+emmet#lang#sass#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#sass#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#sass#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#parseTag(tag) abort$/;"	f
+emmet#lang#sass#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#removeTag() abort$/;"	f
+emmet#lang#sass#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#splitJoinTag() abort$/;"	f
+emmet#lang#sass#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#sass#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/sass.vim	/^function! emmet#lang#sass#toggleComment() abort$/;"	f
+emmet#lang#scss#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#balanceTag(flag) range abort$/;"	f
+emmet#lang#scss#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#findTokens(str) abort$/;"	f
+emmet#lang#scss#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#imageEncode() abort$/;"	f
+emmet#lang#scss#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#imageSize() abort$/;"	f
+emmet#lang#scss#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#mergeLines() abort$/;"	f
+emmet#lang#scss#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#moveNextPrev(flag) abort$/;"	f
+emmet#lang#scss#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#scss#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#scss#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#parseTag(tag) abort$/;"	f
+emmet#lang#scss#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#removeTag() abort$/;"	f
+emmet#lang#scss#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#splitJoinTag() abort$/;"	f
+emmet#lang#scss#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#scss#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/scss.vim	/^function! emmet#lang#scss#toggleComment() abort$/;"	f
+emmet#lang#slim#balanceTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#balanceTag(flag) range abort$/;"	f
+emmet#lang#slim#findTokens	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#findTokens(str) abort$/;"	f
+emmet#lang#slim#imageEncode	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#imageEncode() abort$/;"	f
+emmet#lang#slim#imageSize	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#imageSize() abort$/;"	f
+emmet#lang#slim#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#mergeLines() abort$/;"	f
+emmet#lang#slim#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#moveNextPrev(flag) abort$/;"	f
+emmet#lang#slim#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#moveNextPrevItem(flag) abort$/;"	f
+emmet#lang#slim#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#parseIntoTree(abbr, type) abort$/;"	f
+emmet#lang#slim#parseTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#parseTag(tag) abort$/;"	f
+emmet#lang#slim#removeTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#removeTag() abort$/;"	f
+emmet#lang#slim#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#splitJoinTag() abort$/;"	f
+emmet#lang#slim#toString	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#toString(settings, current, type, inline, filters, itemno, indent) abo/;"	f
+emmet#lang#slim#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet/lang/slim.vim	/^function! emmet#lang#slim#toggleComment() abort$/;"	f
+emmet#lang#type	pack/mattn/start/emmet-vim/autoload/emmet/lang.vim	/^function! emmet#lang#type(type) abort$/;"	f
+emmet#lorem#en#expand	pack/mattn/start/emmet-vim/autoload/emmet/lorem/en.vim	/^function! emmet#lorem#en#expand(command) abort$/;"	f
+emmet#lorem#ja#expand	pack/mattn/start/emmet-vim/autoload/emmet/lorem/ja.vim	/^function! emmet#lorem#ja#expand(command) abort$/;"	f
+emmet#mergeConfig	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#mergeConfig(lhs, rhs) abort$/;"	f
+emmet#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#mergeLines() abort$/;"	f
+emmet#mergeLines	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#mergeLines() range abort$/;"	f
+emmet#moveNextPrev	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#moveNextPrev(flag) abort$/;"	f
+emmet#moveNextPrevItem	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#moveNextPrevItem(flag) abort$/;"	f
+emmet#newNode	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#newNode() abort$/;"	f
+emmet#parseIntoTree	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#parseIntoTree(abbr, type) abort$/;"	f
+emmet#reExpandDollarExpr	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#reExpandDollarExpr(expand, times) abort$/;"	f
+emmet#removeTag	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#removeTag() abort$/;"	f
+emmet#splitFilterArg	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#splitFilterArg(filters) abort$/;"	f
+emmet#splitJoinTag	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#splitJoinTag() abort$/;"	f
+emmet#toString	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#toString(...) abort$/;"	f
+emmet#toggleComment	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#toggleComment() abort$/;"	f
+emmet#unescapeDollarExpr	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#unescapeDollarExpr(expand) abort$/;"	f
+emmet#updateTag	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#updateTag() abort$/;"	f
+emmet#useFilter	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! emmet#useFilter(filters, filter) abort$/;"	f
+emmet#util#cache	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#cache(name, ...) abort$/;"	f
+emmet#util#closePopup	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#closePopup() abort$/;"	f
+emmet#util#cursorInRegion	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#cursorInRegion(region) abort$/;"	f
+emmet#util#deleteContent	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#deleteContent(region) abort$/;"	f
+emmet#util#getContent	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getContent(region) abort$/;"	f
+emmet#util#getContentFromURL	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getContentFromURL(url) abort$/;"	f
+emmet#util#getImageSize	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getImageSize(fn) abort$/;"	f
+emmet#util#getTextFromHTML	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getTextFromHTML(buf) abort$/;"	f
+emmet#util#getVisualBlock	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getVisualBlock() abort$/;"	f
+emmet#util#getcurpos	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#getcurpos() abort$/;"	f
+emmet#util#imageEncodeDecode	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#imageEncodeDecode(fn, flag) abort$/;"	f
+emmet#util#imageSizeWithImageMagick	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#imageSizeWithImageMagick(fn) abort$/;"	f
+emmet#util#isImageMagickInstalled	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#isImageMagickInstalled() abort$/;"	f
+emmet#util#pointInRegion	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#pointInRegion(point, region) abort$/;"	f
+emmet#util#rand	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#rand() abort$/;"	f
+emmet#util#regionInRegion	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#regionInRegion(outer, inner) abort$/;"	f
+emmet#util#regionIsValid	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#regionIsValid(region) abort$/;"	f
+emmet#util#searchRegion	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#searchRegion(start, end) abort$/;"	f
+emmet#util#selectRegion	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#selectRegion(region) abort$/;"	f
+emmet#util#setContent	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#setContent(region, content) abort$/;"	f
+emmet#util#srand	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#srand(seed) abort$/;"	f
+emmet#util#unique	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! emmet#util#unique(arr) abort$/;"	f
+emmet-vim.zip	pack/mattn/start/emmet-vim/Makefile	/^emmet-vim.zip: remove-zip$/;"	t
 emptyLine	pack/junegunn/start/fzf/src/terminal.go	/^var emptyLine = itemLine{}$/;"	v	package:fzf
 enabled	pack/junegunn/start/fzf/src/terminal.go	/^	enabled    bool$/;"	m	struct:fzf.previewer	typeref:typename:bool
 end	pack/junegunn/start/fzf/src/tokenizer.go	/^	end   int$/;"	m	struct:fzf.Range	typeref:typename:int
@@ -1801,6 +1993,8 @@ fzf_base	pack/junegunn/start/fzf/install.ps1	/^$fzf_base=Split-Path -Parent $MyI
 fzf_buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^augroup fzf_buffers$/;"	a
 fzf_popd	pack/junegunn/start/fzf/plugin/fzf.vim	/^augroup fzf_popd$/;"	a
 fzf_swap	pack/junegunn/start/fzf/plugin/fzf.vim	/^    augroup fzf_swap$/;"	a
+g:	pack/mattn/start/emmet-vim/unittest.vim	/^            let g:[opt] = oldoptions[opt]$/;"	v
+g:	pack/mattn/start/emmet-vim/unittest.vim	/^          let g:[opt] = options[opt]$/;"	v
 g:AutoPairs	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '```':'```', '"""':'"""', "'''":/;"	v
 g:AutoPairsCenterLine	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsCenterLine = 1$/;"	v
 g:AutoPairsFlyMode	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsFlyMode = 0$/;"	v
@@ -1928,12 +2122,17 @@ g:NERDTreeWinSize	pack/preservim/start/nerdtree/plugin/NERD_tree.vim	/^let g:NER
 g:__fzf_command	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^    let g:__fzf_command = "normal ".prefix.item."\\<cr>"$/;"	v
 g:_fugitive_last_job	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:_fugitive_last_job = a:state$/;"	v
 g:autoloaded_fugitive	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let g:autoloaded_fugitive = 1$/;"	v
+g:emmet_curl_command	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:emmet_curl_command = 'curl -s -L -A Mozilla\/5.0'$/;"	v
+g:emmet_debug	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:emmet_debug = 0$/;"	v
+g:emmet_docroot	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:emmet_docroot = {}$/;"	v
+g:emmet_html5	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:emmet_html5 = 1$/;"	v
 g:fugitive_event	pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:fugitive_event = dir$/;"	v
 g:fugitive_result	pack/tpope/start/fugitive/autoload/fugitive.vim	/^      let g:fugitive_result = a:dir$/;"	v
 g:fugitive_summary_format	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
 g:fzf#vim#buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  let g:fzf#vim#buffers = {}$/;"	v
 g:io_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:io_fugitive = {$/;"	v
 g:loaded_commentary	pack/tpope/start/commentary/plugin/commentary.vim	/^let g:loaded_commentary = 1$/;"	v
+g:loaded_emmet_vim	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let g:loaded_emmet_vim = 1$/;"	v
 g:loaded_eunuch	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let g:loaded_eunuch = 1$/;"	v
 g:loaded_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
 g:loaded_fzf	pack/junegunn/start/fzf/plugin/fzf.vim	/^let g:loaded_fzf = 1$/;"	v
@@ -1954,6 +2153,11 @@ g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_tic
 g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_tick = b:changedtick$/;"	v
 g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^let g:repeat_tick = -1$/;"	v
 g:unimpaired_html_entities	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let g:unimpaired_html_entities = {$/;"	v
+g:user_emmet_install_global	pack/mattn/start/emmet-vim/unittest.vim	/^      let g:user_emmet_install_global = s:old_user_emmet_install_global$/;"	v
+g:user_emmet_leader_key	options.vim	/^let g:user_emmet_leader_key = '<C-L>'$/;"	v
+g:user_emmet_leader_key	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:user_emmet_leader_key = '<c-y>'$/;"	v
+g:user_emmet_settings	pack/mattn/start/emmet-vim/unittest.vim	/^      let g:user_emmet_settings = s:old_user_emmet_settings$/;"	v
+g:user_emmet_settings	pack/mattn/start/emmet-vim/unittest.vim	/^    let g:user_emmet_settings = {'variables': {'indentation': "\\t", 'use_selection': 1}}$/;"	v
 g:virtual_scriptnames	pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:virtual_scriptnames = {}$/;"	v
 g:virtual_scriptnames	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:virtual_scriptnames[temp] = amatch$/;"	v
 gS	pack/tpope/start/surround/plugin/surround.vim	/^  xmap gS  <Plug>VgSurround$/;"	m
@@ -2313,7 +2517,9 @@ redraw	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) redraw() {$/
 refresh	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) refresh() {$/;"	f	struct:fzf.Terminal
 regex	pack/junegunn/start/fzf/src/tokenizer.go	/^	regex *regexp.Regexp$/;"	m	struct:fzf.Delimiter	typeref:typename:*regexp.Regexp
 release	pack/junegunn/start/fzf/Makefile	/^release:$/;"	t
+release	pack/mattn/start/emmet-vim/Makefile	/^release: emmet-vim.zip$/;"	t
 remove	pack/junegunn/start/fzf/uninstall	/^remove() {$/;"	f
+remove-zip	pack/mattn/start/emmet-vim/Makefile	/^remove-zip:$/;"	t
 remove_line	pack/junegunn/start/fzf/uninstall	/^remove_line() {$/;"	f
 renderPreviewArea	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) renderPreviewArea(unchanged bool) {$/;"	f	struct:fzf.Terminal
 renderPreviewSpinner	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) renderPreviewSpinner() {$/;"	f	struct:fzf.Terminal
@@ -2882,6 +3088,7 @@ s:align_lists	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:ali
 s:align_pairs	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:align_pairs(list)$/;"	f
 s:ansi	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:ansi(str, group, default, ...)$/;"	f
 s:ansi	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:ansi = {'black': 30, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cya/;"	v
+s:b64encode	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! s:b64encode(bytes, table, pad)$/;"	f
 s:backspace	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:backspace(s)$/;"	f
 s:bad_git_dir	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:bad_git_dir = '\/$\\|^fugitive:'$/;"	v
 s:bang_edits	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:bang_edits = {'split': 'Git', 'vsplit': 'vert Git', 'tabedit': 'tab Git', 'pedit': 'Git!'}$/;"	v
@@ -2902,6 +3109,7 @@ s:buffer_repo	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buff
 s:buffer_type	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
 s:buflisted	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:buflisted()$/;"	f
 s:bufopen	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:bufopen(lines)$/;"	f
+s:bx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:bx = '{\\%("[^"]*"\\|''[^'']*''\\|\\$#\\|\\${\\w\\+}\\|\\$\\+\\|{[^{]\\+\\|[^{}]\\)\\{-}}'$/;"	v
 s:calc_size	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:calc_size(max, val, dict)$/;"	f
 s:callback	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:callback(dict, lines) abort$/;"	f
 s:can_diffoff	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:can_diffoff(buf) abort$/;"	f
@@ -2960,15 +3168,20 @@ s:dirArrows	pack/preservim/start/nerdtree/syntax/nerdtree.vim	/^    let s:dirArr
 s:dir_for_worktree	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:dir_for_worktree = {}$/;"	v
 s:disable_colors	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:disable_colors = []$/;"	v
 s:displayHelp	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:displayHelp() abort$/;"	f
+s:do_tests	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:do_tests(bang, ...)$/;"	f
+s:dollar_add	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^function! s:dollar_add(base,no) abort$/;"	f
 s:dopopd	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:dopopd()$/;"	f
 s:dosurround	pack/tpope/start/surround/plugin/surround.vim	/^function! s:dosurround(...) " {{{1$/;"	f
 s:edit_jobs	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:edit_jobs = {}$/;"	v
+s:emmet_settings	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:emmet_settings = {$/;"	v
+s:emmet_unittest_complete	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:emmet_unittest_complete(arglead, cmdline, cmdpos)$/;"	f
 s:enc_to_cp	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function! s:enc_to_cp(str)$/;"	f
 s:entries	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:entries(path) abort$/;"	f
 s:error	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:error(msg)$/;"	f
 s:error_file	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let s:error_file = tempname()$/;"	v
 s:escape	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:escape(path)$/;"	f
 s:escape	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:escape(path)$/;"	f
+s:escape	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:escape(str)$/;"	f
 s:eval	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:eval(dict, key, arg)$/;"	f
 s:evaluate_opts	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:evaluate_opts(options)$/;"	f
 s:excmds	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:excmds()$/;"	f
@@ -2978,6 +3191,7 @@ s:executables	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:executable
 s:execute	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute(dict, command, use_height, temps) abort$/;"	f
 s:execute_term	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute_term(dict, command, temps) abort$/;"	f
 s:execute_tmux	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute_tmux(dict, command, temps) abort$/;"	f
+s:exists	pack/mattn/start/emmet-vim/autoload/emmet/lang.vim	/^let s:exists = {}$/;"	v
 s:exit_handler	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:exit_handler(code, command, ...)$/;"	f
 s:expand	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:expand = '\\%(\\(' . s:var . '\\)\\(' . s:flag . '*\\)\\(:S\\)\\=\\)'$/;"	v
 s:extend	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^function! s:extend(base, extra)$/;"	f
@@ -2992,6 +3206,7 @@ s:file_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:file_patt
 s:file_source	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^function! s:file_source(prefix)$/;"	f
 s:file_split_prefix	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^function! s:file_split_prefix(prefix)$/;"	f
 s:fill_quickfix	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:fill_quickfix(list, ...)$/;"	f
+s:filtermx	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:filtermx = '|\\(\\%(bem\\|html\\|blade\\|haml\\|slim\\|e\\|c\\|s\\|fc\\|xsl\\|t\\|\\\/[^ ]/;"	v
 s:findAndRevealPath	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:findAndRevealPath(pathStr) abort$/;"	f
 s:find_open_window	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:find_open_window(b)$/;"	f
 s:first_line	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:first_line(lines)$/;"	f
@@ -3050,11 +3265,13 @@ s:inputPrompt	pack/preservim/start/nerdtree/nerdtree_plugin/fs_menu.vim	/^functi
 s:inputreplacement	pack/tpope/start/surround/plugin/surround.vim	/^function! s:inputreplacement()$/;"	f
 s:inputtarget	pack/tpope/start/surround/plugin/surround.vim	/^function! s:inputtarget()$/;"	f
 s:insert	pack/tpope/start/surround/plugin/surround.vim	/^function! s:insert(...) " {{{1$/;"	f
+s:install_plugin	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^function! s:install_plugin(mode, buffer)$/;"	f
 s:is_win	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:item_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:item_pattern = s:file_commit_pattern . '\\|^@@'$/;"	v
+s:itemno	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! s:itemno(itemno, current) abort$/;"	f
 s:jump	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:jump(t, w)$/;"	f
 s:jumpToChild	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToChild(node, last) abort$/;"	f
 s:jumpToFirstChild	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToFirstChild(node) abort$/;"	f
@@ -3077,7 +3294,11 @@ s:legacy_option_map	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function
 s:line_handler	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:line_handler(lines)$/;"	f
 s:linechars	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:linechars(pattern) abort$/;"	f
 s:loaded	pack/tpope/start/eunuch/plugin/eunuch.vim	/^  let s:loaded = {}$/;"	v
+s:localvar	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^function! s:localvar(current, key) abort$/;"	f
+s:log	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:log(msg)$/;"	f
 s:log_diff_context	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:log_diff_context = '{"filename": fugitive#Find(v:val . from, a:dir), "lnum": get(offsets, /;"	v
+s:logging	pack/mattn/start/emmet-vim/unittest.vim	/^let s:logging = 0$/;"	v
+s:logn	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:logn(msg)$/;"	f
 s:map	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:map(...) abort$/;"	f
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:maps() abort$/;"	f
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let s:maps = []$/;"	v
@@ -3088,6 +3309,7 @@ s:merge_heads	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:merge_head
 s:merge_opts	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:merge_opts(dict, eopts)$/;"	f
 s:min_version	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:min_version = '0.23.0'$/;"	v
 s:mkdir_p	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:mkdir_p(path) abort$/;"	f
+s:mx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:mx = '\\([+>]\\|[<^]\\+\\)\\{-}'$/;"	v
 s:nbs	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
 s:nomodeline	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let s:nomodeline = v:version > 703 ? '<nomodeline>' : ''$/;"	v
 s:nowait	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
@@ -3132,6 +3354,7 @@ s:ref_header	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:ref_header 
 s:refreshCurrent	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshCurrent(node) abort$/;"	f
 s:refreshRoot	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshRoot() abort$/;"	f
 s:reindent	pack/tpope/start/surround/plugin/surround.vim	/^function! s:reindent() " {{{1$/;"	f
+s:reload	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:reload(d)$/;"	f
 s:remove_layout	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:remove_layout(opts)$/;"	f
 s:renameBuffer	pack/preservim/start/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:renameBuffer(bufNum, newNodeName, isDirectory)$/;"	f
 s:repo_bare	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_bare() dict abort$/;"	f
@@ -3155,16 +3378,29 @@ s:reuseWin	pack/preservim/start/nerdtree/autoload/nerdtree.vim	/^function! s:reu
 s:reverse_list	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:reverse_list(opts)$/;"	f
 s:right	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:right(s)$/;"	f
 s:rootNERDTreePath	pack/preservim/start/nerdtree/autoload/nerdtree.vim	/^let s:rootNERDTreePath = resolve(expand('<sfile>:p:h:h'))$/;"	v
+s:save_cpo	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
+s:save_cpo	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:search_history_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:search_history_sink(lines)$/;"	f
 s:section_commit_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_commit_pattern = s:section_pattern . '\\|^commit '$/;"	v
 s:section_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_pattern = '^[A-Z][a-z][^:]*$'$/;"	v
+s:seed	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^let s:seed = localtime()$/;"	v
 s:separator	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:separator()$/;"	f
 s:setup_paste	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:setup_paste() abort$/;"	f
+s:setup_styledEmmetAbbreviation	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^function! s:setup_styledEmmetAbbreviation() abort$/;"	f
+s:sfile	pack/mattn/start/emmet-vim/unittest.vim	/^let s:sfile = expand('<sfile>')$/;"	v
 s:shellesc	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:shellesc(arg) abort$/;"	f
 s:shellesc_cmd	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:shellesc_cmd(arg)$/;"	f
 s:shortpath	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:shortpath()$/;"	f
 s:shortpath	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:shortpath()$/;"	f
 s:showMenu	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:showMenu(node) abort$/;"	f
+s:show_category	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_category(category)$/;"	f
+s:show_done	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_done()$/;"	f
+s:show_ng	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_ng(no, expect, got)$/;"	f
+s:show_ok	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_ok()$/;"	f
+s:show_pass	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_pass(pass)$/;"	f
+s:show_skip	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_skip(no, title)$/;"	f
+s:show_title	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_title(no, title)$/;"	f
+s:show_type	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:show_type(type)$/;"	f
 s:sortByLength	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:sortByLength(i1, i2)$/;"	f
 s:sort_buffers	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:sort_buffers(...)$/;"	f
 s:split	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:split(dict)$/;"	f
@@ -3182,6 +3418,7 @@ s:temp_files	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_file
 s:temp_scripts	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_scripts = {}$/;"	v
 s:term_marker	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:term_marker = ";#FZF"$/;"	v
 s:term_marker	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:term_marker = '&::FZF'$/;"	v
+s:test	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:test(...)$/;"	f
 s:textobject	pack/tpope/start/commentary/plugin/commentary.vim	/^function! s:textobject(inner) abort$/;"	f
 s:throw	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:throw(string) abort$/;"	f
 s:tmux_enabled	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:tmux_enabled()$/;"	f
@@ -3309,6 +3546,7 @@ termSuffix	pack/junegunn/start/fzf/src/pattern.go	/^	termSuffix$/;"	c	package:fz
 termType	pack/junegunn/start/fzf/src/pattern.go	/^type termType int$/;"	t	package:fzf	typeref:typename:int
 terminate	pack/junegunn/start/fzf/src/reader.go	/^func (r *Reader) terminate() {$/;"	f	struct:fzf.Reader
 test	pack/junegunn/start/fzf/Makefile	/^test: $(SOURCES)$/;"	t
+test	pack/mattn/start/emmet-vim/Makefile	/^test:$/;"	t
 testParserReference	pack/junegunn/start/fzf/src/ansi_test.go	/^func testParserReference(t testing.TB, str string) {$/;"	f	package:fzf
 test_accept_non_empty	pack/junegunn/start/fzf/test/test_go.rb	/^  def test_accept_non_empty$/;"	f	class:TestGoFZF
 test_accept_non_empty_with_empty_list	pack/junegunn/start/fzf/test/test_go.rb	/^  def test_accept_non_empty_with_empty_list$/;"	f	class:TestGoFZF

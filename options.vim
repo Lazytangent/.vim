@@ -90,3 +90,7 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " FZF {{{
 
 " }}}
+
+" Emmet-Vim {{{
+let g:user_emmet_leader_key = '<C-L>'
+" }}}
