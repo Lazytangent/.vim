@@ -31,3 +31,6 @@
 [submodule "pack/junegunn/start/fzf.vim"]
 	path = pack/junegunn/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
+[submodule "pack/mattn/start/emmet-vim"]
+	path = pack/mattn/start/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
