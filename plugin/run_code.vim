@@ -21,7 +21,7 @@ function RunShellCommand(cmdline)
   endfor
 
   botright new
-  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap nospell
   call setline(1, 'You entered:   ' . a:cmdline)
   call setline(2, 'Expanded form: ' . expanded_cmdline)
   call setline(3, substitute(getline(2),'.','=','g'))
