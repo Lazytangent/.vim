@@ -21,11 +21,11 @@ set incsearch
 set lazyredraw
 set magic
 set showmatch
-set mat=2
+set matchtime=2
 
-set number
-set relativenumber
-set numberwidth=5
+" set number
+" set relativenumber
+" set numberwidth=5
 set clipboard+=unnamedplus
 set list
 set listchars=tab:▶\ ,trail:▦
@@ -38,7 +38,7 @@ set modeline
 
 set foldenable
 set foldmethod=marker
-set foldcolumn=1
+" set foldcolumn=1
 set foldlevelstart=10
 
 set background=dark
