@@ -334,6 +334,8 @@ BINARYPPC64LE	pack/junegunn/start/fzf/Makefile	/^BINARYPPC64LE  := fzf-$(GOOS)_p
 BSpace	pack/junegunn/start/fzf/src/tui/tui.go	/^	BSpace$/;"	c	package:tui
 BTab	pack/junegunn/start/fzf/src/tui/tui.go	/^	BTab$/;"	c	package:tui
 BUILD_FLAGS	pack/junegunn/start/fzf/Makefile	/^BUILD_FLAGS    := -a -ldflags "-s -w -X main.version=$(VERSION) -X main.revision=$(REVISION)" -t/;"	m
+BUILD_INVERTED_INDEX	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set BUILD_INVERTED_INDEX=1$/;"	v
+BUILD_INVERTED_INDEX	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set BUILD_INVERTED_INDEX=0$/;"	v
 BackwardEOF	pack/junegunn/start/fzf/src/tui/tui.go	/^	BackwardEOF$/;"	c	package:tui
 BenchmarkExtractColor	pack/junegunn/start/fzf/src/ansi_test.go	/^func BenchmarkExtractColor(b *testing.B) {$/;"	f	package:fzf
 BenchmarkNextAnsiEscapeSequence	pack/junegunn/start/fzf/src/ansi_test.go	/^func BenchmarkNextAnsiEscapeSequence(b *testing.B) {$/;"	f	package:fzf
@@ -393,6 +395,20 @@ COMPREPLY=	pack/junegunn/start/fzf/shell/completion.bash	/^  COMPREPLY=()$/;"	f
 CPrint	pack/junegunn/start/fzf/src/tui/light.go	/^func (w *LightWindow) CPrint(pair ColorPair, text string) {$/;"	f	struct:tui.LightWindow
 CPrint	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (w *TcellWindow) CPrint(pair ColorPair, text string) {$/;"	f	struct:tui.TcellWindow
 CPrint	pack/junegunn/start/fzf/src/tui/tui.go	/^	CPrint(color ColorPair, text string)$/;"	n	interface:tui.Window
+CSCOPE_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_ARGS=%CSCOPE_ARGS% -q$/;"	v
+CSCOPE_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=$/;"	v
+CSCOPE_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=%CSCOPE_ARGS% -i %DB_FILE%.files$/;"	v
+CSCOPE_EXE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_EXE=%~2$/;"	v
+CSCOPE_EXE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_EXE=cscope$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% "%PROJECT_ROOT%"$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% --append "%UPDATED_SOURCE%"$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% -L %TAGS_FILE%.files$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% %~2$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --exclude=%2$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --options=%2$/;"	v
+CTAGS_ARGS	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_ARGS=$/;"	v
+CTAGS_EXE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_EXE=%~2$/;"	v
+CTAGS_EXE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_EXE=ctags$/;"	v
 CacheKey	pack/junegunn/start/fzf/src/pattern.go	/^func (p *Pattern) CacheKey() string {$/;"	f	struct:fzf.Pattern	typeref:typename:string
 Can I have the same NERDTree on every tab automatically?	pack/preservim/start/nerdtree/README.markdown	/^### Can I have the same NERDTree on every tab automatically?$/;"	S	section:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)""Frequently Asked Questions
 Case	pack/junegunn/start/fzf/src/options.go	/^	Case        Case$/;"	m	struct:fzf.Options	typeref:typename:Case
@@ -410,6 +426,7 @@ Chunk	pack/junegunn/start/fzf/src/chunklist.go	/^type Chunk struct {$/;"	s	packa
 ChunkCache	pack/junegunn/start/fzf/src/cache.go	/^type ChunkCache struct {$/;"	s	package:fzf
 ChunkList	pack/junegunn/start/fzf/src/chunklist.go	/^type ChunkList struct {$/;"	s	package:fzf
 CleanExtraSpaces	plugin/clean_whitespace.vim	/^function! CleanExtraSpaces()$/;"	f
+CleanUp	pack/ludovicchabant/start/vim-gutentags/plat/unix/update_scopedb.sh	/^CleanUp() {$/;"	f
 Clear	pack/junegunn/start/fzf/src/chunklist.go	/^func (cl *ChunkList) Clear() {$/;"	f	struct:fzf.ChunkList
 Clear	pack/junegunn/start/fzf/src/tui/dummy.go	/^func (r *FullscreenRenderer) Clear()            {}$/;"	f	unknown:tui.FullscreenRenderer
 Clear	pack/junegunn/start/fzf/src/tui/light.go	/^func (r *LightRenderer) Clear() {$/;"	f	struct:tui.LightRenderer
@@ -467,6 +484,7 @@ Configuration	pack/junegunn/start/fzf/README-VIM.md	/^### Configuration$/;"	S	se
 Constrain	pack/junegunn/start/fzf/src/util/util.go	/^func Constrain(val int, min int, max int) int {$/;"	f	package:util	typeref:typename:int
 Constrain32	pack/junegunn/start/fzf/src/util/util.go	/^func Constrain32(val int32, min int32, max int32) int32 {$/;"	f	package:util	typeref:typename:int32
 Contributing	pack/andymass/start/vim-matchup/README.md	/^### Contributing$/;"	S	section:vim match-up""Development
+Contributing	pack/ludovicchabant/start/vim-gutentags/CONTRIBUTING.md	/^# Contributing$/;"	c
 Contributing	pack/tpope/start/eunuch/README.markdown	/^## Contributing$/;"	s	chapter:eunuch.vim
 Contributing	pack/tpope/start/repeat/README.markdown	/^## Contributing$/;"	s	chapter:repeat.vim
 Contributing	pack/tpope/start/surround/README.markdown	/^## Contributing$/;"	s	chapter:surround.vim
@@ -517,6 +535,8 @@ Custom statusline	pack/junegunn/start/fzf.vim/README.md	/^### Custom statusline$
 Customization	pack/junegunn/start/fzf.vim/README.md	/^Customization$/;"	s	chapter:fzf :heart: vim
 Customizing the highlighting colors	pack/andymass/start/vim-matchup/README.md	/^#### Customizing the highlighting colors$/;"	t	subsection:vim match-up""Options""Module matchparen
 Cycle	pack/junegunn/start/fzf/src/options.go	/^	Cycle       bool$/;"	m	struct:fzf.Options	typeref:typename:bool
+DB_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set DB_FILE=%~2$/;"	v
+DB_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set DB_FILE=cscope.out$/;"	v
 DEBUG	pack/junegunn/start/fzf/src/algo/algo.go	/^var DEBUG bool$/;"	v	package:algo	typeref:typename:bool
 DEFAULT_TIMEOUT	pack/junegunn/start/fzf/test/test_go.rb	/^DEFAULT_TIMEOUT = 10$/;"	C
 DESCRIPTION	pack/junegunn/start/fzf/man/man1/fzf-tmux.1	/^.SH DESCRIPTION$/;"	s	title:fzf-tmux
@@ -537,6 +557,8 @@ Dim	pack/junegunn/start/fzf/src/tui/tcell.go	/^	Dim            = Attr(tcell.Attr
 Disabled	pack/junegunn/start/fzf/src/tui/tui.go	/^	Disabled     ColorAttr$/;"	m	struct:tui.ColorTheme	typeref:typename:ColorAttr
 DoMatchParen	pack/andymass/start/vim-matchup/plugin/matchup.vim	/^command! DoMatchParen call matchup#matchparen#toggle(1)$/;"	c
 Documentation style	pack/andymass/start/vim-matchup/CONTRIBUTING.md	/^## Documentation style$/;"	s	chapter:Guide for code contributions
+DoneParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^:DoneParseArgs$/;"	l
+DoneParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:DoneParseArgs$/;"	l
 Double	pack/junegunn/start/fzf/src/tui/tui.go	/^	Double bool$/;"	m	struct:tui.MouseEvent	typeref:typename:bool
 DoubleClick	pack/junegunn/start/fzf/src/tui/tui.go	/^	DoubleClick$/;"	c	package:tui
 Down	pack/junegunn/start/fzf/src/tui/tui.go	/^	Down   bool$/;"	m	struct:tui.MouseEvent	typeref:typename:bool
@@ -625,6 +647,14 @@ FAQ	pack/tpope/start/fugitive/README.markdown	/^## FAQ$/;"	s	chapter:fugitive.vi
 FAQ	pack/tpope/start/unimpaired/README.markdown	/^## FAQ$/;"	s	chapter:unimpaired.vim
 FIELD	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH FIELD INDEX EXPRESSION$/;"	s	title:fzf
 FILE	pack/junegunn/start/fzf/test/test_go.rb	/^FILE = File.expand_path(__FILE__)$/;"	C
+FILESIZE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^for \/F %%F in ("%DB_FILE%.files") do set FILESIZE=%%~zF$/;"	v
+FILESIZE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILESIZE=0$/;"	v
+FILE_LIST_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD_IS_ABSOLUTE=1$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD_IS_ABSOLUTE=0$/;"	v
 FZF	pack/junegunn/start/fzf/plugin/fzf.vim	/^command! -nargs=* -complete=dir -bang FZF call s:cmd(<bang>0, <f-args>)$/;"	c
 FZF	pack/junegunn/start/fzf/test/test_go.rb	/^FZF = "FZF_DEFAULT_OPTS= FZF_DEFAULT_COMMAND= #{BASE}\/bin\/fzf"$/;"	C
 FZF Vim integration	pack/junegunn/start/fzf/README-VIM.md	/^FZF Vim integration$/;"	c
@@ -697,6 +727,11 @@ Git	pack/tpope/start/fugitive/plugin/fugitive.vim	/^command! -bang -nargs=? -ran
 Global options	pack/junegunn/start/fzf.vim/README.md	/^### Global options$/;"	S	section:fzf :heart: vim""Customization
 Global options supported by `fzf#wrap`	pack/junegunn/start/fzf/README-VIM.md	/^### Global options supported by `fzf#wrap`$/;"	S	section:FZF Vim integration""`fzf#wrap`
 Guide for code contributions	pack/andymass/start/vim-matchup/CONTRIBUTING.md	/^# Guide for code contributions$/;"	c
+Gutentags	pack/ludovicchabant/start/vim-gutentags/README.md	/^# Gutentags$/;"	c
+GutentagsToggleEnabled	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleEnabled :let g:gutentags_enabled=!g:gutentags_enabled$/;"	c
+GutentagsToggleFake	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleFake    :call gutentags#fake()$/;"	c
+GutentagsToggleTrace	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleTrace   :call gutentags#toggletrace()$/;"	c
+GutentagsUpdate	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    command! -buffer -bang GutentagsUpdate :call s:manual_update_tags(<bang>0)$/;"	c
 Gutter	pack/junegunn/start/fzf/src/tui/tui.go	/^	Gutter       ColorAttr$/;"	m	struct:tui.ColorTheme	typeref:typename:ColorAttr
 HTMLHotFix	pack/andymass/start/vim-matchup/test/issues/8/hotfix.vim	/^function! HTMLHotFix()$/;"	f
 HasBg	pack/junegunn/start/fzf/src/tui/tui.go	/^func (p ColorPair) HasBg() bool {$/;"	f	struct:tui.ColorPair	typeref:typename:bool
@@ -721,11 +756,14 @@ How can I close Vim automatically when NERDTree is the last window?	pack/preserv
 How can I map a specific key or shortcut to open NERDTree?	pack/preservim/start/nerdtree/README.markdown	/^### How can I map a specific key or shortcut to open NERDTree?$/;"	S	section:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)""Frequently Asked Questions
 How can I prevent other buffers replacing NERDTree in its window?	pack/preservim/start/nerdtree/README.markdown	/^### How can I prevent other buffers replacing NERDTree in its window?$/;"	S	section:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)""Frequently Asked Questions
 How do I open NERDTree automatically when Vim starts?	pack/preservim/start/nerdtree/README.markdown	/^### How do I open NERDTree automatically when Vim starts?$/;"	S	section:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)""Frequently Asked Questions
+How?	pack/ludovicchabant/start/vim-gutentags/README.md	/^## How?$/;"	s	chapter:Gutentags
 Hscroll	pack/junegunn/start/fzf/src/options.go	/^	Hscroll     bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 HscrollOff	pack/junegunn/start/fzf/src/options.go	/^	HscrollOff  int$/;"	m	struct:fzf.Options	typeref:typename:int
 HtmlListHotfix	pack/andymass/start/vim-matchup/test/issues/19/hotfix.vim	/^function! HtmlListHotfix()$/;"	f
 I16	pack/junegunn/start/fzf/src/util/slab.go	/^	I16 []int16$/;"	m	struct:util.Slab	typeref:typename:[]int16
 I32	pack/junegunn/start/fzf/src/util/slab.go	/^	I32 []int32$/;"	m	struct:util.Slab	typeref:typename:[]int32
+INDEX_WHOLE_PROJECT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v
+INDEX_WHOLE_PROJECT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v
 INMAKE	pack/andymass/start/vim-matchup/test/new/test-delim/Makefile	/^INMAKE := 1$/;"	m
 INMAKE	pack/andymass/start/vim-matchup/test/new/test-loader/Makefile	/^INMAKE := 1$/;"	m
 ImportFunctionDeclBody	pack/andymass/start/vim-matchup/test/issues/64/ast.cc	/^Error ASTNodeImporter::ImportFunctionDeclBody(FunctionDecl *FromFD,$/;"	f	class:ASTNodeImporter	typeref:typename:Error
@@ -790,6 +828,12 @@ KillCommand	pack/junegunn/start/fzf/src/util/util_windows.go	/^func KillCommand(
 Known Issues	pack/jiangmiao/start/auto-pairs/README.md	/^Known Issues$/;"	s	chapter:Auto Pairs
 LAYOUT	pack/junegunn/start/fzf/man/man1/fzf-tmux.1	/^.SH LAYOUT OPTIONS$/;"	s	title:fzf-tmux
 LICENSE	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH LICENSE$/;"	s	title:fzf
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^set LOG_FILE=$/;"	v
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set LOG_FILE=$/;"	v
 Layout	pack/junegunn/start/fzf/README.md	/^#### Layout$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Usage
 Layout	pack/junegunn/start/fzf/src/options.go	/^	Layout      layoutType$/;"	m	struct:fzf.Options	typeref:typename:layoutType
 LeadingWhitespaces	pack/junegunn/start/fzf/src/util/chars.go	/^func (chars *Chars) LeadingWhitespaces() int {$/;"	f	struct:util.Chars	typeref:typename:int
@@ -828,6 +872,8 @@ Log tailing	pack/junegunn/start/fzf/ADVANCED.md	/^Log tailing$/;"	s	chapter:Adva
 Lookup	pack/junegunn/start/fzf/src/cache.go	/^func (cc *ChunkCache) Lookup(chunk *Chunk, key string) []Result {$/;"	f	struct:fzf.ChunkCache	typeref:typename:[]Result
 Loop	pack/junegunn/start/fzf/src/matcher.go	/^func (m *Matcher) Loop() {$/;"	f	struct:fzf.Matcher
 Loop	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) Loop() {$/;"	f	struct:fzf.Terminal
+LoopParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^:LoopParseArgs$/;"	l
+LoopParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
 Lorem	pack/andymass/start/vim-matchup/test/issues/33/test.rb	/^  class Lorem < Ipsum $/;"	c	module:LoremIpsum
 LoremIpsum	pack/andymass/start/vim-matchup/test/issues/33/test.rb	/^module LoremIpsum $/;"	m
 M.active	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/hl-info.lua	/^function M.active()$/;"	f
@@ -1005,8 +1051,17 @@ Options	pack/junegunn/start/fzf/src/options.go	/^type Options struct {$/;"	s	pac
 Origins	pack/andymass/start/vim-matchup/README.md	/^### Origins$/;"	S	section:vim match-up""Acknowledgments
 Other inspirations	pack/andymass/start/vim-matchup/README.md	/^### Other inspirations$/;"	S	section:vim match-up""Acknowledgments
 Overview	pack/andymass/start/vim-matchup/README.md	/^## Overview$/;"	s	chapter:vim match-up
+PAUSE_BEFORE_EXIT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v
+PAUSE_BEFORE_EXIT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v
+POST_PROCESS_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v
+POST_PROCESS_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set POST_PROCESS_CMD=$/;"	v
+PROJECT_ROOT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set PROJECT_ROOT=%~2$/;"	v
+PROJECT_ROOT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set PROJECT_ROOT=$/;"	v
+PROJ_ROOT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set PROJ_ROOT=%~2$/;"	v
 PS1	pack/junegunn/start/fzf/test/test_go.rb	/^PS1= PROMPT_COMMAND= HISTFILE= HISTSIZE=100$/;"	C
 Padding	pack/junegunn/start/fzf/src/options.go	/^	Padding     [4]sizeSpec$/;"	m	struct:fzf.Options	typeref:typename:[4]sizeSpec
+ParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^:ParseArgs$/;"	l
+ParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:ParseArgs$/;"	l
 ParseOptions	pack/junegunn/start/fzf/src/options.go	/^func ParseOptions() *Options {$/;"	f	package:fzf	typeref:typename:*Options
 ParseRange	pack/junegunn/start/fzf/src/tokenizer.go	/^func ParseRange(str *string) (Range, bool) {$/;"	f	package:fzf	typeref:typename:(Range, bool)
 PassMerger	pack/junegunn/start/fzf/src/merger.go	/^func PassMerger(chunks *[]*Chunk, tac bool) *Merger {$/;"	f	package:fzf	typeref:typename:*Merger
@@ -1043,6 +1098,7 @@ Pros	pack/junegunn/start/fzf/README.md	/^Pros$/;"	s	chapter:<img src="https://ra
 Protect	pack/junegunn/start/fzf/src/protector/protector.go	/^func Protect() {$/;"	f	package:protector
 Protect	pack/junegunn/start/fzf/src/protector/protector_openbsd.go	/^func Protect() {$/;"	f	package:protector
 Push	pack/junegunn/start/fzf/src/chunklist.go	/^func (cl *ChunkList) Push(data []byte) bool {$/;"	f	struct:fzf.ChunkList	typeref:typename:bool
+Pushing	pack/ludovicchabant/start/vim-gutentags/CONTRIBUTING.md	/^## Pushing$/;"	s	chapter:Contributing
 Query	pack/junegunn/start/fzf/src/options.go	/^	Query       string$/;"	m	struct:fzf.Options	typeref:typename:string
 README.md	pack/andymass/start/vim-matchup/.projections.json	/^  "README.md": {"type": "readme"},$/;"	o
 REVISION	pack/junegunn/start/fzf/Makefile	/^REVISION       := $(FZF_REVISION)$/;"	m
@@ -1069,6 +1125,7 @@ RefreshWindows	pack/junegunn/start/fzf/src/tui/dummy.go	/^func (r *FullscreenRen
 RefreshWindows	pack/junegunn/start/fzf/src/tui/light.go	/^func (r *LightRenderer) RefreshWindows(windows []Window) {$/;"	f	struct:tui.LightRenderer
 RefreshWindows	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (r *FullscreenRenderer) RefreshWindows(windows []Window) {$/;"	f	unknown:tui.FullscreenRenderer
 RefreshWindows	pack/junegunn/start/fzf/src/tui/tui.go	/^	RefreshWindows(windows []Window)$/;"	n	interface:tui.Renderer
+Related Projects	pack/ludovicchabant/start/vim-gutentags/README.md	/^# Related Projects$/;"	c
 Related projects	pack/junegunn/start/fzf/README.md	/^Related projects$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
 Reloading the candidate list	pack/junegunn/start/fzf/README.md	/^### Reloading the candidate list$/;"	S	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Advanced topics
 Remove	pack/tpope/start/eunuch/plugin/eunuch.vim	/^command! -bar -bang Remove Unlink<bang>$/;"	c
@@ -1129,6 +1186,8 @@ SetNonblock	pack/junegunn/start/fzf/src/util/util_windows.go	/^func SetNonblock(
 Settings	pack/junegunn/start/fzf/README.md	/^#### Settings$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Fuzzy completion for bash and zsh
 Shell	pack/junegunn/start/fzf/test/test_go.rb	/^class Shell$/;"	c
 Shortcuts	pack/jiangmiao/start/auto-pairs/README.md	/^Shortcuts$/;"	s	chapter:Auto Pairs
+ShowUsage	pack/ludovicchabant/start/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
+ShowUsage	pack/ludovicchabant/start/vim-gutentags/plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
 Slab	pack/junegunn/start/fzf/src/util/slab.go	/^type Slab struct {$/;"	s	package:util
 Snapshot	pack/junegunn/start/fzf/src/chunklist.go	/^func (cl *ChunkList) Snapshot() ([]*Chunk, int) {$/;"	f	struct:fzf.ChunkList	typeref:typename:([]*Chunk, int)
 Sort	pack/junegunn/start/fzf/src/options.go	/^	Sort        int$/;"	m	struct:fzf.Options	typeref:typename:int
@@ -1154,6 +1213,8 @@ Swap	pack/junegunn/start/fzf/src/result.go	/^func (a ByRelevanceTac) Swap(i, j i
 Swap	pack/junegunn/start/fzf/src/terminal.go	/^func (a byTimeOrder) Swap(i, j int) {$/;"	f	type:fzf.byTimeOrder
 Switching to fzf-only search mode	pack/junegunn/start/fzf/ADVANCED.md	/^### Switching to fzf-only search mode$/;"	S	section:Advanced fzf examples""Ripgrep integration
 Sync	pack/junegunn/start/fzf/src/options.go	/^	Sync        bool$/;"	m	struct:fzf.Options	typeref:typename:bool
+TAGS_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
+TAGS_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
 TEMPLATE	pack/junegunn/start/fzf/test/test_go.rb	/^TEMPLATE = DATA.read$/;"	C
 TEMPNAME	pack/junegunn/start/fzf/test/test_go.rb	/^  TEMPNAME = '\/tmp\/output'$/;"	C	class:TestBase
 TESTS	pack/andymass/start/vim-matchup/test/new/Makefile	/^TESTS := $(wildcard test-*)$/;"	m
@@ -1237,6 +1298,7 @@ TestTransformIndexOutOfBounds	pack/junegunn/start/fzf/src/tokenizer_test.go	/^fu
 TestTrimLength	pack/junegunn/start/fzf/src/util/chars_test.go	/^func TestTrimLength(t *testing.T) {$/;"	f	package:util
 TestValidateSign	pack/junegunn/start/fzf/src/options_test.go	/^func TestValidateSign(t *testing.T) {$/;"	f	package:fzf
 TestZsh	pack/junegunn/start/fzf/test/test_go.rb	/^class TestZsh < TestBase$/;"	c	mixin:include:TestShell,include:CompletionTest
+Testing	pack/ludovicchabant/start/vim-gutentags/CONTRIBUTING.md	/^## Testing$/;"	s	chapter:Contributing
 The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)	pack/preservim/start/nerdtree/README.markdown	/^# The NERDTree [![Vint](https:\/\/github.com\/preservim\/nerdtree\/workflows\/Vint\/badge.svg)](/;"	c
 Theme	pack/junegunn/start/fzf/src/options.go	/^	Theme       *tui.ColorTheme$/;"	m	struct:fzf.Options	typeref:typename:*tui.ColorTheme
 Third-party libraries used	pack/junegunn/start/fzf/BUILD.md	/^Third-party libraries used$/;"	s	chapter:Building fzf
@@ -1268,11 +1330,14 @@ Type	pack/junegunn/start/fzf/src/tui/tui.go	/^	Type       EventType$/;"	m	struct
 U	pack/tpope/start/repeat/autoload/repeat.vim	/^    nmap U <Plug>(RepeatUndoLine)$/;"	m
 UNAME_M	pack/junegunn/start/fzf/Makefile	/^UNAME_M := $(shell uname -m)$/;"	m
 UNSETS	pack/junegunn/start/fzf/test/test_go.rb	/^UNSETS = %w[$/;"	C
+UPDATED_SOURCE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set UPDATED_SOURCE=%~2$/;"	v
+UPDATED_SOURCE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set UPDATED_SOURCE=$/;"	v
 Underline	pack/junegunn/start/fzf/src/tui/dummy.go	/^	Underline = Attr(1 << 3)$/;"	c	package:tui
 Underline	pack/junegunn/start/fzf/src/tui/tcell.go	/^	Underline      = Attr(tcell.AttrUnderline)$/;"	c	package:tui
 Unicode	pack/junegunn/start/fzf/src/options.go	/^	Unicode     bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 UnimpairedMapTransform	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! UnimpairedMapTransform(algorithm, key) abort$/;"	f
 Unlink	pack/tpope/start/eunuch/plugin/eunuch.vim	/^command! -bar -bang Unlink$/;"	c
+Unlock	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:Unlock$/;"	l
 Unwatch	pack/junegunn/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Unwatch(events ...EventType) {$/;"	f	struct:util.EventBox
 Up	pack/junegunn/start/fzf/src/tui/tui.go	/^	Up$/;"	c	package:tui
 UpdateCount	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) UpdateCount(cnt int, final bool, failedCommand *string) {$/;"	f	struct:fzf.Terminal
@@ -1282,6 +1347,8 @@ UpdateProgress	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) Upda
 Updating the list of processes by pressing CTRL-R	pack/junegunn/start/fzf/ADVANCED.md	/^### Updating the list of processes by pressing CTRL-R$/;"	S	section:Advanced fzf examples""Dynamic reloading of the list
 Upgrading fzf	pack/junegunn/start/fzf/README.md	/^Upgrading fzf$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
 Usage	pack/junegunn/start/fzf/README.md	/^Usage$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
+Usage	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^:Usage$/;"	l
+Usage	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:Usage$/;"	l
 Using Homebrew	pack/junegunn/start/fzf/README.md	/^### Using Homebrew$/;"	S	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Installation
 Using Linux package managers	pack/junegunn/start/fzf/README.md	/^### Using Linux package managers$/;"	S	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Installation
 Using Makefile	pack/junegunn/start/fzf/BUILD.md	/^### Using Makefile$/;"	S	section:Building fzf""Build instructions
@@ -1303,7 +1370,9 @@ Wait	pack/junegunn/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Wait(call
 WaitFor	pack/junegunn/start/fzf/src/util/eventbox.go	/^func (b *EventBox) WaitFor(event EventType) {$/;"	f	struct:util.EventBox
 Wall	pack/tpope/start/eunuch/plugin/eunuch.vim	/^command! -bar -nargs=? Wall$/;"	c
 Watch	pack/junegunn/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Watch(events ...EventType) {$/;"	f	struct:util.EventBox
+What?	pack/ludovicchabant/start/vim-gutentags/README.md	/^## What?$/;"	s	chapter:Gutentags
 Why you should use fzf on Vim	pack/junegunn/start/fzf.vim/README.md	/^Why you should use fzf on Vim$/;"	s	chapter:fzf :heart: vim
+Why?	pack/ludovicchabant/start/vim-gutentags/README.md	/^## Why?$/;"	s	chapter:Gutentags
 Width	pack/junegunn/start/fzf/src/tui/light.go	/^func (w *LightWindow) Width() int {$/;"	f	struct:tui.LightWindow	typeref:typename:int
 Width	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (w *TcellWindow) Width() int {$/;"	f	struct:tui.TcellWindow	typeref:typename:int
 Width	pack/junegunn/start/fzf/src/tui/tui.go	/^	Width() int$/;"	n	interface:tui.Window	typeref:typename:int
@@ -1312,6 +1381,7 @@ Windows	pack/junegunn/start/fzf/README.md	/^### Windows$/;"	S	section:<img src="
 WithAttr	pack/junegunn/start/fzf/src/tui/tui.go	/^func (p ColorPair) WithAttr(attr Attr) ColorPair {$/;"	f	struct:tui.ColorPair	typeref:typename:ColorPair
 WithNth	pack/junegunn/start/fzf/src/options.go	/^	WithNth     []Range$/;"	m	struct:fzf.Options	typeref:typename:[]Range
 WriteBookmarks	pack/preservim/start/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 WriteBookmarks call g:NERDTreeBookmark.Write()$/;"	c
+Writing	pack/ludovicchabant/start/vim-gutentags/CONTRIBUTING.md	/^## Writing$/;"	s	chapter:Contributing
 X	pack/junegunn/start/fzf/src/tui/light.go	/^func (w *LightWindow) X() int {$/;"	f	struct:tui.LightWindow	typeref:typename:int
 X	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (w *TcellWindow) X() int {$/;"	f	struct:tui.TcellWindow	typeref:typename:int
 X	pack/junegunn/start/fzf/src/tui/tui.go	/^	X      int$/;"	m	struct:tui.MouseEvent	typeref:typename:int
@@ -2168,6 +2238,7 @@ fzf_buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^augroup fzf_buffers$/;"
 fzf_popd	pack/junegunn/start/fzf/plugin/fzf.vim	/^augroup fzf_popd$/;"	a
 fzf_swap	pack/junegunn/start/fzf/plugin/fzf.vim	/^    augroup fzf_swap$/;"	a
 g:	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^    let g:[a:option] = a:default$/;"	v
+g:	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:[newname] = g:[key]$/;"	v
 g:	pack/mattn/start/emmet-vim/unittest.vim	/^            let g:[opt] = oldoptions[opt]$/;"	v
 g:	pack/mattn/start/emmet-vim/unittest.vim	/^          let g:[opt] = options[opt]$/;"	v
 g:AutoPairs	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '```':'```', '"""':'"""', "'''":/;"	v
@@ -2295,6 +2366,8 @@ g:NERDTreeWinPos	options.vim	/^let g:NERDTreeWinPos = "right"$/;"	v
 g:NERDTreeWinPos	pack/preservim/start/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreeWinPos  = get(g:, 'NERDTreeWinPos', 'left')$/;"	v
 g:NERDTreeWinSize	pack/preservim/start/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreeWinSize = get(g:, 'NERDTreeWinSize', 31)$/;"	v
 g:__fzf_command	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^    let g:__fzf_command = "normal ".prefix.item."\\<cr>"$/;"	v
+g:__gutentags_vim_is_leaving	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    let g:__gutentags_vim_is_leaving = 1$/;"	v
+g:__gutentags_vim_is_leaving	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:__gutentags_vim_is_leaving = 0$/;"	v
 g:_fugitive_last_job	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:_fugitive_last_job = a:state$/;"	v
 g:autoloaded_fugitive	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let g:autoloaded_fugitive = 1$/;"	v
 g:emmet_curl_command	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^  let g:emmet_curl_command = 'curl -s -L -A Mozilla\/5.0'$/;"	v
@@ -2305,6 +2378,65 @@ g:fugitive_event	pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:fug
 g:fugitive_result	pack/tpope/start/fugitive/autoload/fugitive.vim	/^      let g:fugitive_result = a:dir$/;"	v
 g:fugitive_summary_format	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
 g:fzf#vim#buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  let g:fzf#vim#buffers = {}$/;"	v
+g:gutentags_add_ctrlp_root_markers	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_ctrlp_root_markers = get(g:, 'gutentags_add_ctrlp_root_markers', 1)$/;"	v
+g:gutentags_add_default_project_roots	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
+g:gutentags_auto_add_cscope	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
+g:gutentags_auto_add_gtags_cscope	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_background_update	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_background_update = get(g:, 'gutentags_background_update', 1)$/;"	v
+g:gutentags_cache_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = ''$/;"	v
+g:gutentags_cache_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':p')$/;"	v
+g:gutentags_cache_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':s?[\/\\\\]$??')$/;"	v
+g:gutentags_cscope_build_inverted_index	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_build_inverted_index = 0$/;"	v
+g:gutentags_cscope_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_executable = 'cscope'$/;"	v
+g:gutentags_ctags_auto_set_tags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_auto_set_tags = get(g:, 'gutentags_ctags_auto_set_tags', 1)$/;"	v
+g:gutentags_ctags_check_tagfile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
+g:gutentags_ctags_exclude	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
+g:gutentags_ctags_exclude_wildignore	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
+g:gutentags_ctags_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
+g:gutentags_ctags_extra_args	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
+g:gutentags_ctags_options_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
+g:gutentags_ctags_post_process_cmd	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_post_process_cmd = get(g:, 'gutentags_ctags_post_process_cmd', '')$/;"	v
+g:gutentags_ctags_tagfile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_tagfile = get(g:, 'gutentags_ctags_tagfile', 'tags')$/;"	v
+g:gutentags_debug	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_debug = get(g:, 'gutentags_debug', 0)$/;"	v
+g:gutentags_define_advanced_commands	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_define_advanced_commands = get(g:, 'gutentags_define_advanced_commands', 0)$/;"	v
+g:gutentags_enabled	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:gutentags_enabled = 0$/;"	v
+g:gutentags_enabled	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_enabled = get(g:, 'gutentags_enabled', 1)$/;"	v
+g:gutentags_exclude_filetypes	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_filetypes = get(g:, 'gutentags_exclude_filetypes', [])$/;"	v
+g:gutentags_exclude_project_root	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_project_root = get(g:, 'gutentags_exclude_project_root', ['\/usr\/local'/;"	v
+g:gutentags_fake	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_fake = a:1$/;"	v
+g:gutentags_fake	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    let g:gutentags_fake = !g:gutentags_fake$/;"	v
+g:gutentags_fake	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_fake = get(g:, 'gutentags_fake', 0)$/;"	v
+g:gutentags_file_list_command	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_file_list_command = get(g:, 'gutentags_file_list_command', '')$/;"	v
+g:gutentags_generate_on_empty_buffer	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_empty_buffer = get(g:, 'gutentags_generate_on_empty_buffer', 0)$/;"	v
+g:gutentags_generate_on_missing	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_missing = get(g:, 'gutentags_generate_on_missing', 1)$/;"	v
+g:gutentags_generate_on_new	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_new = get(g:, 'gutentags_generate_on_new', 1)$/;"	v
+g:gutentags_generate_on_write	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_write = get(g:, 'gutentags_generate_on_write', 1)$/;"	v
+g:gutentags_gtags_cscope_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_cscope_executable = 'gtags-cscope'$/;"	v
+g:gutentags_gtags_dbpath	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_dbpath = ''$/;"	v
+g:gutentags_gtags_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_executable = 'gtags'$/;"	v
+g:gutentags_gtags_options_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_options_file = '.gutgtags'$/;"	v
+g:gutentags_init_user_func	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_init_user_func = get(g:, 'gutentags_init_user_func', $/;"	v
+g:gutentags_modules	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_modules = get(g:, 'gutentags_modules', ['ctags'])$/;"	v
+g:gutentags_pause_after_update	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_pause_after_update = get(g:, 'gutentags_pause_after_update', 0)$/;"	v
+g:gutentags_plat_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . "\\\\plat\\\\win32\\\\"$/;"	v
+g:gutentags_plat_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . '\/plat\/unix\/'$/;"	v
+g:gutentags_project_info	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_info = get(g:, 'gutentags_project_info', [])$/;"	v
+g:gutentags_project_root	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_project_root += ['.git', '.hg', '.svn', '.bzr', '_darcs', '_FOSSIL_', '.fslc/;"	v
+g:gutentags_project_root	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root = get(g:, 'gutentags_project_root', [])$/;"	v
+g:gutentags_project_root_finder	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root_finder = get(g:, 'gutentags_project_root_finder', '')$/;"	v
+g:gutentags_res_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . "\\\\res\\\\"$/;"	v
+g:gutentags_res_dir	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . '\/res\/'$/;"	v
+g:gutentags_resolve_symlinks	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_resolve_symlinks = get(g:, 'gutentags_resolve_symlinks', 0)$/;"	v
+g:gutentags_scopefile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_scopefile = 'cscope.out'$/;"	v
+g:gutentags_script_ext	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.cmd'$/;"	v
+g:gutentags_script_ext	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.sh'$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^            let g:gutentags_trace = l:prev_trace$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = 1$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = a:1$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = l:trace_backup$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    let g:gutentags_trace = !g:gutentags_trace$/;"	v
+g:gutentags_trace	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_trace = get(g:, 'gutentags_trace', 0)$/;"	v
+g:gutentags_use_jobs	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_use_jobs = get(g:, 'gutentags_use_jobs', has('job'))$/;"	v
 g:io_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:io_fugitive = {$/;"	v
 g:loaded_commentary	pack/tpope/start/commentary/plugin/commentary.vim	/^let g:loaded_commentary = 1$/;"	v
 g:loaded_emmet_vim	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let g:loaded_emmet_vim = 1$/;"	v
@@ -2312,6 +2444,7 @@ g:loaded_eunuch	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let g:loaded_eunuch 
 g:loaded_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
 g:loaded_fzf	pack/junegunn/start/fzf/plugin/fzf.vim	/^let g:loaded_fzf = 1$/;"	v
 g:loaded_fzf_vim	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^let g:loaded_fzf_vim = 1$/;"	v
+g:loaded_gutentags	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
 g:loaded_matchit	pack/andymass/start/vim-matchup/plugin/matchup.vim	/^let g:loaded_matchit = 1$/;"	v
 g:loaded_matchparen	pack/andymass/start/vim-matchup/plugin/matchup.vim	/^  let g:loaded_matchparen = 1$/;"	v
 g:loaded_matchup	pack/andymass/start/vim-matchup/plugin/matchup.vim	/^let g:loaded_matchup = 1$/;"	v
@@ -2381,6 +2514,53 @@ get_byte_offset	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-par
 getch	pack/junegunn/start/fzf/src/tui/light_unix.go	/^func (r *LightRenderer) getch(nonblock bool) (int, bool) {$/;"	f	unknown:tui.LightRenderer	typeref:typename:(int, bool)
 getch	pack/junegunn/start/fzf/src/tui/light_windows.go	/^func (r *LightRenderer) getch(nonblock bool) (int, bool) {$/;"	f	unknown:tui.LightRenderer	typeref:typename:(int, bool)
 go	pack/junegunn/start/fzf/test/test_go.rb	/^  def go(args)$/;"	f	class:Tmux
+gutentags#add_job	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#add_job(module, tags_file, data) abort$/;"	f
+gutentags#build_default_job_options	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#build_default_job_options(module) abort$/;"	f
+gutentags#chdir	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#chdir(path)$/;"	f
+gutentags#cscope#generate	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#cscope#init	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#init(project_root) abort$/;"	f
+gutentags#cscope#on_job_exit	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#ctags#generate	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#ctags#init	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#init(project_root) abort$/;"	f
+gutentags#ctags#on_job_exit	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#default_get_project_root	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_get_project_root(path) abort$/;"	f
+gutentags#default_stderr_cb	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stderr_cb(chan, msg) abort$/;"	f
+gutentags#default_stdout_cb	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stdout_cb(chan, msg) abort$/;"	f
+gutentags#error	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#error(message)$/;"	f
+gutentags#fake	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#fake(...)$/;"	f
+gutentags#find_job_index_by_data	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_data(module, data) abort$/;"	f
+gutentags#find_job_index_by_tags_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_tags_file(module, tags_file) abort$/;"	f
+gutentags#get_cachefile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_cachefile(root_dir, filename) abort$/;"	f
+gutentags#get_job_data	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_data(module, job_idx) abort$/;"	f
+gutentags#get_job_tags_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_tags_file(module, job_idx) abort$/;"	f
+gutentags#get_plat_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_plat_file(filename) abort$/;"	f
+gutentags#get_project_file_list_cmd	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_file_list_cmd(path) abort$/;"	f
+gutentags#get_project_info	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_info(path) abort$/;"	f
+gutentags#get_project_root	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_root(path) abort$/;"	f
+gutentags#get_res_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_res_file(filename) abort$/;"	f
+gutentags#gtags_cscope#generate	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#gtags_cscope#init	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#init(project_root) abort$/;"	f
+gutentags#gtags_cscope#on_job_exit	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#inprogress	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#inprogress()$/;"	f
+gutentags#is_path_rooted	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#is_path_rooted(path) abort$/;"	f
+gutentags#make_args	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#make_args(cmd) abort$/;"	f
+gutentags#normalizepath	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#normalizepath(path)$/;"	f
+gutentags#on_vim_leave_pre	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#on_vim_leave_pre() abort$/;"	f
+gutentags#remove_job	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job(module, job_idx) abort$/;"	f
+gutentags#remove_job_by_data	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job_by_data(module, data) abort$/;"	f
+gutentags#rescan	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#rescan(...)$/;"	f
+gutentags#setup_gutentags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#setup_gutentags() abort$/;"	f
+gutentags#shellslash	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#shellslash(path)$/;"	f
+gutentags#start_job	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#start_job(cmd, opts) abort$/;"	f
+gutentags#statusline	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline(...) abort$/;"	f
+gutentags#statusline_cb	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline_cb(fmt_cb, ...) abort$/;"	f
+gutentags#stripslash	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#stripslash(path)$/;"	f
+gutentags#throw	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#throw(message)$/;"	f
+gutentags#toggletrace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#toggletrace(...)$/;"	f
+gutentags#trace	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#trace(message, ...)$/;"	f
+gutentags#validate_cmd	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#validate_cmd(cmd) abort$/;"	f
+gutentags#warning	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#warning(message)$/;"	f
+gutentags_detect	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^augroup gutentags_detect$/;"	a
 hasPreviewAction	pack/junegunn/start/fzf/src/terminal.go	/^func hasPreviewAction(opts *Options) bool {$/;"	f	package:fzf	typeref:typename:bool
 hasPreviewFlags	pack/junegunn/start/fzf/src/terminal.go	/^func hasPreviewFlags(template string) (slot bool, plus bool, query bool) {$/;"	f	package:fzf	typeref:typename:(slot bool, plus bool, query bool)
 hasPreviewWindow	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) hasPreviewWindow() bool {$/;"	f	struct:fzf.Terminal	typeref:typename:bool
@@ -3425,14 +3605,18 @@ s:UserCommandList	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:
 s:VersionCheck	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:VersionCheck() abort$/;"	f
 s:Wall	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:Wall() abort$/;"	f
 s:WinShellEsc	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:WinShellEsc(arg) abort$/;"	f
+s:_handleOldOptions	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
 s:action_for	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:action_for(key, ...)$/;"	f
 s:activateAll	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateAll() abort$/;"	f
 s:activateBookmark	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateBookmark(bm) abort$/;"	f
 s:activateDirNode	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(directoryNode, ...) abort$/;"	f
 s:activateFileNode	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node) abort$/;"	f
 s:add_background_matches_1	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^function! s:add_background_matches_1(line1, col1, line2, col2) " {{{1$/;"	f
+s:add_db	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
 s:add_matches	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^function! s:add_matches(corrlist, ...) " {{{1$/;"	f
 s:add_methods	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:add_methods(namespace, method_names) abort$/;"	f
+s:added_db_files	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
+s:added_dbs	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
 s:addr_other	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_other = has('patch-8.1.560') ? '-addr=other' : ''$/;"	v
 s:addr_tabs	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_tabs  = has('patch-7.4.542') ? '-addr=tabs' : ''$/;"	v
 s:addr_wins	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_wins  = has('patch-7.4.542') ? '-addr=windows' : ''$/;"	v
@@ -3470,6 +3654,7 @@ s:buflisted	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:bufli
 s:bufopen	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:bufopen(lines)$/;"	f
 s:bx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:bx = '{\\%("[^"]*"\\|''[^'']*''\\|\\$#\\|\\${\\w\\+}\\|\\$\\+\\|{[^{]\\+\\|[^{}]\\)\\{-}}'$/;"	v
 s:cache	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^let s:cache = {}$/;"	v
+s:cache_project_root	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
 s:cache_valid	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^let s:cache_valid = {}$/;"	v
 s:calc_size	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:calc_size(max, val, dict)$/;"	f
 s:callback	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:callback(dict, lines) abort$/;"	f
@@ -3535,6 +3720,7 @@ s:defaults	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:defaults()$/;"	f
 s:defs	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^function! s:defs(commands)$/;"	f
 s:delete	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:delete(s)$/;"	f
 s:deleteBookmark	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:deleteBookmark(bookmark) abort$/;"	f
+s:did_check_exe	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
 s:diff_modifier	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diff_modifier(count) abort$/;"	f
 s:diff_restore	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diff_restore() abort$/;"	f
 s:diff_window_count	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diff_window_count() abort$/;"	f
@@ -3631,9 +3817,11 @@ s:fzf_tempname	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:fzf_tempname
 s:fzf_tmux	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:fzf_tmux(dict)$/;"	f
 s:fzf_tmux	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:fzf_tmux = s:base_dir.'\/bin\/fzf-tmux'$/;"	v
 s:fzf_vim_term	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  function! s:fzf_vim_term()$/;"	f
+s:generate_wildignore_options	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
 s:get_backref	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:get_backref(groups, bref, warn)$/;"	f
 s:get_color	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:get_color(attr, ...)$/;"	f
 s:get_color	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:get_color(attr, ...)$/;"	f
+s:get_ctags_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
 s:get_delim	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:get_delim(opts) abort " {{{1$/;"	f
 s:get_delim_multi	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:get_delim_multi(opts) " {{{1$/;"	f
 s:get_git_root	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:get_git_root()$/;"	f
@@ -3700,8 +3888,11 @@ s:jumpToRoot	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^funct
 s:jumpToSibling	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToSibling(node, forward) abort$/;"	f
 s:keyMaps	pack/preservim/start/nerdtree/lib/nerdtree/key_map.vim	/^let s:keyMaps = {}$/;"	v
 s:key_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:key_sink(line)$/;"	f
+s:known_files	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
+s:known_projects	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
 s:last_time	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:last_time = reltime()$/;"	v
 s:last_times	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:last_times = {}$/;"	v
+s:last_wildignores	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
 s:launcher	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:launcher = '%s'$/;"	v
 s:launcher	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:launcher = function('s:xterm_launcher')$/;"	v
 s:layout_keys	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:layout_keys = ['window', 'up', 'down', 'left', 'right']$/;"	v
@@ -3717,6 +3908,7 @@ s:log_diff_context	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:log_d
 s:logging	pack/mattn/start/emmet-vim/unittest.vim	/^let s:logging = 0$/;"	v
 s:logn	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:logn(msg)$/;"	f
 s:make_oldstyle_omaps	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:make_oldstyle_omaps(lhs, rhs)$/;"	f
+s:manual_update_tags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
 s:map	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^  function! s:map(mode, lhs, rhs, ...)$/;"	f
 s:map	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:map(...) abort$/;"	f
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:maps() abort$/;"	f
@@ -3747,6 +3939,8 @@ s:not_bslash	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^le
 s:nowait	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
 s:nowait	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
 s:ns_id	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^  let s:ns_id = nvim_create_namespace('vim-matchup')$/;"	v
+s:nvim_job_exit_wrapper	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f
+s:nvim_job_out_wrapper	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f
 s:old_cpo	pack/preservim/start/nerdtree/plugin/NERD_tree.vim	/^let s:old_cpo = &cpoptions$/;"	v
 s:old_style_ops	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^let s:old_style_ops = !(has('patch-8.1.0648') || has('nvim-0.5.0'))$/;"	v
 s:open	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:open(cmd, target)$/;"	f
@@ -3788,6 +3982,7 @@ s:print_short	pack/andymass/start/vim-matchup/autoload/matchup/where.vim	/^funct
 s:print_verbose	pack/andymass/start/vim-matchup/autoload/matchup/where.vim	/^function! s:print_verbose() " {{{1$/;"	f
 s:process	pack/tpope/start/surround/plugin/surround.vim	/^function! s:process(string)$/;"	f
 s:process_hlend	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:process_hlend(re, cursorpos) " {{{1$/;"	f
+s:process_options_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:process_options_file(proj_dir, path) abort$/;"	f
 s:promptToDelBuffer	pack/preservim/start/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:promptToDelBuffer(bufnum, msg)$/;"	f
 s:pushd	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:pushd(dict)$/;"	f
 s:putline	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:putline(how, map) abort$/;"	f
@@ -3825,6 +4020,8 @@ s:reuseWin	pack/preservim/start/nerdtree/autoload/nerdtree.vim	/^function! s:reu
 s:reverse_list	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:reverse_list(opts)$/;"	f
 s:right	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:right(s)$/;"	f
 s:rootNERDTreePath	pack/preservim/start/nerdtree/autoload/nerdtree.vim	/^let s:rootNERDTreePath = resolve(expand('<sfile>:p:h:h'))$/;"	v
+s:runner_exe	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
+s:runner_exe	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:runner_exe = '"' . gutentags#get_plat_file('update_tags') . '"'$/;"	v
 s:save_cpo	pack/andymass/start/vim-matchup/after/ftplugin/cpp_matchup.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/andymass/start/vim-matchup/after/ftplugin/fortran_matchup.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/andymass/start/vim-matchup/after/ftplugin/html_matchup.vim	/^let s:save_cpo = &cpo$/;"	v
@@ -3921,8 +4118,15 @@ s:tree_up_dir_line	pack/preservim/start/nerdtree/syntax/nerdtree.vim	/^let s:tre
 s:trees	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:trees = {}$/;"	v
 s:treesitter_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:treesitter_init_module() " {{{1$/;"	f
 s:ulen	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:ulen(s)$/;"	f
+s:unix_redir	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
 s:upDirCurrentRootClosed	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootClosed() abort$/;"	f
 s:upDirCurrentRootOpen	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootOpen() abort$/;"	f
+s:update_in_progress	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    let s:update_in_progress[module] = []$/;"	v
+s:update_in_progress	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:update_in_progress = {}$/;"	v
+s:update_queue	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^    let s:update_queue[module] = []$/;"	v
+s:update_queue	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:update_queue = {}$/;"	v
+s:update_tags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! s:update_tags(bufno, module, write_mode, queue_mode) abort$/;"	f
 s:url_decode	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:url_decode(str) abort$/;"	f
 s:url_encode	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:url_encode(str) abort$/;"	f
 s:use_sh	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:use_sh()$/;"	f
@@ -3935,6 +4139,7 @@ s:warn	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:warn(msg)$/;"	f
 s:warned	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:warned = 0$/;"	v
 s:where_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:where_init_module() " {{{1$/;"	f
 s:wide	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:wide = 120$/;"	v
+s:wildignores_options_path	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:wildignores_options_path = ''$/;"	v
 s:windows_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:windows_sink(line)$/;"	f
 s:winshell	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:winshell() abort$/;"	f
 s:wordish	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^function! s:wordish(delim)$/;"	f
@@ -3943,6 +4148,7 @@ s:wrap	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:wrap(name,
 s:wrap	pack/tpope/start/surround/plugin/surround.vim	/^function! s:wrap(string,char,type,removed,special)$/;"	f
 s:wrap_cmds	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
 s:wrapreg	pack/tpope/start/surround/plugin/surround.vim	/^function! s:wrapreg(reg,char,removed,special)$/;"	f
+s:write_triggered_update_tags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! s:write_triggered_update_tags(bufno) abort$/;"	f
 s:xml_decode	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:xml_decode(str) abort$/;"	f
 s:xml_encode	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:xml_encode(str) abort$/;"	f
 s:xml_entity_decode	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:xml_entity_decode(str) abort$/;"	f
@@ -4261,6 +4467,9 @@ updateTerminalSize	pack/junegunn/start/fzf/src/tui/light_unix.go	/^func (r *Ligh
 updateTerminalSize	pack/junegunn/start/fzf/src/tui/light_windows.go	/^func (r *LightRenderer) updateTerminalSize() {$/;"	f	unknown:tui.LightRenderer
 update_cached_matches	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/query.lua	/^  local function update_cached_matches(bufnr, changed_tick, query_group)$/;"	f
 usage	pack/junegunn/start/fzf/src/options.go	/^const usage = `usage: fzf [options]$/;"	c	package:fzf
+use_raw_list	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%FILE_LIST_CMD_IS_ABSOLUTE%"]==["1"] set use_raw_list=1$/;"	v
+use_raw_list	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%PROJECT_ROOT%"]==["."] set use_raw_list=1$/;"	v
+use_raw_list	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^        set use_raw_list=0$/;"	v
 util	pack/junegunn/start/fzf/src/util/atomicbool.go	/^package util$/;"	p
 util	pack/junegunn/start/fzf/src/util/atomicbool_test.go	/^package util$/;"	p
 util	pack/junegunn/start/fzf/src/util/chars.go	/^package util$/;"	p

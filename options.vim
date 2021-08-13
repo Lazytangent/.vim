@@ -31,7 +31,7 @@ set list
 set listchars=tab:▶\ ,trail:▦
 
 set mouse=a
-set spell
+" set spell
 set spellfile=~/.vim/spell/en.utf-8.add
 set cursorline
 set modeline
