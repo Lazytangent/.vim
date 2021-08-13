@@ -34,3 +34,6 @@
 [submodule "pack/mattn/start/emmet-vim"]
 	path = pack/mattn/start/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "pack/andymass/start/vim-matchup"]
+	path = pack/andymass/start/vim-matchup
+	url = git@github.com:andymass/vim-matchup.git
