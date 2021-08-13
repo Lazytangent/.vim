@@ -37,3 +37,6 @@
 [submodule "pack/andymass/start/vim-matchup"]
 	path = pack/andymass/start/vim-matchup
 	url = git@github.com:andymass/vim-matchup.git
+[submodule "pack/ludovicchabant/start/vim-gutentags"]
+	path = pack/ludovicchabant/start/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
