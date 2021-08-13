@@ -21,12 +21,12 @@ set incsearch
 set lazyredraw
 set magic
 set showmatch
-set mat=2
+set matchtime=2
 
-set number
-set relativenumber
-set numberwidth=5
-set clipboard=unnamedplus
+" set number
+" set relativenumber
+" set numberwidth=5
+set clipboard+=unnamedplus
 set list
 set listchars=tab:▶\ ,trail:▦
 
@@ -38,7 +38,7 @@ set modeline
 
 set foldenable
 set foldmethod=marker
-set foldcolumn=1
+" set foldcolumn=1
 set foldlevelstart=10
 
 set background=dark
@@ -68,6 +68,12 @@ set splitbelow
 set textwidth=80
 set formatoptions+=t
 
+set shiftround
+set grepprg=ag
+
+set omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,noselect
+
 try
   set undodir=~/.vim/temp_dirs/undodir
   set undofile
@@ -83,4 +89,8 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 
 " FZF {{{
 
+" }}}
+
+" Emmet-Vim {{{
+let g:user_emmet_leader_key = '<C-L>'
 " }}}
