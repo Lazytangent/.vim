@@ -1,3 +1,3 @@
 setlocal textwidth=72
 setlocal spell
-g:gutentags_enabled = 0
+let g:gutentags_enabled=0
