@@ -2392,6 +2392,7 @@ g:gutentags_ctags_auto_set_tags	pack/ludovicchabant/start/vim-gutentags/autoload
 g:gutentags_ctags_check_tagfile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
 g:gutentags_ctags_exclude	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
 g:gutentags_ctags_exclude_wildignore	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
+g:gutentags_ctags_executable	options.vim	/^let g:gutentags_ctags_executable = "\/opt\/homebrew\/Cellar\/universal-ctags\/HEAD-c436bca\/bin\//;"	v
 g:gutentags_ctags_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
 g:gutentags_ctags_extra_args	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
 g:gutentags_ctags_options_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
@@ -2399,6 +2400,7 @@ g:gutentags_ctags_post_process_cmd	pack/ludovicchabant/start/vim-gutentags/autol
 g:gutentags_ctags_tagfile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_tagfile = get(g:, 'gutentags_ctags_tagfile', 'tags')$/;"	v
 g:gutentags_debug	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_debug = get(g:, 'gutentags_debug', 0)$/;"	v
 g:gutentags_define_advanced_commands	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_define_advanced_commands = get(g:, 'gutentags_define_advanced_commands', 0)$/;"	v
+g:gutentags_enabled	ftplugin/gitcommit.vim	/^let g:gutentags_enabled=0$/;"	v
 g:gutentags_enabled	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:gutentags_enabled = 0$/;"	v
 g:gutentags_enabled	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_enabled = get(g:, 'gutentags_enabled', 1)$/;"	v
 g:gutentags_exclude_filetypes	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_filetypes = get(g:, 'gutentags_exclude_filetypes', [])$/;"	v

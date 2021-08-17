@@ -94,3 +94,7 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " Emmet-Vim {{{
 let g:user_emmet_leader_key = '<C-L>'
 " }}}
+
+" Gutentags {{{
+let g:gutentags_ctags_executable = "/opt/homebrew/Cellar/universal-ctags/HEAD-c436bca/bin/ctags"
+" }}}
