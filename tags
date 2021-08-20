@@ -9,12 +9,8 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/c436bca6/
+#	mappings.vim	/^nnoremap # #``$/;"	m
 $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
-$c	mappings.vim	/^cnoremap $c e <C-\\>eCurrentFileDir("e")<cr>$/;"	m
-$d	mappings.vim	/^cnoremap $d e ~\/Desktop\/$/;"	m
-$h	mappings.vim	/^cnoremap $h e ~\/$/;"	m
-$j	mappings.vim	/^cnoremap $j e .\/$/;"	m
-$q	mappings.vim	/^cnoremap $q <C-\\>eDeleteTillSlash()<cr>$/;"	m
 (a.1) jump between matching words	pack/andymass/start/vim-matchup/README.md	/^#### (a.1) jump between matching words$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
 (a.2) jump to open and close words	pack/andymass/start/vim-matchup/README.md	/^#### (a.2) jump to open and close words$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
 (a.3) jump inside	pack/andymass/start/vim-matchup/README.md	/^#### (a.3) jump inside$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
@@ -23,6 +19,7 @@ $q	mappings.vim	/^cnoremap $q <C-\\>eDeleteTillSlash()<cr>$/;"	m
 (c.2) highlight _all_ matches	pack/andymass/start/vim-matchup/README.md	/^#### (c.2) highlight _all_ matches$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
 (c.3) display matches off screen	pack/andymass/start/vim-matchup/README.md	/^#### (c.3) display matches off screen$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
 (c.4) where am I?	pack/andymass/start/vim-matchup/README.md	/^#### (c.4) where am I?$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
+*	mappings.vim	/^nnoremap * *``$/;"	m
 *Backward incompatible changes*	pack/junegunn/start/fzf/CHANGELOG.md	/^### *Backward incompatible changes*$/;"	S	section:CHANGELOG""0.9.4
 .	pack/tpope/start/repeat/autoload/repeat.vim	/^    nmap . <Plug>(RepeatDot)$/;"	m
 0.10.0	pack/junegunn/start/fzf/CHANGELOG.md	/^0.10.0$/;"	s	chapter:CHANGELOG
@@ -198,6 +195,8 @@ $q	mappings.vim	/^cnoremap $q <C-\\>eDeleteTillSlash()<cr>$/;"	m
 <SID>AutoPairsReturn	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^inoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>$/;"	m
 <img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)	pack/junegunn/start/fzf/README.md	/^<img src="https:\/\/raw.githubusercontent.com\/junegunn\/i\/master\/fzf.png" height="170" alt="f/;"	c
 <leader><cr>	mappings.vim	/^map <silent> <leader><cr> :nohlsearch<cr>$/;"	m
+<leader><leader>g	mappings.vim	/^nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@$/;"	m
+<leader><leader>g	mappings.vim	/^vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>$/;"	m
 <leader>fa	mappings.vim	/^nnoremap <leader>fa :Ag<space>$/;"	m
 <leader>fb	mappings.vim	/^nnoremap <leader>fb <cmd>Buffers<cr>$/;"	m
 <leader>fc	mappings.vim	/^nnoremap <leader>fc <cmd>Commands<cr>$/;"	m
@@ -726,6 +725,7 @@ Getting Started	pack/preservim/start/nerdtree/README.markdown	/^## Getting Start
 Git	pack/tpope/start/fugitive/plugin/fugitive.vim	/^command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#Complete Git exe fugitive#Comman/;"	c
 Global options	pack/junegunn/start/fzf.vim/README.md	/^### Global options$/;"	S	section:fzf :heart: vim""Customization
 Global options supported by `fzf#wrap`	pack/junegunn/start/fzf/README-VIM.md	/^### Global options supported by `fzf#wrap`$/;"	S	section:FZF Vim integration""`fzf#wrap`
+GrepOperator	plugin/grep-operator.vim	/^function! GrepOperator(type)$/;"	f
 Guide for code contributions	pack/andymass/start/vim-matchup/CONTRIBUTING.md	/^# Guide for code contributions$/;"	c
 Gutentags	pack/ludovicchabant/start/vim-gutentags/README.md	/^# Gutentags$/;"	c
 GutentagsToggleEnabled	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleEnabled :let g:gutentags_enabled=!g:gutentags_enabled$/;"	c
@@ -1640,6 +1640,8 @@ byLength	pack/junegunn/start/fzf/src/options.go	/^	byLength$/;"	c	package:fzf
 byScore	pack/junegunn/start/fzf/src/options.go	/^	byScore criterion = iota$/;"	c	package:fzf	typeref:type:criterion
 byTimeOrder	pack/junegunn/start/fzf/src/terminal.go	/^type byTimeOrder []selectedItem$/;"	t	package:fzf	typeref:typename:[]selectedItem
 c	pack/andymass/start/vim-matchup/test/issues/10/legacy.vim	/^let c = "\\\\(  \\\\)"$/;"	v
+c#	mappings.vim	/^nnoremap c# ?\\<<C-r>=expand('<cword>')<cr>\\>\\C<cr>``cgN$/;"	m
+c*	mappings.vim	/^nnoremap c* \/\\<<C-r>=expand('<cword>')<cr>\\>\\C<cr>``cgn$/;"	m
 cS	pack/tpope/start/surround/plugin/surround.vim	/^  nmap cS  <Plug>CSurround$/;"	m
 cache	pack/junegunn/start/fzf/src/cache.go	/^	cache map[*Chunk]*queryCache$/;"	m	struct:fzf.ChunkCache	typeref:typename:map[*Chunk]*queryCache
 cacheKey	pack/junegunn/start/fzf/src/pattern.go	/^	cacheKey      string$/;"	m	struct:fzf.Pattern	typeref:typename:string
@@ -1741,6 +1743,8 @@ cy	pack/junegunn/start/fzf/src/terminal.go	/^	cy           int$/;"	m	struct:fzf.
 cycle	pack/junegunn/start/fzf/src/options.go	/^	cycle       bool$/;"	m	struct:fzf.previewOpts	typeref:typename:bool
 cycle	pack/junegunn/start/fzf/src/terminal.go	/^	cycle        bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
 d	pack/andymass/start/vim-matchup/test/issues/10/legacy.vim	/^let d = "( \\\\(  )"  .  "\\\\(  " . '\\(  \\)' . "\\\\)"$/;"	v
+d#	mappings.vim	/^nnoremap d# ?\\<<C-r>=expand('<cword>')<cr>\\>\\C<cr>``dgN$/;"	m
+d*	mappings.vim	/^nnoremap d* \/\\<<C-r>=expand('<cword>')<cr>\\>\\C<cr>``dgn$/;"	m
 days_in_month	pack/andymass/start/vim-matchup/test/issues/33/test.rb	/^    def days_in_month(month, year)$/;"	S	class:Time
 debugV2	pack/junegunn/start/fzf/src/algo/algo.go	/^func debugV2(T []rune, pattern []rune, F []int32, lastIdx int, H []int16, C []int16) {$/;"	f	package:algo
 defaultCommand	pack/junegunn/start/fzf/src/constants.go	/^var defaultCommand string$/;"	v	package:fzf	typeref:typename:string
@@ -2588,9 +2592,21 @@ htmlcov/index.html	pack/andymass/start/vim-matchup/test/new/Makefile	/^htmlcov\/
 ifElseIfElseProg	pack/andymass/start/vim-matchup/test/issues/51/test.f90	/^program ifElseIfElseProg$/;"	p
 ignore	pack/junegunn/start/fzf/src/util/eventbox.go	/^	ignore map[EventType]bool$/;"	m	struct:util.EventBox	typeref:typename:map[EventType]bool
 il(	mappings.vim	/^onoremap il( :<C-u>normal! F)vi(<cr>$/;"	m
+il)	mappings.vim	/^onoremap il) :<C-u>normal! F)vi(<cr>$/;"	m
+ilB	mappings.vim	/^onoremap ilB :<C-u>normal! F}vi{<cr>$/;"	m
+il[	mappings.vim	/^onoremap il[ :<C-u>normal! F]vi[<cr>$/;"	m
+il]	mappings.vim	/^onoremap il] :<C-u>normal! F]vi[<cr>$/;"	m
+ilb	mappings.vim	/^onoremap ilb :<C-u>normal! F)vi(<cr>$/;"	m
+il{	mappings.vim	/^onoremap il{ :<C-u>normal! F}vi{<cr>$/;"	m
+il}	mappings.vim	/^onoremap il} :<C-u>normal! F}vi{<cr>$/;"	m
 in(	mappings.vim	/^onoremap in( :<C-u>normal! f(vi(<cr>$/;"	m
+in)	mappings.vim	/^onoremap in) :<C-u>normal! f(vi(<cr>$/;"	m
+inB	mappings.vim	/^onoremap inB :<C-u>normal! f{vi{<cr>$/;"	m
 inBytes	pack/junegunn/start/fzf/src/util/chars.go	/^	inBytes         bool$/;"	m	struct:util.Chars	typeref:typename:bool
 inHandle	pack/junegunn/start/fzf/src/tui/light.go	/^	inHandle        uintptr$/;"	m	struct:tui.LightRenderer	typeref:typename:uintptr
+in[	mappings.vim	/^onoremap in[ :<C-u>normal! f[vi[<cr>$/;"	m
+in]	mappings.vim	/^onoremap in] :<C-u>normal! f[vi[<cr>$/;"	m
+inb	mappings.vim	/^onoremap inb :<C-u>normal! f(vi(<cr>$/;"	m
 index	pack/junegunn/start/fzf/src/matcher.go	/^	index   int$/;"	m	struct:fzf.partialResult	typeref:typename:int
 indexAt	pack/junegunn/start/fzf/src/algo/algo.go	/^func indexAt(index int, max int, forward bool) int {$/;"	f	package:algo	typeref:typename:int
 infoDefault	pack/junegunn/start/fzf/src/options.go	/^	infoDefault infoStyle = iota$/;"	c	package:fzf	typeref:type:infoStyle
@@ -2620,6 +2636,8 @@ insert_to_path	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-part
 install	pack/junegunn/start/fzf/Makefile	/^install: bin\/fzf$/;"	t
 interpretCode	pack/junegunn/start/fzf/src/ansi.go	/^func interpretCode(ansiCode string, prevState *ansiState) ansiState {$/;"	f	package:fzf	typeref:typename:ansiState
 inv	pack/junegunn/start/fzf/src/pattern.go	/^	inv           bool$/;"	m	struct:fzf.term	typeref:typename:bool
+in{	mappings.vim	/^onoremap in{ :<C-u>normal! f{vi{<cr>$/;"	m
+in}	mappings.vim	/^onoremap in} :<C-u>normal! f{vi{<cr>$/;"	m
 is24	pack/junegunn/start/fzf/src/tui/tui.go	/^func (c Color) is24() bool {$/;"	f	type:tui.Color	typeref:typename:bool
 isAlphabet	pack/junegunn/start/fzf/src/options.go	/^func isAlphabet(char uint8) bool {$/;"	f	package:fzf	typeref:typename:bool
 isAscii	pack/junegunn/start/fzf/src/algo/algo.go	/^func isAscii(runes []rune) bool {$/;"	f	package:algo	typeref:typename:bool

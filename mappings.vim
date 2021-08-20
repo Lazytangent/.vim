@@ -21,24 +21,53 @@ nnoremap <C-j> :<C-U>execute "exec 'norm m`' \| move +" . (0+v:count1)<cr>``
 vnoremap <C-k> :<C-U>execute "'<,'>move '<-" . (1+v:count1)<cr>gv
 vnoremap <C-j> :<C-U>execute "'<,'>move '<+" . (0+v:count1)<cr>gv
 
-cnoremap $h e ~/
-cnoremap $d e ~/Desktop/
-cnoremap $j e ./
-cnoremap $c e <C-\>eCurrentFileDir("e")<cr>
-
-cnoremap $q <C-\>eDeleteTillSlash()<cr>
-
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+nnoremap * *``
+nnoremap # #``
+
+nnoremap c* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``cgn
+nnoremap c# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``cgN
+
+nnoremap d* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgn
+nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
+
+" Plugin Mappings {{{
+
+" ExecuteFile {{{2
 nnoremap <C-L><C-R> :call ExecuteFile()<cr>
+" }}}
+
+" GrepOperator {{{2
+nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
+" }}}
+
+" }}}
 
 " Operator Pending Mappings {{{
 onoremap in( :<C-u>normal! f(vi(<cr>
 onoremap il( :<C-u>normal! F)vi(<cr>
+onoremap in) :<C-u>normal! f(vi(<cr>
+onoremap il) :<C-u>normal! F)vi(<cr>
+onoremap inb :<C-u>normal! f(vi(<cr>
+onoremap ilb :<C-u>normal! F)vi(<cr>
+
+onoremap in{ :<C-u>normal! f{vi{<cr>
+onoremap il{ :<C-u>normal! F}vi{<cr>
+onoremap in} :<C-u>normal! f{vi{<cr>
+onoremap il} :<C-u>normal! F}vi{<cr>
+onoremap inB :<C-u>normal! f{vi{<cr>
+onoremap ilB :<C-u>normal! F}vi{<cr>
+
+onoremap in[ :<C-u>normal! f[vi[<cr>
+onoremap il[ :<C-u>normal! F]vi[<cr>
+onoremap in] :<C-u>normal! f[vi[<cr>
+onoremap il] :<C-u>normal! F]vi[<cr>
 " }}}
 
 " NERDTree Mappings {{{

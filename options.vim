@@ -83,13 +83,13 @@ endtry
 " Statusline {{{
 set laststatus=1
 
-set statusline=\ %f
-set statusline+=\ -
-set statusline+=\ FileType:
-set statusline+=\ %y
-set statusline+=%=
-set statusline+=%l
-set statusline+=\ /\ %-2L
+" set statusline=\ %f
+" set statusline+=\ -
+" set statusline+=\ FileType:
+" set statusline+=\ %y
+" set statusline+=%=
+" set statusline+=%l
+" set statusline+=\ /\ %-2L
 " }}}
 
 " Cursor Settings {{{
