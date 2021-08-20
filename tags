@@ -205,6 +205,7 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <leader>fr	mappings.vim	/^nnoremap <leader>fr :Rg<space>$/;"	m
 <leader>ft	mappings.vim	/^nnoremap <leader>ft :Tags<space>$/;"	m
 <leader>fz	mappings.vim	/^nnoremap <leader>fz <cmd>FZF<cr>$/;"	m
+<leader>l	mappings.vim	/^nnoremap <leader>l :ls<cr>:b<space>$/;"	m
 <leader>nn	mappings.vim	/^nnoremap <leader>nn :NERDTreeFocus<cr>$/;"	m
 <localleader>aO	mappings.vim	/^nnoremap <localleader>aO O<Esc>$/;"	m
 <localleader>ao	mappings.vim	/^nnoremap <localleader>ao o<Esc>$/;"	m

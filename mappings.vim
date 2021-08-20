@@ -36,6 +36,8 @@ nnoremap c# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``cgN
 nnoremap d* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgn
 nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
 
+nnoremap <leader>l :ls<cr>:b<space>
+
 " Plugin Mappings {{{
 
 " ExecuteFile {{{2

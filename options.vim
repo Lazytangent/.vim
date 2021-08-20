@@ -80,8 +80,10 @@ try
 catch
 endtry
 
+set ttyfast
+
 " Statusline {{{
-set laststatus=1
+" set laststatus=1
 
 " set statusline=\ %f
 " set statusline+=\ -
