@@ -107,7 +107,8 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " }}}
 
 " FZF {{{
-
+" let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.3, 'relative': v:true, 'yoffset': 1.0 } }
+let g:fzf_layout = { 'down': '10%' }
 " }}}
 
 " Emmet-Vim {{{
