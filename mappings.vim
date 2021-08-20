@@ -36,6 +36,11 @@ cnoremap <C-N> <Down>
 
 nnoremap <C-L><C-R> :call ExecuteFile()<cr>
 
+" Operator Pending Mappings {{{
+onoremap in( :<C-u>normal! f(vi(<cr>
+onoremap il( :<C-u>normal! F)vi(<cr>
+" }}}
+
 " NERDTree Mappings {{{
 nnoremap <leader>nn :NERDTreeFocus<cr>
 " }}}

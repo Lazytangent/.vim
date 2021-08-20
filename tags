@@ -2587,6 +2587,8 @@ hscrollOff	pack/junegunn/start/fzf/src/terminal.go	/^	hscrollOff   int$/;"	m	str
 htmlcov/index.html	pack/andymass/start/vim-matchup/test/new/Makefile	/^htmlcov\/index.html: env \/tmp\/vim-profile.txt$/;"	t
 ifElseIfElseProg	pack/andymass/start/vim-matchup/test/issues/51/test.f90	/^program ifElseIfElseProg$/;"	p
 ignore	pack/junegunn/start/fzf/src/util/eventbox.go	/^	ignore map[EventType]bool$/;"	m	struct:util.EventBox	typeref:typename:map[EventType]bool
+il(	mappings.vim	/^onoremap il( :<C-u>normal! F)vi(<cr>$/;"	m
+in(	mappings.vim	/^onoremap in( :<C-u>normal! f(vi(<cr>$/;"	m
 inBytes	pack/junegunn/start/fzf/src/util/chars.go	/^	inBytes         bool$/;"	m	struct:util.Chars	typeref:typename:bool
 inHandle	pack/junegunn/start/fzf/src/tui/light.go	/^	inHandle        uintptr$/;"	m	struct:tui.LightRenderer	typeref:typename:uintptr
 index	pack/junegunn/start/fzf/src/matcher.go	/^	index   int$/;"	m	struct:fzf.partialResult	typeref:typename:int

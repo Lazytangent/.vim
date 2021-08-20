@@ -80,8 +80,18 @@ try
 catch
 endtry
 
+" Statusline {{{
+set laststatus=2
+set statusline=%f
+set statusline+=\ -
+set statusline+=\ FileType:
+set statusline+=\ %y
+" }}}
+
+" Cursor Settings {{{
 let &t_EI = "\e[0 q"
 let &t_SI = "\e[5 q"
+" }}}
 
 " NERDTree Settings {{{
 let g:NERDTreeWinPos = "right"
