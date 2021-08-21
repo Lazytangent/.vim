@@ -142,10 +142,14 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <C-P>	pack/tpope/start/fugitive/autoload/fugitive.vim	/^          nnoremap <buffer> <silent> <C-P> :<C-U>execute line('.') == 1 ? 'CtrlP ' . fnameescape/;"	m
 <C-R>	pack/tpope/start/repeat/autoload/repeat.vim	/^    nmap <C-R> <Plug>(RepeatRedo)$/;"	m
 <C-S>	pack/tpope/start/surround/plugin/surround.vim	/^      imap    <C-S> <Plug>Isurround$/;"	m
+<C-X><CR>	pack/tpope/start/endwise/plugin/endwise.vim	/^    imap <script> <C-X><CR> <CR><SID>AlwaysEnd$/;"	m
+<C-X><CR>	pack/tpope/start/endwise/plugin/endwise.vim	/^  inoremap <buffer> <C-X><CR> <C-X><CR>$/;"	m
 <C-j>	mappings.vim	/^nnoremap <C-j> :<C-U>execute "exec 'norm m`' \\| move +" . (0+v:count1)<cr>``$/;"	m
 <C-j>	mappings.vim	/^vnoremap <C-j> :<C-U>execute "'<,'>move '<+" . (0+v:count1)<cr>gv$/;"	m
 <C-k>	mappings.vim	/^nnoremap <C-k> :<C-U>execute "exec 'norm m`' \\| move -" . (1+v:count1)<cr>``$/;"	m
 <C-k>	mappings.vim	/^vnoremap <C-k> :<C-U>execute "'<,'>move '<-" . (1+v:count1)<cr>gv$/;"	m
+<CR>	pack/tpope/start/endwise/plugin/endwise.vim	/^    imap <CR> <CR><Plug>DiscretionaryEnd$/;"	m
+<CR>	pack/tpope/start/endwise/plugin/endwise.vim	/^  inoremap <buffer> <CR> <CR>$/;"	m
 <Plug>(-fzf-complete-finish)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^inoremap <silent> <Plug>(-fzf-complete-finish) <c-o>l$/;"	m
 <Plug>(-fzf-complete-finish)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <silent> <Plug>(-fzf-complete-finish) a$/;"	m
 <Plug>(-fzf-complete-trigger)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^inoremap <silent> <Plug>(-fzf-complete-trigger) <c-o>:call <sid>complete_trigger()<cr>$/;"	m
@@ -155,6 +159,7 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <Plug>(RepeatUndoLine)	pack/tpope/start/repeat/autoload/repeat.vim	/^nnoremap <silent> <Plug>(RepeatUndoLine) :<C-U>call repeat#wrap('U',v:count)<CR>$/;"	m
 <Plug>(fzf-insert)	pack/junegunn/start/fzf/plugin/fzf.vim	/^nnoremap <silent> <Plug>(fzf-insert) i$/;"	m
 <Plug>(fzf-normal)	pack/junegunn/start/fzf/plugin/fzf.vim	/^nnoremap <silent> <Plug>(fzf-normal) <Nop>$/;"	m
+<Plug>AlwaysEnd	pack/tpope/start/endwise/plugin/endwise.vim	/^  imap    <script> <Plug>AlwaysEnd        <SID>AlwaysEnd$/;"	m
 <Plug>AutoPairsReturn	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^imap <script> <Plug>AutoPairsReturn <SID>AutoPairsReturn$/;"	m
 <Plug>CSurround	pack/tpope/start/surround/plugin/surround.vim	/^nnoremap <silent> <Plug>CSurround  :<C-U>call <SID>changesurround(1)<CR>$/;"	m
 <Plug>ChangeCommentary	pack/tpope/start/commentary/plugin/commentary.vim	/^nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>$/;"	m
@@ -164,6 +169,7 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <Plug>CommentaryLine	pack/tpope/start/commentary/plugin/commentary.vim	/^nnoremap <expr>   <Plug>CommentaryLine <SID>go() . '_'$/;"	m
 <Plug>CommentaryUndo	pack/tpope/start/commentary/plugin/commentary.vim	/^nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Comme/;"	m
 <Plug>Csurround	pack/tpope/start/surround/plugin/surround.vim	/^nnoremap <silent> <Plug>Csurround  :<C-U>call <SID>changesurround()<CR>$/;"	m
+<Plug>DiscretionaryEnd	pack/tpope/start/endwise/plugin/endwise.vim	/^  imap    <script> <Plug>DiscretionaryEnd <SID>DiscretionaryEnd$/;"	m
 <Plug>Dsurround	pack/tpope/start/surround/plugin/surround.vim	/^nnoremap <silent> <Plug>Dsurround  :<C-U>call <SID>dosurround(<SID>inputtarget())<CR>$/;"	m
 <Plug>ISurround	pack/tpope/start/surround/plugin/surround.vim	/^inoremap <silent> <Plug>ISurround  <C-R>=<SID>insert(1)<CR>$/;"	m
 <Plug>Isurround	pack/tpope/start/surround/plugin/surround.vim	/^inoremap <silent> <Plug>Isurround  <C-R>=<SID>insert()<CR>$/;"	m
@@ -192,7 +198,9 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <Plug>unimpairedPutAbove	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedPutAbove :call <SID>putline('[p', 'Above')<CR>$/;"	m
 <Plug>unimpairedPutBelow	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedPutBelow :call <SID>putline(']p', 'Below')<CR>$/;"	m
 <SID>:	pack/tpope/start/fugitive/autoload/fugitive.vim	/^nnoremap <SID>: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m
+<SID>AlwaysEnd	pack/tpope/start/endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>AlwaysEnd        <C-R>=<SID>crend(1)<CR>$/;"	m
 <SID>AutoPairsReturn	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^inoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>$/;"	m
+<SID>DiscretionaryEnd	pack/tpope/start/endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>DiscretionaryEnd <C-R>=<SID>crend(0)<CR>$/;"	m
 <img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)	pack/junegunn/start/fzf/README.md	/^<img src="https:\/\/raw.githubusercontent.com\/junegunn\/i\/master\/fzf.png" height="170" alt="f/;"	c
 <leader><cr>	mappings.vim	/^map <silent> <leader><cr> :nohlsearch<cr>$/;"	m
 <leader><leader>g	mappings.vim	/^nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@$/;"	m
@@ -585,6 +593,8 @@ Enclose	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (w *TcellWindow) Enclose
 Enclose	pack/junegunn/start/fzf/src/tui/tui.go	/^	Enclose(y int, x int) bool$/;"	n	interface:tui.Window	typeref:typename:bool
 End	pack/junegunn/start/fzf/src/algo/algo.go	/^	End   int$/;"	m	struct:algo.Result	typeref:typename:int
 End	pack/junegunn/start/fzf/src/tui/tui.go	/^	End$/;"	c	package:tui
+EndwiseAlways	pack/tpope/start/endwise/plugin/endwise.vim	/^function! EndwiseAlways()$/;"	f
+EndwiseDiscretionary	pack/tpope/start/endwise/plugin/endwise.vim	/^function! EndwiseDiscretionary()$/;"	f
 Environment variables	pack/junegunn/start/fzf/README.md	/^#### Environment variables$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Usage
 Environment variables / Aliases	pack/junegunn/start/fzf/README.md	/^#### Environment variables \/ Aliases$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Fuzzy completion for bash and zsh
 EqualMatch	pack/junegunn/start/fzf/src/algo/algo.go	/^func EqualMatch(caseSensitive bool, normalize bool, forward bool, text *util.Chars, pattern []ru/;"	f	package:algo	typeref:typename:(Result, *[]int)
@@ -792,6 +802,7 @@ Installation	pack/junegunn/start/fzf/README-VIM.md	/^Installation$/;"	s	chapter:
 Installation	pack/junegunn/start/fzf/README.md	/^Installation$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
 Installation	pack/preservim/start/nerdtree/README.markdown	/^## Installation$/;"	s	chapter:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)
 Installation	pack/tpope/start/commentary/README.markdown	/^## Installation$/;"	s	chapter:commentary.vim
+Installation	pack/tpope/start/endwise/README.markdown	/^## Installation$/;"	s	chapter:endwise.vim
 Installation	pack/tpope/start/eunuch/README.markdown	/^## Installation$/;"	s	chapter:eunuch.vim
 Installation	pack/tpope/start/fugitive/README.markdown	/^## Installation$/;"	s	chapter:fugitive.vim
 Installation	pack/tpope/start/repeat/README.markdown	/^## Installation$/;"	s	chapter:repeat.vim
@@ -859,6 +870,7 @@ License	pack/jiangmiao/start/auto-pairs/README.md	/^License$/;"	s	chapter:Auto P
 License	pack/junegunn/start/fzf.vim/README.md	/^License$/;"	s	chapter:fzf :heart: vim
 License	pack/junegunn/start/fzf/BUILD.md	/^License$/;"	s	chapter:Building fzf
 License	pack/tpope/start/commentary/README.markdown	/^## License$/;"	s	chapter:commentary.vim
+License	pack/tpope/start/endwise/README.markdown	/^## License$/;"	s	chapter:endwise.vim
 License	pack/tpope/start/eunuch/README.markdown	/^## License$/;"	s	chapter:eunuch.vim
 License	pack/tpope/start/fugitive/README.markdown	/^## License$/;"	s	chapter:fugitive.vim
 License	pack/tpope/start/repeat/README.markdown	/^## License$/;"	s	chapter:repeat.vim
@@ -1175,6 +1187,7 @@ Search syntax	pack/junegunn/start/fzf/README.md	/^#### Search syntax$/;"	t	secti
 Select1	pack/junegunn/start/fzf/src/options.go	/^	Select1     bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 Selected	pack/junegunn/start/fzf/src/tui/tui.go	/^	Selected     ColorAttr$/;"	m	struct:tui.ColorTheme	typeref:typename:ColorAttr
 Self-Promotion	pack/tpope/start/commentary/README.markdown	/^## Self-Promotion$/;"	s	chapter:commentary.vim
+Self-Promotion	pack/tpope/start/endwise/README.markdown	/^## Self-Promotion$/;"	s	chapter:endwise.vim
 Self-Promotion	pack/tpope/start/eunuch/README.markdown	/^## Self-Promotion$/;"	s	chapter:eunuch.vim
 Self-Promotion	pack/tpope/start/fugitive/README.markdown	/^## Self-Promotion$/;"	s	chapter:fugitive.vim
 Self-Promotion	pack/tpope/start/repeat/README.markdown	/^## Self-Promotion$/;"	s	chapter:repeat.vim
@@ -1979,6 +1992,8 @@ emmet-vim.zip	pack/mattn/start/emmet-vim/Makefile	/^emmet-vim.zip: remove-zip$/;
 emptyLine	pack/junegunn/start/fzf/src/terminal.go	/^var emptyLine = itemLine{}$/;"	v	package:fzf
 enabled	pack/junegunn/start/fzf/src/terminal.go	/^	enabled    bool$/;"	m	struct:fzf.previewer	typeref:typename:bool
 end	pack/junegunn/start/fzf/src/tokenizer.go	/^	end   int$/;"	m	struct:fzf.Range	typeref:typename:int
+endwise	pack/tpope/start/endwise/plugin/endwise.vim	/^augroup endwise " {{{1$/;"	a
+endwise.vim	pack/tpope/start/endwise/README.markdown	/^# endwise.vim$/;"	c
 env	pack/andymass/start/vim-matchup/test/new/Makefile	/^env: env\/pyvenv.cfg$/;"	t
 env/pyvenv.cfg	pack/andymass/start/vim-matchup/test/new/Makefile	/^env\/pyvenv.cfg:$/;"	t
 equals	pack/junegunn/start/fzf/src/ansi.go	/^func (s *ansiState) equals(t *ansiState) bool {$/;"	f	struct:fzf.ansiState	typeref:typename:bool
@@ -2383,7 +2398,11 @@ g:fugitive_event	pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:fug
 g:fugitive_result	pack/tpope/start/fugitive/autoload/fugitive.vim	/^      let g:fugitive_result = a:dir$/;"	v
 g:fugitive_summary_format	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
 g:fzf#vim#buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  let g:fzf#vim#buffers = {}$/;"	v
+g:fzf_buffers_jump	options.vim	/^let g:fzf_buffers_jump = 1$/;"	v
+g:fzf_commits_log_options	options.vim	/^let g:fzf_commits_log_options = '--graph --color=always'$/;"	v
+g:fzf_history_dir	options.vim	/^let g:fzf_history_dir = '~\/.local\/share\/fzf-history'$/;"	v
 g:fzf_layout	options.vim	/^let g:fzf_layout = { 'down': '10%' }$/;"	v
+g:fzf_tags_command	options.vim	/^let g:fzf_tags_command = 'ctags -R'$/;"	v
 g:gutentags_add_ctrlp_root_markers	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_ctrlp_root_markers = get(g:, 'gutentags_add_ctrlp_root_markers', 1)$/;"	v
 g:gutentags_add_default_project_roots	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
 g:gutentags_auto_add_cscope	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
@@ -2448,6 +2467,7 @@ g:gutentags_use_jobs	pack/ludovicchabant/start/vim-gutentags/plugin/gutentags.vi
 g:io_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:io_fugitive = {$/;"	v
 g:loaded_commentary	pack/tpope/start/commentary/plugin/commentary.vim	/^let g:loaded_commentary = 1$/;"	v
 g:loaded_emmet_vim	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let g:loaded_emmet_vim = 1$/;"	v
+g:loaded_endwise	pack/tpope/start/endwise/plugin/endwise.vim	/^let g:loaded_endwise = 1$/;"	v
 g:loaded_eunuch	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let g:loaded_eunuch = 1$/;"	v
 g:loaded_fugitive	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
 g:loaded_fzf	pack/junegunn/start/fzf/plugin/fzf.vim	/^let g:loaded_fzf = 1$/;"	v
@@ -3630,6 +3650,7 @@ s:VersionCheck	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Ver
 s:Wall	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:Wall() abort$/;"	f
 s:WinShellEsc	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:WinShellEsc(arg) abort$/;"	f
 s:_handleOldOptions	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
+s:abbrev	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:abbrev()$/;"	f
 s:action_for	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:action_for(key, ...)$/;"	f
 s:activateAll	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateAll() abort$/;"	f
 s:activateBookmark	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateBookmark(bm) abort$/;"	f
@@ -3725,6 +3746,7 @@ s:cpo_save	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;
 s:cpo_save	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
 s:create_popup	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function s:create_popup(hl, opts) abort$/;"	f
 s:create_popup	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function! s:create_popup(hl, opts) abort$/;"	f
+s:crend	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:crend(always)$/;"	f
 s:csi	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:csi(color, fg)$/;"	f
 s:cur	pack/andymass/start/vim-matchup/test/new/test-loader/test.vim	/^let s:cur = matchup#delim#get_current('all', 'both')$/;"	v
 s:cur	pack/andymass/start/vim-matchup/test/new/test-loader/test.vim	/^let s:cur = matchup#delim#get_current('all', 'both_all')$/;"	v
@@ -3956,6 +3978,7 @@ s:misc_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^functi
 s:mkdir_p	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:mkdir_p(path) abort$/;"	f
 s:motion_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:motion_init_module() " {{{1$/;"	f
 s:mx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:mx = '\\([+>]\\|[<^]\\+\\)\\{-}'$/;"	v
+s:mysearchpair	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:mysearchpair(beginpat,endpat,synidpat)$/;"	f
 s:nbs	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
 s:nbsl	pack/andymass/start/vim-matchup/autoload/matchup/re.vim	/^let s:nbsl = '\\v%(\\\\@<!%(\\\\\\\\)*)@<=\\m'$/;"	v
 s:nomodeline	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let s:nomodeline = v:version > 703 ? '<nomodeline>' : ''$/;"	v
@@ -4115,7 +4138,9 @@ s:subcommands_before_2_5	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s
 s:surround_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:surround_init_module() " {{{1$/;"	f
 s:surroundings	pack/tpope/start/commentary/plugin/commentary.vim	/^function! s:surroundings() abort$/;"	f
 s:synID	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^  function s:synID(lnum, col, trans)$/;"	f
+s:synid	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:synid()$/;"	f
 s:tags_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:tags_sink(lines)$/;"	f
+s:teardownMappings	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:teardownMappings()$/;"	f
 s:temp_files	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_files = {}$/;"	v
 s:temp_scripts	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_scripts = {}$/;"	v
 s:term_marker	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:term_marker = ";#FZF"$/;"	v

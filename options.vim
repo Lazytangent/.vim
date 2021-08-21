@@ -83,15 +83,17 @@ endtry
 set ttyfast
 
 " Statusline {{{
-" set laststatus=1
+set laststatus=2
 
-" set statusline=\ %f
-" set statusline+=\ -
-" set statusline+=\ FileType:
-" set statusline+=\ %y
-" set statusline+=%=
-" set statusline+=%l
-" set statusline+=\ /\ %-2L
+set statusline=\ %f%m
+set statusline+=\ %y
+set statusline+=%=
+set statusline+=%q
+set statusline+=\ %k
+set statusline+=\ Column:\ %-4c
+set statusline+=\ Line:\ %l
+set statusline+=\ /\ %-4L
+set statusline+=\ %p%%\ 
 " }}}
 
 " Cursor Settings {{{
@@ -109,6 +111,10 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " FZF {{{
 " let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.3, 'relative': v:true, 'yoffset': 1.0 } }
 let g:fzf_layout = { 'down': '10%' }
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+let g:fzf_buffers_jump = 1
+let g:fzf_commits_log_options = '--graph --color=always'
+let g:fzf_tags_command = 'ctags -R'
 " }}}
 
 " Emmet-Vim {{{
