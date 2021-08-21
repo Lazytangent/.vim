@@ -2398,6 +2398,7 @@ g:fugitive_event	pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:fug
 g:fugitive_result	pack/tpope/start/fugitive/autoload/fugitive.vim	/^      let g:fugitive_result = a:dir$/;"	v
 g:fugitive_summary_format	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
 g:fzf#vim#buffers	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  let g:fzf#vim#buffers = {}$/;"	v
+g:fzf_action	options.vim	/^let g:fzf_action = {$/;"	v
 g:fzf_buffers_jump	options.vim	/^let g:fzf_buffers_jump = 1$/;"	v
 g:fzf_commits_log_options	options.vim	/^let g:fzf_commits_log_options = '--graph --color=always'$/;"	v
 g:fzf_history_dir	options.vim	/^let g:fzf_history_dir = '~\/.local\/share\/fzf-history'$/;"	v
@@ -3697,6 +3698,7 @@ s:buffer_repo	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buff
 s:buffer_type	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
 s:buflisted	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:buflisted()$/;"	f
 s:bufopen	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:bufopen(lines)$/;"	f
+s:build_quickfix_list	options.vim	/^function! s:build_quickfix_list(lines)$/;"	f
 s:bx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:bx = '{\\%("[^"]*"\\|''[^'']*''\\|\\$#\\|\\${\\w\\+}\\|\\$\\+\\|{[^{]\\+\\|[^{}]\\)\\{-}}'$/;"	v
 s:cache	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^let s:cache = {}$/;"	v
 s:cache_project_root	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
