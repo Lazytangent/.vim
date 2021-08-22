@@ -8,7 +8,7 @@
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	5.9.0	/c436bca6/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210711.0/
 #	mappings.vim	/^nnoremap # #``$/;"	m
 $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 (a.1) jump between matching words	pack/andymass/start/vim-matchup/README.md	/^#### (a.1) jump between matching words$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
@@ -732,6 +732,7 @@ GetChar	pack/junegunn/start/fzf/src/tui/dummy.go	/^func (r *FullscreenRenderer) 
 GetChar	pack/junegunn/start/fzf/src/tui/light.go	/^func (r *LightRenderer) GetChar() Event {$/;"	f	struct:tui.LightRenderer	typeref:typename:Event
 GetChar	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (r *FullscreenRenderer) GetChar() Event {$/;"	f	unknown:tui.FullscreenRenderer	typeref:typename:Event
 GetChar	pack/junegunn/start/fzf/src/tui/tui.go	/^	GetChar() Event$/;"	n	interface:tui.Renderer	typeref:typename:Event
+GetPugIndent	pack/digitaltoad/start/vim-pug/indent/pug.vim	/^function! GetPugIndent()$/;"	f
 Getting Started	pack/preservim/start/nerdtree/README.markdown	/^## Getting Started$/;"	s	chapter:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)
 Git	pack/tpope/start/fugitive/plugin/fugitive.vim	/^command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#Complete Git exe fugitive#Comman/;"	c
 Global options	pack/junegunn/start/fzf.vim/README.md	/^### Global options$/;"	S	section:fzf :heart: vim""Customization
@@ -796,6 +797,7 @@ Input	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) Input() (bool
 Input	pack/junegunn/start/fzf/src/tui/tui.go	/^	Input        ColorAttr$/;"	m	struct:tui.ColorTheme	typeref:typename:ColorAttr
 Insert	pack/junegunn/start/fzf/src/tui/tui.go	/^	Insert$/;"	c	package:tui
 Installation	pack/andymass/start/vim-matchup/README.md	/^## Installation$/;"	s	chapter:vim match-up
+Installation	pack/digitaltoad/start/vim-pug/README.md	/^Installation$/;"	s	chapter:vim-pug
 Installation	pack/jiangmiao/start/auto-pairs/README.md	/^Installation$/;"	s	chapter:Auto Pairs
 Installation	pack/junegunn/start/fzf.vim/README.md	/^Installation$/;"	s	chapter:fzf :heart: vim
 Installation	pack/junegunn/start/fzf/README-VIM.md	/^Installation$/;"	s	chapter:FZF Vim integration
@@ -1590,10 +1592,13 @@ b	pack/andymass/start/vim-matchup/test/issues/10/legacy.vim	/^let b = '\\(  \\)'
 b:AutoPairs	ftplugin/eruby.vim	/^let b:AutoPairs = AutoPairsDefine({ '<%': '%>', '|': '|', '<%=': '%>' })$/;"	v
 b:AutoPairs	ftplugin/ruby.vim	/^let b:AutoPairs = AutoPairsDefine({ '|': '|' })$/;"	v
 b:AutoPairs	ftplugin/tex.vim	/^let b:AutoPairs = AutoPairsDefine({ '$': '$' })$/;"	v
+b:browsefilter	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let b:browsefilter="Pug Files (*.pug)\\t*.pug\\n" . s:browsefilter$/;"	v
+b:current_syntax	pack/digitaltoad/start/vim-pug/syntax/pug.vim	/^let b:current_syntax = "pug"$/;"	v
 b:current_syntax	pack/tpope/start/fugitive/syntax/fugitive.vim	/^let b:current_syntax = "fugitive"$/;"	v
 b:current_syntax	pack/tpope/start/fugitive/syntax/fugitiveblame.vim	/^let b:current_syntax = "fugitiveblame"$/;"	v
 b:did_ftplugin	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	pack/tpope/start/fugitive/ftplugin/fugitiveblame.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_indent	pack/digitaltoad/start/vim-pug/indent/pug.vim	/^let b:did_indent = 1$/;"	v
 b:match_ignorecase	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^  let b:match_ignorecase = 0$/;"	v
 b:match_midmap	pack/andymass/start/vim-matchup/after/ftplugin/lua_matchup.vim	/^let b:match_midmap = [$/;"	v
 b:match_midmap	pack/andymass/start/vim-matchup/after/ftplugin/ruby_matchup.vim	/^let b:match_midmap = [$/;"	v
@@ -1614,12 +1619,14 @@ b:match_words	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchupte
 b:match_words	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^  let b:match_words .= ',so👔me\\zething:t\\t👕t\\zemid:e👖\\te\\zeend'$/;"	v
 b:match_words	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^  let b:match_words .= ',ぽ:も'$/;"	v
 b:match_words	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^  let b:match_words = '\\<\\(\\(foo\\)\\(bar\\)\\):\\3\\2:end\\1'$/;"	v
+b:match_words	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let b:match_words = s:match_words$/;"	v
 b:matchup_matchparen_enabled	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^    let b:matchup_matchparen_enabled = 0$/;"	v
 b:matchup_matchparen_fallback	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^    let b:matchup_matchparen_fallback = 0$/;"	v
 b:matchup_matchparen_timeout	pack/andymass/start/vim-matchup/after/ftplugin/ocaml_matchup.vim	/^let b:matchup_matchparen_timeout=100$/;"	v
 b:undo_ftplugin	pack/andymass/start/vim-matchup/after/ftplugin/lua_matchup.vim	/^let b:undo_ftplugin .= '| unlet! b:match_midmap'$/;"	v
 b:undo_ftplugin	pack/andymass/start/vim-matchup/after/ftplugin/ocaml_matchup.vim	/^let b:undo_ftplugin .= ' | unlet! b:matchup_matchparen_timeout'$/;"	v
 b:undo_ftplugin	pack/andymass/start/vim-matchup/after/ftplugin/ruby_matchup.vim	/^  let b:undo_ftplugin .= '|unlet! b:match_midmap'$/;"	v
+b:undo_ftplugin	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let b:undo_ftplugin = "setl cms< com< "$/;"	v
 bash	pack/junegunn/start/fzf/test/test_go.rb	/^    def bash$/;"	S	class:Shell
 basicMatch	pack/junegunn/start/fzf/src/pattern.go	/^func (p *Pattern) basicMatch(item *Item, withPos bool, slab *util.Slab) (Offset, int, *[]int) {$/;"	f	struct:fzf.Pattern	typeref:typename:(Offset, int, *[]int)
 begin	pack/junegunn/start/fzf/src/tokenizer.go	/^	begin int$/;"	m	struct:fzf.Range	typeref:typename:int
@@ -2507,6 +2514,7 @@ g:matchup_matchparen_enabled	pack/andymass/start/vim-matchup/autoload/matchup/ma
 g:matchup_matchparen_enabled	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^  let g:matchup_matchparen_enabled = a:0 > 0$/;"	v
 g:matchup_matchpref_html_nolists	pack/andymass/start/vim-matchup/test/issues/19/option.vim	/^let g:matchup_matchpref_html_nolists = 1$/;"	v
 g:matchup_override_vimtex	pack/andymass/start/vim-matchup/test/new/common/bootstrap.vim	/^let g:matchup_override_vimtex = 1$/;"	v
+g:pug_self_closing_tags	pack/digitaltoad/start/vim-pug/indent/pug.vim	/^  let g:pug_self_closing_tags = 'meta|link|img|hr|br|input'$/;"	v
 g:repeat_count	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_count = a:0 ? a:1 : v:count$/;"	v
 g:repeat_reg	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_reg = [a:sequence, a:register]$/;"	v
 g:repeat_reg	pack/tpope/start/repeat/autoload/repeat.vim	/^let g:repeat_reg = ['', '']$/;"	v
@@ -2608,6 +2616,7 @@ hidden	pack/junegunn/start/fzf/src/options.go	/^	hidden      bool$/;"	m	struct:f
 highlight surrounding	pack/andymass/start/vim-matchup/README.md	/^#### highlight surrounding$/;"	t	subsection:vim match-up""Options""Module matchparen
 highlighting timeouts	pack/andymass/start/vim-matchup/README.md	/^#### highlighting timeouts$/;"	t	subsection:vim match-up""Options""Module matchparen
 history	pack/junegunn/start/fzf/src/terminal.go	/^	history      *History$/;"	m	struct:fzf.Terminal	typeref:typename:*History
+homebrew	options.vim	/^let homebrew = system("brew --prefix") + "\/bin\/ctags"$/;"	v
 horizontal	pack/junegunn/start/fzf/src/tui/tui.go	/^	horizontal  rune$/;"	m	struct:tui.BorderStyle	typeref:typename:rune
 hscroll	pack/junegunn/start/fzf/src/terminal.go	/^	hscroll      bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
 hscrollOff	pack/junegunn/start/fzf/src/terminal.go	/^	hscrollOff   int$/;"	m	struct:fzf.Terminal	typeref:typename:int
@@ -2722,6 +2731,7 @@ lru.new	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/lru.l
 lru_pairs	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/lru.lua	/^    local function lru_pairs()$/;"	f
 main	pack/junegunn/start/fzf/main.go	/^func main() {$/;"	f	package:main
 main	pack/junegunn/start/fzf/main.go	/^package main$/;"	p
+main_syntax	pack/digitaltoad/start/vim-pug/syntax/pug.vim	/^  let main_syntax = 'pug'$/;"	v
 makeFreeSpace	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/lru.lua	/^    local function makeFreeSpace(bytes)$/;"	f
 makeSpace	pack/junegunn/start/fzf/src/tui/light.go	/^func (r *LightRenderer) makeSpace() {$/;"	f	struct:tui.LightRenderer
 makeSpinner	pack/junegunn/start/fzf/src/terminal.go	/^func makeSpinner(unicode bool) []string {$/;"	f	package:fzf	typeref:typename:[]string
@@ -3677,6 +3687,7 @@ s:ansi	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:ansi(str, 
 s:ansi	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:ansi = {'black': 30, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cya/;"	v
 s:arrow	pack/andymass/start/vim-matchup/autoload/matchup/where.vim	/^function! s:arrow()$/;"	f
 s:attached	pack/andymass/start/vim-matchup/autoload/matchup/ts_engine.vim	/^let s:attached = {}$/;"	v
+s:attributes	pack/digitaltoad/start/vim-pug/indent/pug.vim	/^let s:attributes = '\\%((.\\{-\\})\\)'$/;"	v
 s:b64encode	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^function! s:b64encode(bytes, table, pad)$/;"	f
 s:backspace	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:backspace(s)$/;"	f
 s:bad_git_dir	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:bad_git_dir = '\/$\\|^fugitive:'$/;"	v
@@ -3689,6 +3700,8 @@ s:bin	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:bin = {$/;"	v
 s:bin_dir	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:bin_dir = expand('<sfile>:p:h:h:h').'\/bin\/'$/;"	v
 s:blobdirs	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:blobdirs = {}$/;"	v
 s:border_opt	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:border_opt(window)$/;"	f
+s:browsefilter	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let s:browsefilter = b:browsefilter$/;"	v
+s:browsefilter	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:browsefilter = "All Files (*.*)\\t*.*\\n"$/;"	v
 s:btags_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:btags_sink(lines)$/;"	f
 s:btags_source	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:btags_source(tag_cmds)$/;"	f
 s:buffer_line_handler	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:buffer_line_handler(lines)$/;"	f
@@ -3963,6 +3976,8 @@ s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:maps() ab
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let s:maps = []$/;"	v
 s:mark_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:mark_sink(lines)$/;"	f
 s:match_word_cache	pack/andymass/start/vim-matchup/autoload/matchup/loader.vim	/^let s:match_word_cache = {}$/;"	v
+s:match_words	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let s:match_words = b:match_words$/;"	v
+s:match_words	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:match_words = ""$/;"	v
 s:matchbegin	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:matchbegin(text, close)$/;"	f
 s:matchend	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:matchend(text, open)$/;"	f
 s:matching	pack/andymass/start/vim-matchup/test/new/test-loader/test.vim	/^let s:matching = matchup#delim#get_matching(s:cur)$/;"	v
@@ -4097,6 +4112,7 @@ s:save_cpo	pack/andymass/start/vim-matchup/autoload/matchup/ts_engine.vim	/^let 
 s:save_cpo	pack/andymass/start/vim-matchup/autoload/matchup/ts_syntax.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/andymass/start/vim-matchup/autoload/matchup/util.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/andymass/start/vim-matchup/autoload/matchup/where.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:save_cpo	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:search_history_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:search_history_sink(lines)$/;"	f
@@ -4141,6 +4157,7 @@ s:surround_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^fu
 s:surroundings	pack/tpope/start/commentary/plugin/commentary.vim	/^function! s:surroundings() abort$/;"	f
 s:synID	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^  function s:synID(lnum, col, trans)$/;"	f
 s:synid	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:synid()$/;"	f
+s:tag	pack/digitaltoad/start/vim-pug/indent/pug.vim	/^let s:tag = '\\([%.#][[:alnum:]_-]\\+\\|'.s:attributes.'\\)*[<>]*'$/;"	v
 s:tags_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:tags_sink(lines)$/;"	f
 s:teardownMappings	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:teardownMappings()$/;"	f
 s:temp_files	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_files = {}$/;"	v
@@ -4169,6 +4186,8 @@ s:tree_up_dir_line	pack/preservim/start/nerdtree/syntax/nerdtree.vim	/^let s:tre
 s:trees	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:trees = {}$/;"	v
 s:treesitter_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:treesitter_init_module() " {{{1$/;"	f
 s:ulen	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:ulen(s)$/;"	f
+s:undo_ftplugin	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let s:undo_ftplugin = b:undo_ftplugin$/;"	v
+s:undo_ftplugin	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:undo_ftplugin = ""$/;"	v
 s:unix_redir	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
 s:unix_redir	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
 s:upDirCurrentRootClosed	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootClosed() abort$/;"	f
@@ -4541,6 +4560,7 @@ version	pack/junegunn/start/fzf/src/terminal.go	/^	version  int64$/;"	m	struct:f
 version	pack/junegunn/start/fzf/src/terminal.go	/^	version int64$/;"	m	struct:fzf.previewResult	typeref:typename:int64
 vertical	pack/junegunn/start/fzf/src/tui/tui.go	/^	vertical    rune$/;"	m	struct:tui.BorderStyle	typeref:typename:rune
 vim match-up	pack/andymass/start/vim-matchup/README.md	/^# vim match-up$/;"	c
+vim-pug	pack/digitaltoad/start/vim-pug/README.md	/^# vim-pug #$/;"	c
 vim-script	pack/andymass/start/vim-matchup/README.md	/^#### vim-script$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
 vimtex, for LaTeX documents	pack/andymass/start/vim-matchup/README.md	/^### vimtex, for LaTeX documents$/;"	S	section:vim match-up""Interoperability
 vmove	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) vmove(o int, allowCycle bool) {$/;"	f	struct:fzf.Terminal
