@@ -8,7 +8,7 @@
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210711.0/
+!_TAG_PROGRAM_VERSION	5.9.0	/a1b35a9c/
 #	mappings.vim	/^nnoremap # #``$/;"	m
 $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 (a.1) jump between matching words	pack/andymass/start/vim-matchup/README.md	/^#### (a.1) jump between matching words$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
@@ -2425,7 +2425,7 @@ g:gutentags_ctags_auto_set_tags	pack/ludovicchabant/start/vim-gutentags/autoload
 g:gutentags_ctags_check_tagfile	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
 g:gutentags_ctags_exclude	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
 g:gutentags_ctags_exclude_wildignore	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
-g:gutentags_ctags_executable	options.vim	/^let g:gutentags_ctags_executable = "\/opt\/homebrew\/Cellar\/universal-ctags\/HEAD-c436bca\/bin\//;"	v
+g:gutentags_ctags_executable	options.vim	/^let g:gutentags_ctags_executable = substitute(system("brew --prefix"), '\\n', '', 'g') . "\/bin\//;"	v
 g:gutentags_ctags_executable	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
 g:gutentags_ctags_extra_args	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
 g:gutentags_ctags_options_file	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
@@ -2616,7 +2616,6 @@ hidden	pack/junegunn/start/fzf/src/options.go	/^	hidden      bool$/;"	m	struct:f
 highlight surrounding	pack/andymass/start/vim-matchup/README.md	/^#### highlight surrounding$/;"	t	subsection:vim match-up""Options""Module matchparen
 highlighting timeouts	pack/andymass/start/vim-matchup/README.md	/^#### highlighting timeouts$/;"	t	subsection:vim match-up""Options""Module matchparen
 history	pack/junegunn/start/fzf/src/terminal.go	/^	history      *History$/;"	m	struct:fzf.Terminal	typeref:typename:*History
-homebrew	options.vim	/^let homebrew = system("brew --prefix") + "\/bin\/ctags"$/;"	v
 horizontal	pack/junegunn/start/fzf/src/tui/tui.go	/^	horizontal  rune$/;"	m	struct:tui.BorderStyle	typeref:typename:rune
 hscroll	pack/junegunn/start/fzf/src/terminal.go	/^	hscroll      bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
 hscrollOff	pack/junegunn/start/fzf/src/terminal.go	/^	hscrollOff   int$/;"	m	struct:fzf.Terminal	typeref:typename:int

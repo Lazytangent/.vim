@@ -93,7 +93,7 @@ set statusline+=\ %k
 set statusline+=\ Column:\ %-4c
 set statusline+=\ Line:\ %l
 set statusline+=\ /\ %-4L
-set statusline+=\ %p%%\
+set statusline+=\ %p%%\ 
 " }}}
 
 " Cursor Settings {{{
