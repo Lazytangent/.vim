@@ -212,6 +212,7 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <leader><cr>	mappings.vim	/^map <silent> <leader><cr> :nohlsearch<cr>$/;"	m
 <leader><leader>g	mappings.vim	/^nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@$/;"	m
 <leader><leader>g	mappings.vim	/^vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>$/;"	m
+<leader>c	mappings.vim	/^nnoremap <leader>c :changes<cr>$/;"	m
 <leader>fa	mappings.vim	/^nnoremap <leader>fa :Ag<space>$/;"	m
 <leader>fb	mappings.vim	/^nnoremap <leader>fb <cmd>Buffers<cr>$/;"	m
 <leader>fc	mappings.vim	/^nnoremap <leader>fc <cmd>Commands<cr>$/;"	m
@@ -220,7 +221,9 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <leader>fr	mappings.vim	/^nnoremap <leader>fr :Rg<space>$/;"	m
 <leader>ft	mappings.vim	/^nnoremap <leader>ft :Tags<space>$/;"	m
 <leader>fz	mappings.vim	/^nnoremap <leader>fz <cmd>FZF<cr>$/;"	m
+<leader>j	mappings.vim	/^nnoremap <leader>j :jumps<cr>$/;"	m
 <leader>l	mappings.vim	/^nnoremap <leader>l :ls<cr>:b<space>$/;"	m
+<leader>m	mappings.vim	/^nnoremap <leader>m :marks<cr>:normal! `$/;"	m
 <leader>nn	mappings.vim	/^nnoremap <leader>nn :NERDTreeFocus<cr>$/;"	m
 <localleader>aO	mappings.vim	/^nnoremap <localleader>aO O<Esc>$/;"	m
 <localleader>ao	mappings.vim	/^nnoremap <localleader>ao o<Esc>$/;"	m
@@ -232,7 +235,6 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <localleader>gp	mappings.vim	/^nnoremap <localleader>gp <cmd>Git push<cr>$/;"	m
 <localleader>gs	mappings.vim	/^nnoremap <localleader>gs <cmd>Git<cr>$/;"	m
 <localleader>gw	mappings.vim	/^nnoremap <localleader>gw <cmd>Gwrite<cr>$/;"	m
-<localleader>m	mappings.vim	/^nnoremap <localleader>m :marks<cr>:normal! `$/;"	m
 <localleader>wq	mappings.vim	/^nnoremap <localleader>wq :wq<cr>$/;"	m
 <plug>(-fzf-/)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-\/) \/$/;"	m
 <plug>(-fzf-:)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-:) :$/;"	m
