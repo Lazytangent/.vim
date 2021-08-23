@@ -8,7 +8,7 @@
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210711.0/
+!_TAG_PROGRAM_VERSION	5.9.0	/c436bca6/
 #	mappings.vim	/^nnoremap # #``$/;"	m
 $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 (a.1) jump between matching words	pack/andymass/start/vim-matchup/README.md	/^#### (a.1) jump between matching words$/;"	t	subsection:vim match-up""Features""Detailed feature documentation
@@ -1378,6 +1378,7 @@ VERSION_REGEX	pack/junegunn/start/fzf/Makefile	/^VERSION_REGEX  := $(subst .,\\.
 VERSION_TRIM	pack/junegunn/start/fzf/Makefile	/^VERSION_TRIM   := $(shell sed "s\/-.*\/\/" <<< $(VERSION))$/;"	m
 Variables	pack/andymass/start/vim-matchup/README.md	/^### Variables$/;"	S	section:vim match-up""Options
 Version	pack/junegunn/start/fzf/src/options.go	/^	Version     bool$/;"	m	struct:fzf.Options	typeref:typename:bool
+Vim Config Files	README.md	/^# Vim Config Files$/;"	c
 Vim functions	pack/junegunn/start/fzf.vim/README.md	/^#### Vim functions$/;"	t	subsection:fzf :heart: vim""Customization""Advanced customization
 Vim plugin	pack/junegunn/start/fzf/README.md	/^Vim plugin$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
 W	mappings.vim	/^command! W execute 'w !sudo tee % > \/dev\/null' <bar> edit!$/;"	c
