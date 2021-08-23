@@ -275,7 +275,12 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <sid>(wise)	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^  nnoremap <silent><expr> <sid>(wise)$/;"	m
 =o	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^  nmap <silent><expr> =o <SID>legacy_option_map(nr2char(getchar()))$/;"	m
 =op	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^  nnoremap =op <Nop>$/;"	m
+@(targets)	pack/wellle/start/targets.vim/plugin/targets.vim	/^        onoremap <silent> @(targets) :<C-U>call targets#do()<CR>$/;"	m
+@(targets)	pack/wellle/start/targets.vim/plugin/targets.vim	/^        xnoremap <silent> @(targets) :<C-U>call targets#do()<CR>$/;"	m
 A	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_alternate A   exe s:Al/;"	c
+A Pair	pack/wellle/start/targets.vim/README.md	/^#### A Pair$/;"	t	subsection:Overview""Pair Text Objects
+A Quote	pack/wellle/start/targets.vim/README.md	/^#### A Quote$/;"	t	subsection:Overview""Quote Text Objects
+A Separator	pack/wellle/start/targets.vim/README.md	/^#### A Separator$/;"	t	subsection:Overview""Separator Text Objects
 AD	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_edit      AD  exe s:Al/;"	c
 AE	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_alternate AE  exe s:Al/;"	c
 AR	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_edit      AR  exe s:Al/;"	c
@@ -303,7 +308,17 @@ AltSLeft	pack/junegunn/start/fzf/src/tui/tui.go	/^	AltSLeft$/;"	c	package:tui
 AltSRight	pack/junegunn/start/fzf/src/tui/tui.go	/^	AltSRight$/;"	c	package:tui
 AltSUp	pack/junegunn/start/fzf/src/tui/tui.go	/^	AltSUp$/;"	c	package:tui
 AltUp	pack/junegunn/start/fzf/src/tui/tui.go	/^	AltUp$/;"	c	package:tui
+An Argument	pack/wellle/start/targets.vim/README.md	/^#### An Argument$/;"	t	subsection:Overview""Argument Text Objects
 Ansi	pack/junegunn/start/fzf/src/options.go	/^	Ansi        bool$/;"	m	struct:fzf.Options	typeref:typename:bool
+Any Block	pack/wellle/start/targets.vim/README.md	/^#### Any Block$/;"	t	subsection:Overview""Multi Text Objects
+Any Quote	pack/wellle/start/targets.vim/README.md	/^#### Any Quote$/;"	t	subsection:Overview""Multi Text Objects
+Argument Seek	pack/wellle/start/targets.vim/README.md	/^#### Argument Seek$/;"	t	subsection:Overview""Argument Text Objects
+Argument Text Objects	pack/wellle/start/targets.vim/README.md	/^### Argument Text Objects$/;"	S	section:Overview
+Argument mappings	pack/wellle/start/targets.vim/cheatsheet.md	/^## Argument mappings$/;"	s
+Around Argument	pack/wellle/start/targets.vim/README.md	/^#### Around Argument$/;"	t	subsection:Overview""Argument Text Objects
+Around Pair	pack/wellle/start/targets.vim/README.md	/^#### Around Pair$/;"	t	subsection:Overview""Pair Text Objects
+Around Quote	pack/wellle/start/targets.vim/README.md	/^#### Around Quote$/;"	t	subsection:Overview""Quote Text Objects
+Around Separator	pack/wellle/start/targets.vim/README.md	/^#### Around Separator$/;"	t	subsection:Overview""Separator Text Objects
 As Vim plugin	pack/junegunn/start/fzf/README.md	/^### As Vim plugin$/;"	S	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Installation
 AsEvent	pack/junegunn/start/fzf/src/tui/tui.go	/^func (t EventType) AsEvent() Event {$/;"	f	type:tui.EventType	typeref:typename:Event
 AsString	pack/junegunn/start/fzf/src/item.go	/^func (item *Item) AsString(stripAnsi bool) string {$/;"	f	struct:fzf.Item	typeref:typename:string
@@ -558,6 +573,7 @@ Custom completion	pack/junegunn/start/fzf.vim/README.md	/^Custom completion$/;"	
 Custom fuzzy completion	pack/junegunn/start/fzf/README.md	/^#### Custom fuzzy completion$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Fuzzy completion for bash and zsh
 Custom statusline	pack/junegunn/start/fzf.vim/README.md	/^### Custom statusline$/;"	S	section:fzf :heart: vim""Status line of terminal buffer
 Customization	pack/junegunn/start/fzf.vim/README.md	/^Customization$/;"	s	chapter:fzf :heart: vim
+Customize seeking	pack/wellle/start/targets.vim/cheatsheet.md	/^## Customize seeking$/;"	s
 Customizing the highlighting colors	pack/andymass/start/vim-matchup/README.md	/^#### Customizing the highlighting colors$/;"	t	subsection:vim match-up""Options""Module matchparen
 Cycle	pack/junegunn/start/fzf/src/options.go	/^	Cycle       bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 DB_FILE	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set DB_FILE=%~2$/;"	v
@@ -575,6 +591,7 @@ Delimiter	pack/junegunn/start/fzf/src/options.go	/^	Delimiter   Delimiter$/;"	m	
 Delimiter	pack/junegunn/start/fzf/src/tokenizer.go	/^type Delimiter struct {$/;"	s	package:fzf
 Demo	pack/junegunn/start/fzf/README.md	/^#### Demo$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Usage
 Dependencies	pack/junegunn/start/fzf.vim/README.md	/^### Dependencies$/;"	S	section:fzf :heart: vim""Installation
+Deprecated settings	pack/wellle/start/targets.vim/README.md	/^### Deprecated settings$/;"	S	section:Settings
 Destroy	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=*       -complete=customlist,s:Complete_destroy  Destroy       :e/;"	c
 Detailed feature documentation	pack/andymass/start/vim-matchup/README.md	/^### Detailed feature documentation$/;"	S	section:vim match-up""Features
 Development	pack/andymass/start/vim-matchup/README.md	/^## Development$/;"	s	chapter:vim match-up
@@ -647,6 +664,7 @@ Example: `Rg` command with preview window	pack/junegunn/start/fzf.vim/README.md	
 Example: `git grep` wrapper	pack/junegunn/start/fzf.vim/README.md	/^#### Example: `git grep` wrapper$/;"	t	subsection:fzf :heart: vim""Customization""Advanced customization
 Examples	pack/junegunn/start/fzf/README-VIM.md	/^#### Examples$/;"	t	subsection:FZF Vim integration""`:FZF[!]`""Configuration
 Examples	pack/junegunn/start/fzf/README.md	/^Examples$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
+Examples	pack/wellle/start/targets.vim/README.md	/^## Examples$/;"	s
 ExecCommand	pack/junegunn/start/fzf/src/util/util_unix.go	/^func ExecCommand(command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
 ExecCommand	pack/junegunn/start/fzf/src/util/util_windows.go	/^func ExecCommand(command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
 ExecCommandWith	pack/junegunn/start/fzf/src/util/util_unix.go	/^func ExecCommandWith(shell string, command string, setpgid bool) *exec.Cmd {$/;"	f	package:util	typeref:typename:*exec.Cmd
@@ -806,6 +824,10 @@ Improvements	pack/junegunn/start/fzf/CHANGELOG.md	/^### Improvements$/;"	S	secti
 Improvements	pack/junegunn/start/fzf/CHANGELOG.md	/^### Improvements$/;"	S	section:CHANGELOG""0.9.3
 Improvements	pack/junegunn/start/fzf/CHANGELOG.md	/^### Improvements$/;"	S	section:CHANGELOG""0.9.4
 Improvements	pack/junegunn/start/fzf/CHANGELOG.md	/^### Improvements$/;"	S	section:CHANGELOG""0.9.5
+In Argument	pack/wellle/start/targets.vim/README.md	/^#### In Argument$/;"	t	subsection:Overview""Argument Text Objects
+In Pair	pack/wellle/start/targets.vim/README.md	/^#### In Pair$/;"	t	subsection:Overview""Pair Text Objects
+In Quote	pack/wellle/start/targets.vim/README.md	/^#### In Quote$/;"	t	subsection:Overview""Quote Text Objects
+In Separator	pack/wellle/start/targets.vim/README.md	/^#### In Separator$/;"	t	subsection:Overview""Separator Text Objects
 Inclusive and exclusive motions	pack/andymass/start/vim-matchup/README.md	/^### Inclusive and exclusive motions$/;"	S	section:vim match-up""Features
 Index	pack/junegunn/start/fzf/src/item.go	/^func (item *Item) Index() int32 {$/;"	f	struct:fzf.Item	typeref:typename:int32
 Index	pack/junegunn/start/fzf/src/result.go	/^func (result *Result) Index() int32 {$/;"	f	struct:fzf.Result	typeref:typename:int32
@@ -819,6 +841,10 @@ Init	pack/junegunn/start/fzf/src/tui/tui.go	/^	Init()$/;"	n	interface:tui.Render
 Input	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) Input() (bool, []rune) {$/;"	f	struct:fzf.Terminal	typeref:typename:(bool, []rune)
 Input	pack/junegunn/start/fzf/src/tui/tui.go	/^	Input        ColorAttr$/;"	m	struct:tui.ColorTheme	typeref:typename:ColorAttr
 Insert	pack/junegunn/start/fzf/src/tui/tui.go	/^	Insert$/;"	c	package:tui
+Inside Argument	pack/wellle/start/targets.vim/README.md	/^#### Inside Argument$/;"	t	subsection:Overview""Argument Text Objects
+Inside Pair	pack/wellle/start/targets.vim/README.md	/^#### Inside Pair$/;"	t	subsection:Overview""Pair Text Objects
+Inside Quote	pack/wellle/start/targets.vim/README.md	/^#### Inside Quote$/;"	t	subsection:Overview""Quote Text Objects
+Inside Separator	pack/wellle/start/targets.vim/README.md	/^#### Inside Separator$/;"	t	subsection:Overview""Separator Text Objects
 Installation	pack/andymass/start/vim-matchup/README.md	/^## Installation$/;"	s	chapter:vim match-up
 Installation	pack/digitaltoad/start/vim-pug/README.md	/^Installation$/;"	s	chapter:vim-pug
 Installation	pack/jiangmiao/start/auto-pairs/README.md	/^Installation$/;"	s	chapter:Auto Pairs
@@ -834,10 +860,13 @@ Installation	pack/tpope/start/rails/README.markdown	/^## Installation$/;"	s	chap
 Installation	pack/tpope/start/repeat/README.markdown	/^## Installation$/;"	s	chapter:repeat.vim
 Installation	pack/tpope/start/surround/README.markdown	/^## Installation$/;"	s	chapter:surround.vim
 Installation	pack/tpope/start/unimpaired/README.markdown	/^## Installation$/;"	s	chapter:unimpaired.vim
+Installation	pack/wellle/start/targets.vim/README.md	/^## Installation$/;"	s
 Int	pack/junegunn/start/fzf/src/tui/tui.go	/^func (t EventType) Int() int {$/;"	f	type:tui.EventType	typeref:typename:int
+Internals	pack/wellle/start/targets.vim/plugins.md	/^## Internals$/;"	s
 Interoperability	pack/andymass/start/vim-matchup/README.md	/^## Interoperability$/;"	s	chapter:vim match-up
 Introduction	pack/junegunn/start/fzf/ADVANCED.md	/^Introduction$/;"	s	chapter:Advanced fzf examples
 Introduction	pack/preservim/start/nerdtree/README.markdown	/^## Introduction$/;"	s	chapter:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)
+Introduction	pack/wellle/start/targets.vim/README.md	/^## Introduction$/;"	s
 Invalid	pack/junegunn/start/fzf/src/tui/tui.go	/^	Invalid$/;"	c	package:tui
 IsBytes	pack/junegunn/start/fzf/src/util/chars.go	/^func (chars *Chars) IsBytes() bool {$/;"	f	struct:util.Chars	typeref:typename:bool
 IsDefault	pack/junegunn/start/fzf/src/tui/tui.go	/^func (c Color) IsDefault() bool {$/;"	f	type:tui.Color	typeref:typename:bool
@@ -849,6 +878,7 @@ IsTty	pack/junegunn/start/fzf/src/util/util.go	/^func IsTty() bool {$/;"	f	packa
 IsWindows	pack/junegunn/start/fzf/src/util/util_unix.go	/^func IsWindows() bool {$/;"	f	package:util	typeref:typename:bool
 IsWindows	pack/junegunn/start/fzf/src/util/util_windows.go	/^func IsWindows() bool {$/;"	f	package:util	typeref:typename:bool
 Issue descriptions	pack/andymass/start/vim-matchup/CONTRIBUTING.md	/^# Issue descriptions$/;"	c
+Issues	pack/wellle/start/targets.vim/README.md	/^## Issues$/;"	s
 Italic	pack/junegunn/start/fzf/src/tui/dummy.go	/^	Italic    = Attr(1 << 2)$/;"	c	package:tui
 Italic	pack/junegunn/start/fzf/src/tui/tcell.go	/^	Italic         = Attr(tcell.AttrItalic)$/;"	c	package:tui
 Item	pack/junegunn/start/fzf/src/item.go	/^type Item struct {$/;"	s	package:fzf
@@ -1002,6 +1032,7 @@ MoveAndClear	pack/junegunn/start/fzf/src/tui/light.go	/^func (w *LightWindow) Mo
 MoveAndClear	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (w *TcellWindow) MoveAndClear(y int, x int) {$/;"	f	struct:tui.TcellWindow
 MoveAndClear	pack/junegunn/start/fzf/src/tui/tui.go	/^	MoveAndClear(y int, x int)$/;"	n	interface:tui.Window
 Multi	pack/junegunn/start/fzf/src/options.go	/^	Multi       int$/;"	m	struct:fzf.Options	typeref:typename:int
+Multi Text Objects	pack/wellle/start/targets.vim/README.md	/^### Multi Text Objects$/;"	S	section:Overview
 Multibyte Pairs	pack/jiangmiao/start/auto-pairs/README.md	/^Multibyte Pairs$/;"	s	chapter:Auto Pairs
 NAME	pack/junegunn/start/fzf/man/man1/fzf-tmux.1	/^.SH NAME$/;"	s	title:fzf-tmux
 NAME	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH NAME$/;"	s	title:fzf
@@ -1074,10 +1105,15 @@ NewWindow	pack/junegunn/start/fzf/src/tui/dummy.go	/^func (r *FullscreenRenderer
 NewWindow	pack/junegunn/start/fzf/src/tui/light.go	/^func (r *LightRenderer) NewWindow(top int, left int, width int, height int, preview bool, border/;"	f	struct:tui.LightRenderer	typeref:typename:Window
 NewWindow	pack/junegunn/start/fzf/src/tui/tcell.go	/^func (r *FullscreenRenderer) NewWindow(top int, left int, width int, height int, preview bool, b/;"	f	unknown:tui.FullscreenRenderer	typeref:typename:Window
 NewWindow	pack/junegunn/start/fzf/src/tui/tui.go	/^	NewWindow(top int, left int, width int, height int, preview bool, borderStyle BorderStyle) Wind/;"	n	interface:tui.Renderer	typeref:typename:Window
+Next and Last Argument	pack/wellle/start/targets.vim/README.md	/^#### Next and Last Argument$/;"	t	subsection:Overview""Argument Text Objects
+Next and Last Pair	pack/wellle/start/targets.vim/README.md	/^#### Next and Last Pair$/;"	t	subsection:Overview""Pair Text Objects
+Next and Last Quote	pack/wellle/start/targets.vim/README.md	/^#### Next and Last Quote$/;"	t	subsection:Overview""Quote Text Objects
+Next and Last Separator	pack/wellle/start/targets.vim/README.md	/^#### Next and Last Separator$/;"	t	subsection:Overview""Separator Text Objects
 NoColorTheme	pack/junegunn/start/fzf/src/tui/tui.go	/^func NoColorTheme() *ColorTheme {$/;"	f	package:tui	typeref:typename:*ColorTheme
 NoMatchParen	pack/andymass/start/vim-matchup/plugin/matchup.vim	/^command! NoMatchParen call matchup#matchparen#toggle(0)$/;"	c
 Normalize	pack/junegunn/start/fzf/src/options.go	/^	Normalize   bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 NormalizeRunes	pack/junegunn/start/fzf/src/algo/normalize.go	/^func NormalizeRunes(runes []rune) []rune {$/;"	f	package:algo	typeref:typename:[]rune
+Notes	pack/wellle/start/targets.vim/README.md	/^## Notes$/;"	s
 Nth	pack/junegunn/start/fzf/src/options.go	/^	Nth         []Range$/;"	m	struct:fzf.Options	typeref:typename:[]Range
 OPTIONS	pack/junegunn/start/fzf/man/man1/fzf.1	/^.SH OPTIONS$/;"	s	title:fzf
 Offset	pack/junegunn/start/fzf/src/result.go	/^type Offset [2]int32$/;"	t	package:fzf	typeref:typename:[2]int32
@@ -1098,6 +1134,7 @@ Options	pack/junegunn/start/fzf/src/options.go	/^type Options struct {$/;"	s	pac
 Origins	pack/andymass/start/vim-matchup/README.md	/^### Origins$/;"	S	section:vim match-up""Acknowledgments
 Other inspirations	pack/andymass/start/vim-matchup/README.md	/^### Other inspirations$/;"	S	section:vim match-up""Acknowledgments
 Overview	pack/andymass/start/vim-matchup/README.md	/^## Overview$/;"	s	chapter:vim match-up
+Overview	pack/wellle/start/targets.vim/README.md	/^## Overview$/;"	s
 PAUSE_BEFORE_EXIT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v
 PAUSE_BEFORE_EXIT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v
 POST_PROCESS_CMD	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v
@@ -1107,6 +1144,9 @@ PROJECT_ROOT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	
 PROJ_ROOT	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set PROJ_ROOT=%~2$/;"	v
 PS1	pack/junegunn/start/fzf/test/test_go.rb	/^PS1= PROMPT_COMMAND= HISTFILE= HISTSIZE=100$/;"	C
 Padding	pack/junegunn/start/fzf/src/options.go	/^	Padding     [4]sizeSpec$/;"	m	struct:fzf.Options	typeref:typename:[4]sizeSpec
+Pair Seek	pack/wellle/start/targets.vim/README.md	/^#### Pair Seek$/;"	t	subsection:Overview""Pair Text Objects
+Pair Text Objects	pack/wellle/start/targets.vim/README.md	/^### Pair Text Objects$/;"	S	section:Overview
+Pair mappings	pack/wellle/start/targets.vim/cheatsheet.md	/^## Pair mappings$/;"	s
 ParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_scopedb.cmd	/^:ParseArgs$/;"	l
 ParseArgs	pack/ludovicchabant/start/vim-gutentags/plat/win32/update_tags.cmd	/^:ParseArgs$/;"	l
 ParseOptions	pack/junegunn/start/fzf/src/options.go	/^func ParseOptions() *Options {$/;"	f	package:fzf	typeref:typename:*Options
@@ -1122,6 +1162,7 @@ Performance	pack/junegunn/start/fzf/README.md	/^### Performance$/;"	S	section:<i
 PgDn	pack/junegunn/start/fzf/src/tui/tui.go	/^	PgDn$/;"	c	package:tui
 PgUp	pack/junegunn/start/fzf/src/tui/tui.go	/^	PgUp$/;"	c	package:tui
 Phony	pack/junegunn/start/fzf/src/options.go	/^	Phony       bool$/;"	m	struct:fzf.Options	typeref:typename:bool
+Plugins	pack/wellle/start/targets.vim/plugins.md	/^## Plugins$/;"	s
 Pointer	pack/junegunn/start/fzf/src/options.go	/^	Pointer     string$/;"	m	struct:fzf.Options	typeref:typename:string
 Popup window support	pack/junegunn/start/fzf/ADVANCED.md	/^#### Popup window support$/;"	t	subsection:Advanced fzf examples""Screen Layout""`fzf-tmux`
 PrefixMatch	pack/junegunn/start/fzf/src/algo/algo.go	/^func PrefixMatch(caseSensitive bool, normalize bool, forward bool, text *util.Chars, pattern []r/;"	f	package:algo	typeref:typename:(Result, *[]int)
@@ -1148,6 +1189,9 @@ Protect	pack/junegunn/start/fzf/src/protector/protector_openbsd.go	/^func Protec
 Push	pack/junegunn/start/fzf/src/chunklist.go	/^func (cl *ChunkList) Push(data []byte) bool {$/;"	f	struct:fzf.ChunkList	typeref:typename:bool
 Pushing	pack/ludovicchabant/start/vim-gutentags/CONTRIBUTING.md	/^## Pushing$/;"	s	chapter:Contributing
 Query	pack/junegunn/start/fzf/src/options.go	/^	Query       string$/;"	m	struct:fzf.Options	typeref:typename:string
+Quote Seek	pack/wellle/start/targets.vim/README.md	/^#### Quote Seek$/;"	t	subsection:Overview""Quote Text Objects
+Quote Text Objects	pack/wellle/start/targets.vim/README.md	/^### Quote Text Objects$/;"	S	section:Overview
+Quote mappings	pack/wellle/start/targets.vim/cheatsheet.md	/^## Quote mappings$/;"	s
 R	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_related   R   exe   s:/;"	c
 R	pack/tpope/start/rails/ftplugin/railslog.vim	/^nnoremap <buffer> <silent> R :<C-U>exe <SID>reload_log()<CR>$/;"	m
 RD	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_edit      RD  exe   s:/;"	c
@@ -1164,6 +1208,10 @@ Rails	pack/tpope/start/rails/plugin/rails.vim	/^command! -bang -bar -nargs=* -ra
 RailsDetect	pack/tpope/start/rails/plugin/rails.vim	/^function! RailsDetect(...) abort$/;"	f
 Rake	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=? -bang -count -complete=customlist,rails#complete_rake Rake    :/;"	c
 Range	pack/junegunn/start/fzf/src/tokenizer.go	/^type Range struct {$/;"	s	package:fzf
+Ranges after (right of/below) cursor	pack/wellle/start/targets.vim/cheatsheet.md	/^#### Ranges after (right of\/below) cursor$/;"	t	section:Customize seeking
+Ranges around cursor:	pack/wellle/start/targets.vim/cheatsheet.md	/^#### Ranges around cursor:$/;"	t	section:Customize seeking
+Ranges before (left of/above) cursor	pack/wellle/start/targets.vim/cheatsheet.md	/^#### Ranges before (left of\/above) cursor$/;"	t	section:Customize seeking
+Ranges on cursor:	pack/wellle/start/targets.vim/cheatsheet.md	/^#### Ranges on cursor:$/;"	t	section:Customize seeking
 Rationale	pack/junegunn/start/fzf.vim/README.md	/^Rationale$/;"	s	chapter:fzf :heart: vim
 Rbrowse	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=? -bang -range -complete=customlist,s:Complete_preview Rbrowse :c/;"	c
 Rdbext	pack/tpope/start/rails/autoload/rails.vim	/^    command! -buffer -bar -nargs=? -complete=customlist,s:Complete_environments Rdbext  :echoerr/;"	c
@@ -1248,12 +1296,16 @@ Self-Promotion	pack/tpope/start/rails/README.markdown	/^## Self-Promotion$/;"	s	
 Self-Promotion	pack/tpope/start/repeat/README.markdown	/^## Self-Promotion$/;"	s	chapter:repeat.vim
 Self-Promotion	pack/tpope/start/surround/README.markdown	/^## Self-Promotion$/;"	s	chapter:surround.vim
 Self-Promotion	pack/tpope/start/unimpaired/README.markdown	/^## Self-Promotion$/;"	s	chapter:unimpaired.vim
+Separator Seek	pack/wellle/start/targets.vim/README.md	/^#### Separator Seek$/;"	t	subsection:Overview""Separator Text Objects
+Separator Text Objects	pack/wellle/start/targets.vim/README.md	/^### Separator Text Objects$/;"	S	section:Overview
+Separator mappings	pack/wellle/start/targets.vim/cheatsheet.md	/^## Separator mappings$/;"	s
 Server	pack/tpope/start/rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=? -bang -complete=customlist,s:Complete_server   Server        :e/;"	c
 Set	pack/junegunn/start/fzf/src/util/atomicbool.go	/^func (a *AtomicBool) Set(newState bool) bool {$/;"	f	struct:util.AtomicBool	typeref:typename:bool
 Set	pack/junegunn/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Set(event EventType, value interface{}) {$/;"	f	struct:util.EventBox
 SetNonblock	pack/junegunn/start/fzf/src/util/util_unix.go	/^func SetNonblock(file *os.File, nonblock bool) {$/;"	f	package:util
 SetNonblock	pack/junegunn/start/fzf/src/util/util_windows.go	/^func SetNonblock(file *os.File, nonblock bool) {$/;"	f	package:util
 Settings	pack/junegunn/start/fzf/README.md	/^#### Settings$/;"	t	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Fuzzy completion for bash and zsh
+Settings	pack/wellle/start/targets.vim/README.md	/^## Settings$/;"	s
 Shell	pack/junegunn/start/fzf/test/test_go.rb	/^class Shell$/;"	c
 Shortcuts	pack/jiangmiao/start/auto-pairs/README.md	/^Shortcuts$/;"	s	chapter:Auto Pairs
 ShowUsage	pack/ludovicchabant/start/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
@@ -1291,6 +1343,7 @@ TESTS	pack/andymass/start/vim-matchup/test/new/Makefile	/^TESTS := $(wildcard te
 TSRange_from_table	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-party/query.lua	/^local function TSRange_from_table(buf, range)$/;"	f
 Tab	pack/junegunn/start/fzf/src/tui/tui.go	/^	Tab$/;"	c	package:tui
 Table of Contents	pack/junegunn/start/fzf/README.md	/^Table of Contents$/;"	s	chapter:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)
+Table of Contents	pack/wellle/start/targets.vim/README.md	/^## Table of Contents$/;"	s
 Table of contents	pack/andymass/start/vim-matchup/README.md	/^## Table of contents$/;"	s	chapter:vim match-up
 Tabstop	pack/junegunn/start/fzf/src/options.go	/^	Tabstop     int$/;"	m	struct:fzf.Options	typeref:typename:int
 Tac	pack/junegunn/start/fzf/src/options.go	/^	Tac         bool$/;"	m	struct:fzf.Options	typeref:typename:bool
@@ -1380,6 +1433,7 @@ ToChars	pack/junegunn/start/fzf/src/util/chars.go	/^func ToChars(bytes []byte) C
 ToRunes	pack/junegunn/start/fzf/src/util/chars.go	/^func (chars *Chars) ToRunes() []rune {$/;"	f	struct:util.Chars	typeref:typename:[]rune
 ToString	pack/junegunn/start/fzf/src/ansi.go	/^func (s *ansiState) ToString() string {$/;"	f	struct:fzf.ansiState	typeref:typename:string
 ToString	pack/junegunn/start/fzf/src/util/chars.go	/^func (chars *Chars) ToString() string {$/;"	f	struct:util.Chars	typeref:typename:string
+Todos	pack/wellle/start/targets.vim/README.md	/^## Todos$/;"	s
 ToggleSort	pack/junegunn/start/fzf/src/options.go	/^	ToggleSort  bool$/;"	m	struct:fzf.Options	typeref:typename:bool
 Toggling between data sources	pack/junegunn/start/fzf/ADVANCED.md	/^### Toggling between data sources$/;"	S	section:Advanced fzf examples""Dynamic reloading of the list
 Token	pack/junegunn/start/fzf/src/tokenizer.go	/^type Token struct {$/;"	s	package:fzf
@@ -1610,6 +1664,7 @@ algo	pack/junegunn/start/fzf/src/algo/algo_test.go	/^package algo$/;"	p
 algo	pack/junegunn/start/fzf/src/algo/normalize.go	/^package algo$/;"	p
 all	pack/junegunn/start/fzf/Makefile	/^all: target\/$(BINARY)$/;"	t
 all	pack/mattn/start/emmet-vim/Makefile	/^all : emmet-vim.zip$/;"	t
+all	pack/wellle/start/targets.vim/test/Makefile	/^all: | test check$/;"	t
 alloc16	pack/junegunn/start/fzf/src/algo/algo.go	/^func alloc16(offset int, slab *util.Slab, size int) (int, []int16) {$/;"	f	package:algo	typeref:typename:(int, []int16)
 alloc32	pack/junegunn/start/fzf/src/algo/algo.go	/^func alloc32(offset int, slab *util.Slab, size int) (int, []int32) {$/;"	f	package:algo	typeref:typename:(int, []int32)
 another_function	pack/andymass/start/vim-matchup/test/issues/3/test.sql	/^create or replace function another_function()$/;"	f
@@ -1746,6 +1801,7 @@ charLower	pack/junegunn/start/fzf/src/algo/algo.go	/^	charLower$/;"	c	package:al
 charNonWord	pack/junegunn/start/fzf/src/algo/algo.go	/^	charNonWord charClass = iota$/;"	c	package:algo	typeref:type:charClass
 charNumber	pack/junegunn/start/fzf/src/algo/algo.go	/^	charNumber$/;"	c	package:algo
 charUpper	pack/junegunn/start/fzf/src/algo/algo.go	/^	charUpper$/;"	c	package:algo
+check	pack/wellle/start/targets.vim/test/Makefile	/^check:$/;"	t
 checkAscii	pack/junegunn/start/fzf/src/util/chars.go	/^func checkAscii(bytes []byte) (bool, int) {$/;"	f	package:util	typeref:typename:(bool, int)
 check_binary	pack/junegunn/start/fzf/install	/^check_binary() {$/;"	f
 check_binary	pack/junegunn/start/fzf/install.ps1	/^function check_binary () {$/;"	f
@@ -1754,6 +1810,7 @@ chunks	pack/junegunn/start/fzf/src/chunklist.go	/^	chunks []*Chunk$/;"	m	struct:
 chunks	pack/junegunn/start/fzf/src/matcher.go	/^	chunks     []*Chunk$/;"	m	struct:fzf.MatchRequest	typeref:typename:[]*Chunk
 chunks	pack/junegunn/start/fzf/src/merger.go	/^	chunks  *[]*Chunk$/;"	m	struct:fzf.Merger	typeref:typename:*[]*Chunk
 clean	pack/junegunn/start/fzf/Makefile	/^clean:$/;"	t
+clean	pack/wellle/start/targets.vim/test/Makefile	/^clean:$/;"	t
 cleanExit	pack/junegunn/start/fzf/src/terminal.go	/^	cleanExit    bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
 cleanTemporaryFiles	pack/junegunn/start/fzf/src/terminal.go	/^func cleanTemporaryFiles() {$/;"	f	package:fzf
 cleanse	pack/junegunn/start/fzf/src/tui/light.go	/^func cleanse(str string) string {$/;"	f	package:tui	typeref:typename:string
@@ -2558,6 +2615,7 @@ g:loaded_nerdtree_ui_glue_autoload	pack/preservim/start/nerdtree/autoload/nerdtr
 g:loaded_rails	pack/tpope/start/rails/plugin/rails.vim	/^let g:loaded_rails = 1$/;"	v
 g:loaded_repeat	pack/tpope/start/repeat/autoload/repeat.vim	/^let g:loaded_repeat = 1$/;"	v
 g:loaded_surround	pack/tpope/start/surround/plugin/surround.vim	/^let g:loaded_surround = 1$/;"	v
+g:loaded_targets	pack/wellle/start/targets.vim/plugin/targets.vim	/^let g:loaded_targets = '0.5.0' " version number$/;"	v
 g:loaded_unimpaired	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let g:loaded_unimpaired = 1$/;"	v
 g:matchup#perf#times	pack/andymass/start/vim-matchup/autoload/matchup/perf.vim	/^      let g:matchup#perf#times[l:key].maximum = l:elapsed$/;"	v
 g:matchup#perf#times	pack/andymass/start/vim-matchup/autoload/matchup/perf.vim	/^    let g:matchup#perf#times[l:key] = {$/;"	v
@@ -2591,6 +2649,14 @@ g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^        let g:repeat
 g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_tick = -1$/;"	v
 g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^    let g:repeat_tick = b:changedtick$/;"	v
 g:repeat_tick	pack/tpope/start/repeat/autoload/repeat.vim	/^let g:repeat_tick = -1$/;"	v
+g:targets_aiAI	pack/wellle/start/targets.vim/README.md	/^### g:targets_aiAI$/;"	S	section:Settings
+g:targets_aiAI	pack/wellle/start/targets.vim/plugin/targets.vim	/^    let g:targets_aiAI = s:getKeysAsList(get(g:, 'targets_aiAI', 'aiAI'))$/;"	v
+g:targets_gracious	pack/wellle/start/targets.vim/README.md	/^### g:targets_gracious$/;"	S	section:Settings
+g:targets_jumpRanges	pack/wellle/start/targets.vim/README.md	/^### g:targets_jumpRanges$/;"	S	section:Settings
+g:targets_mapped_aiAI	pack/wellle/start/targets.vim/README.md	/^### g:targets_mapped_aiAI$/;"	S	section:Settings
+g:targets_nl	pack/wellle/start/targets.vim/README.md	/^### g:targets_nl$/;"	S	section:Settings
+g:targets_nl	pack/wellle/start/targets.vim/plugin/targets.vim	/^    let g:targets_nl   = s:getKeysAsList(get(g:, 'targets_nl', get(g:, 'targets_nlNL', 'nl')[0:1/;"	v
+g:targets_seekRanges	pack/wellle/start/targets.vim/README.md	/^### g:targets_seekRanges$/;"	S	section:Settings
 g:tex_flavor	pack/andymass/start/vim-matchup/test/new/test-delim/test.vim	/^let g:tex_flavor = "latex"$/;"	v
 g:unimpaired_html_entities	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let g:unimpaired_html_entities = {$/;"	v
 g:user_emmet_install_global	pack/mattn/start/emmet-vim/unittest.vim	/^      let g:user_emmet_install_global = s:old_user_emmet_install_global$/;"	v
@@ -2674,6 +2740,7 @@ hasPreviewer	pack/junegunn/start/fzf/src/terminal.go	/^func (t *Terminal) hasPre
 header	pack/junegunn/start/fzf/src/terminal.go	/^	header       []string$/;"	m	struct:fzf.Terminal	typeref:typename:[]string
 header0	pack/junegunn/start/fzf/src/terminal.go	/^	header0      []string$/;"	m	struct:fzf.Terminal	typeref:typename:[]string
 headerLines	pack/junegunn/start/fzf/src/options.go	/^	headerLines int$/;"	m	struct:fzf.previewOpts	typeref:typename:int
+health#targets#check	pack/wellle/start/targets.vim/autoload/health/targets.vim	/^function! health#targets#check() abort$/;"	f
 height	pack/junegunn/start/fzf/src/tui/light.go	/^	height        int$/;"	m	struct:tui.LightRenderer	typeref:typename:int
 height	pack/junegunn/start/fzf/src/tui/light.go	/^	height   int$/;"	m	struct:tui.LightWindow	typeref:typename:int
 height	pack/junegunn/start/fzf/src/tui/tcell.go	/^	height      int$/;"	m	struct:tui.TcellWindow	typeref:typename:int
@@ -3805,12 +3872,20 @@ s:abbrev	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:abbrev()$/;"	
 s:abolish_l	pack/tpope/start/rails/plugin/rails.vim	/^function! s:abolish_l(word)$/;"	f
 s:abolish_setup	pack/tpope/start/rails/plugin/rails.vim	/^function! s:abolish_setup()$/;"	f
 s:abolish_t	pack/tpope/start/rails/plugin/rails.vim	/^function! s:abolish_t(word)$/;"	f
+s:abortMatch	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:abortMatch(context, message)$/;"	f
 s:action_for	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:action_for(key, ...)$/;"	f
 s:activateAll	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateAll() abort$/;"	f
 s:activateBookmark	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateBookmark(bm) abort$/;"	f
 s:activateDirNode	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(directoryNode, ...) abort$/;"	f
 s:activateFileNode	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node) abort$/;"	f
 s:active	pack/tpope/start/rails/autoload/rails.vim	/^function! s:active() abort$/;"	f
+s:addAllMappings	pack/wellle/start/targets.vim/plugin/targets.vim	/^function! s:addAllMappings()$/;"	f
+s:addLegacyMappings	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! s:addLegacyMappings()$/;"	f
+s:addMapping1	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:addMapping1(mapType, mapping, aiAI)$/;"	f
+s:addMapping2	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:addMapping2(mapType, mapping, aiAI, nl)$/;"	f
+s:addMappings	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:addMappings(mapType, prefix, suffix)$/;"	f
+s:addMappings	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! s:addMappings()$/;"	f
+s:addToJumplist	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:addToJumplist(context, target)$/;"	f
 s:add_background_matches_1	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^function! s:add_background_matches_1(line1, col1, line2, col2) " {{{1$/;"	f
 s:add_db	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
 s:add_matches	pack/andymass/start/vim-matchup/autoload/matchup/matchparen.vim	/^function! s:add_matches(corrlist, ...) " {{{1$/;"	f
@@ -3884,6 +3959,7 @@ s:bad_git_dir	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:bad_git_dir 
 s:bang_edits	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:bang_edits = {'split': 'Git', 'vsplit': 'vert Git', 'tabedit': 'tab Git', 'pedit': 'Git!'}$/;"	v
 s:base_dir	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:base_dir = expand('<sfile>:h:h')$/;"	v
 s:beep	pack/tpope/start/surround/plugin/surround.vim	/^function! s:beep()$/;"	f
+s:bestTarget	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^function! s:bestTarget(targets, context, message)$/;"	f
 s:bin	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^    let s:bin.preview = fnamemodify(s:bin.preview, ':8')$/;"	v
 s:bin	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^    let s:bin.preview = split(system('for %A in ("'.s:bin.preview.'") do @echo %~sA'), "\\n")[0]$/;"	v
 s:bin	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:bin = {$/;"	v
@@ -3931,10 +4007,13 @@ s:cfile_delegate	pack/tpope/start/rails/autoload/rails.vim	/^function! s:cfile_d
 s:chCwd	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chCwd(node) abort$/;"	f
 s:chRoot	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chRoot(node) abort$/;"	f
 s:changesurround	pack/tpope/start/surround/plugin/surround.vim	/^function! s:changesurround(...) " {{{1$/;"	f
+s:check	pack/wellle/start/targets.vim/autoload/health/targets.vim	/^function! s:check(trigger, map)$/;"	f
 s:check_requirements	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:check_requirements()$/;"	f
 s:checked	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:checked = 0$/;"	v
 s:checked	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:checked = {}$/;"	v
 s:chomp	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:chomp(str)$/;"	f
+s:cleanUp	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:cleanUp()$/;"	f
+s:clearCommandLine	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:clearCommandLine()$/;"	f
 s:clikeft	pack/andymass/start/vim-matchup/autoload/matchup/quirks.vim	/^let s:clikeft = [$/;"	v
 s:closeChildren	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeChildren(node) abort$/;"	f
 s:closeCurrentDir	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeCurrentDir(node) abort$/;"	f
@@ -3964,12 +4043,18 @@ s:config	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:config = {}$/;"
 s:controller	pack/tpope/start/rails/autoload/rails.vim	/^function! s:controller(...)$/;"	f
 s:controllerList	pack/tpope/start/rails/autoload/rails.vim	/^function! s:controllerList(A,L,P)$/;"	f
 s:corresponding	pack/andymass/start/vim-matchup/test/new/test-delim/test.vim	/^let s:corresponding = matchup#delim#get_matching(s:current)$/;"	v
+s:count	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! s:count(char, text)$/;"	f
 s:cpath	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:cpath(path, ...) abort$/;"	f
 s:cpo_save	pack/andymass/start/vim-matchup/test/legacy/rtp/ftplugin/matchuptest.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
+s:createArgTextObjects	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:createArgTextObjects(mapType, trigger)$/;"	f
+s:createPairTextObjects	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:createPairTextObjects(mapType, pairs)$/;"	f
+s:createQuoteTextObjects	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:createQuoteTextObjects(mapType, quotes)$/;"	f
+s:createSeparatorTextObjects	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:createSeparatorTextObjects(mapType, separators)$/;"	f
+s:createTagTextObjects	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! s:createTagTextObjects(mapType, trigger)$/;"	f
 s:create_popup	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function s:create_popup(hl, opts) abort$/;"	f
 s:create_popup	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function! s:create_popup(hl, opts) abort$/;"	f
 s:crend	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:crend(always)$/;"	f
@@ -3985,6 +4070,7 @@ s:customOpenFile	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^f
 s:custom_counter	pack/andymass/start/vim-matchup/autoload/matchup/custom.vim	/^  let s:custom_counter = 0$/;"	v
 s:custom_opts	pack/andymass/start/vim-matchup/autoload/matchup/custom.vim	/^  let s:custom_opts = {}$/;"	v
 s:debug	pack/tpope/start/rails/autoload/rails.vim	/^function! s:debug(str)$/;"	f
+s:defaultQuoteDirs	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^let s:defaultQuoteDirs = get(g:, 'targets_quoteDirs', {$/;"	v
 s:default_action	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:default_action = {$/;"	v
 s:default_action	pack/junegunn/start/fzf/plugin/fzf.vim	/^let s:default_action = {$/;"	v
 s:default_layout	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:default_layout()$/;"	f
@@ -4028,6 +4114,7 @@ s:efm_generate	pack/tpope/start/rails/autoload/rails.vim	/^let s:efm_generate =$
 s:efm_notes	pack/tpope/start/rails/autoload/rails.vim	/^let s:efm_notes = '%-P%f:,\\ \\ *\\ [%\\ %#%l]\\ [%t%*[^]]] %m,\\ \\ *\\ [%[\\ ]%#%l] %m,%-Q'$/;"	v
 s:emmet_settings	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:emmet_settings = {$/;"	v
 s:emmet_unittest_complete	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:emmet_unittest_complete(arglead, cmdline, cmdpos)$/;"	f
+s:empty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^let s:empty = 1$/;"	v
 s:enc_to_cp	pack/junegunn/start/fzf/plugin/fzf.vim	/^  function! s:enc_to_cp(str)$/;"	f
 s:endof	pack/tpope/start/rails/autoload/rails.vim	/^function! s:endof(lnum)$/;"	f
 s:endswith	pack/tpope/start/rails/autoload/rails.vim	/^function! s:endswith(string,suffix)$/;"	f
@@ -4052,6 +4139,7 @@ s:exec_paths	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:exec_paths 
 s:executable	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:executable(binary) abort$/;"	f
 s:executables	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:executables = {}$/;"	v
 s:execute	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute(dict, command, use_height, temps) abort$/;"	f
+s:execute	pack/wellle/start/targets.vim/test/test.vim	/^function! s:execute(operation, motions)$/;"	f
 s:execute_term	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute_term(dict, command, temps) abort$/;"	f
 s:execute_tmux	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:execute_tmux(dict, command, temps) abort$/;"	f
 s:exists	pack/mattn/start/emmet-vim/autoload/emmet/lang.vim	/^let s:exists = {}$/;"	v
@@ -4088,6 +4176,10 @@ s:fill_quickfix	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:f
 s:filtermx	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:filtermx = '|\\(\\%(bem\\|html\\|blade\\|haml\\|slim\\|e\\|c\\|s\\|fc\\|xsl\\|t\\|\\\/[^ ]/;"	v
 s:find	pack/tpope/start/rails/autoload/rails.vim	/^function! s:find(cmd, file) abort$/;"	f
 s:findAndRevealPath	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:findAndRevealPath(pathStr) abort$/;"	f
+s:findArg	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! s:findArg(args, direction, flags1, flags2, flags3, opening, closing)$/;"	f
+s:findArgBoundary	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! s:findArgBoundary(flags1, flags2, skip, finish, all, separator)$/;"	f
+s:findRawTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:findRawTarget(context, factories, count)$/;"	f
+s:findTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:findTarget(context, count)$/;"	f
 s:find_file	pack/tpope/start/rails/autoload/rails.vim	/^function! s:find_file(name, ...) abort$/;"	f
 s:find_open_window	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:find_open_window(b)$/;"	f
 s:findasset	pack/tpope/start/rails/autoload/rails.vim	/^function! s:findasset(path, dir) abort$/;"	f
@@ -4136,6 +4228,9 @@ s:fzf_vim_term	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^  function! s:fzf_vi
 s:gem_subdirs	pack/tpope/start/rails/autoload/rails.vim	/^function! s:gem_subdirs(...) abort$/;"	f
 s:gem_subdirs	pack/tpope/start/rails/autoload/rails.vim	/^let s:gem_subdirs = {}$/;"	v
 s:generate_wildignore_options	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
+s:getFactories	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:getFactories(trigger)$/;"	f
+s:getKeyAsStr	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:getKeyAsStr()$/;"	f
+s:getKeysAsList	pack/wellle/start/targets.vim/plugin/targets.vim	/^function! s:getKeysAsList(keys)$/;"	f
 s:get_backref	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:get_backref(groups, bref, warn)$/;"	f
 s:get_color	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:get_color(attr, ...)$/;"	f
 s:get_color	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:get_color(attr, ...)$/;"	f
@@ -4147,6 +4242,7 @@ s:get_match_words	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim
 s:get_matching_delims	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:get_matching_delims(down, stopline) dict abort " {{{1$/;"	f
 s:get_version	pack/junegunn/start/fzf/plugin/fzf.vim	/^function s:get_version(bin)$/;"	f
 s:getchar	pack/tpope/start/surround/plugin/surround.vim	/^function! s:getchar()$/;"	f
+s:getchar	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! s:getchar()$/;"	f
 s:geteffline	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^function! s:geteffline(expr)$/;"	f
 s:getftime	pack/tpope/start/rails/autoload/rails.vim	/^function! s:getftime(path) abort$/;"	f
 s:getline	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:getline()$/;"	f
@@ -4157,10 +4253,15 @@ s:given_range	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:giv
 s:glob	pack/tpope/start/rails/autoload/rails.vim	/^function! s:glob(path) abort$/;"	f
 s:globsubs	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:globsubs = {$/;"	v
 s:go	pack/tpope/start/commentary/plugin/commentary.vim	/^function! s:go(...) abort$/;"	f
+s:gracious	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^let s:gracious = get(g:, 'targets_gracious', 0)$/;"	v
 s:gsub	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:gsub(str,pat,rep) abort$/;"	f
 s:gsub	pack/tpope/start/rails/autoload/rails.vim	/^function! s:gsub(str,pat,rep)$/;"	f
+s:handleEmptyMatch	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:handleEmptyMatch(context, target)$/;"	f
 s:handleLeftClick	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleLeftClick() abort$/;"	f
 s:handleMiddleMouse	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleMiddleMouse() abort$/;"	f
+s:handleTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:handleTarget(context, target, rawTarget)$/;"	f
+s:hasLegacySettings	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! s:hasLegacySettings()$/;"	f
+s:hasPrefix	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:hasPrefix(str, prefix)$/;"	f
 s:has_any	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:has_any(dict, keys)$/;"	f
 s:has_app	pack/tpope/start/rails/after/syntax/ruby/rails.vim	/^let s:has_app = exists('*RailsDetect') && RailsDetect()$/;"	v
 s:has_plugin	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^function! s:has_plugin(plug)$/;"	f
@@ -4178,8 +4279,10 @@ s:history_source	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:
 s:htmllikeft	pack/andymass/start/vim-matchup/autoload/matchup/quirks.vim	/^let s:htmllikeft = [$/;"	v
 s:in_indentexpr	pack/andymass/start/vim-matchup/autoload/matchup/motion.vim	/^function! s:in_indentexpr()$/;"	f
 s:indexes	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:indexes = {}$/;"	v
+s:init	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:init()$/;"	f
 s:initCustomOpenArgs	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:initCustomOpenArgs() abort$/;"	f
 s:initOpenURL	pack/tpope/start/rails/autoload/rails.vim	/^function! s:initOpenURL() abort$/;"	f
+s:initX	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:initX(trigger)$/;"	f
 s:init_default_mappings	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:init_default_mappings()$/;"	f
 s:init_delim_lists	pack/andymass/start/vim-matchup/autoload/matchup/loader.vim	/^function! s:init_delim_lists(use_match_words) abort " {{{1$/;"	f
 s:init_delim_lists_fast	pack/andymass/start/vim-matchup/autoload/matchup/loader.vim	/^function! s:init_delim_lists_fast(mps) abort " {{{1$/;"	f
@@ -4196,8 +4299,10 @@ s:inputreplacement	pack/tpope/start/surround/plugin/surround.vim	/^function! s:i
 s:inputtarget	pack/tpope/start/surround/plugin/surround.vim	/^function! s:inputtarget()$/;"	f
 s:insert	pack/tpope/start/surround/plugin/surround.vim	/^function! s:insert(...) " {{{1$/;"	f
 s:install_plugin	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^function! s:install_plugin(mode, buffer)$/;"	f
+s:invalid	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^let s:invalid = 0$/;"	v
 s:invert_skip	pack/andymass/start/vim-matchup/autoload/matchup/delim.vim	/^let s:invert_skip = 0$/;"	v
 s:invertrange	pack/tpope/start/rails/autoload/rails.vim	/^function! s:invertrange(beg,end)$/;"	f
+s:isNewSelection	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:isNewSelection(visualTarget)$/;"	f
 s:is_win	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	pack/junegunn/start/fzf.vim/plugin/fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
@@ -4222,6 +4327,8 @@ s:keyMaps	pack/preservim/start/nerdtree/lib/nerdtree/key_map.vim	/^let s:keyMaps
 s:key_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:key_sink(line)$/;"	f
 s:known_files	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
 s:known_projects	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
+s:lastRawTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^let s:lastRawTarget = targets#target#withError('initial')$/;"	v
+s:lastTrigger	pack/wellle/start/targets.vim/autoload/targets.vim	/^let s:lastTrigger   = "   "$/;"	v
 s:last_time	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:last_time = reltime()$/;"	v
 s:last_times	pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:last_times = {}$/;"	v
 s:last_wildignores	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
@@ -4252,6 +4359,7 @@ s:manual_update_tags	pack/ludovicchabant/start/vim-gutentags/autoload/gutentags.
 s:map	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^  function! s:map(mode, lhs, rhs, ...)$/;"	f
 s:map	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:map(...) abort$/;"	f
 s:map_gf	pack/tpope/start/rails/autoload/rails.vim	/^function! s:map_gf() abort$/;"	f
+s:mappings	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^let s:mappings = {}$/;"	v
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:maps() abort$/;"	f
 s:maps	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^let s:maps = []$/;"	v
 s:mark_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:mark_sink(lines)$/;"	f
@@ -4286,6 +4394,7 @@ s:mkdir_p	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:mkdir_p(path) 
 s:mkdir_p	pack/tpope/start/rails/autoload/rails.vim	/^function! s:mkdir_p(path) abort$/;"	f
 s:mkeep	pack/tpope/start/rails/autoload/rails.vim	/^function! s:mkeep(str)$/;"	f
 s:model	pack/tpope/start/rails/autoload/rails.vim	/^function! s:model(...)$/;"	f
+s:modifyTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:modifyTarget(target, modifier)$/;"	f
 s:mods	pack/tpope/start/rails/autoload/rails.vim	/^function! s:mods(mods) abort$/;"	f
 s:motion_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:motion_init_module() " {{{1$/;"	f
 s:mx	pack/mattn/start/emmet-vim/autoload/emmet/lang/html.vim	/^let s:mx = '\\([+>]\\|[<^]\\+\\)\\{-}'$/;"	v
@@ -4293,6 +4402,7 @@ s:mysearchpair	pack/tpope/start/endwise/plugin/endwise.vim	/^function! s:mysearc
 s:nbs	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
 s:nbsl	pack/andymass/start/vim-matchup/autoload/matchup/re.vim	/^let s:nbsl = '\\v%(\\\\@<!%(\\\\\\\\)*)@<=\\m'$/;"	v
 s:nomodeline	pack/tpope/start/eunuch/plugin/eunuch.vim	/^let s:nomodeline = v:version > 703 ? '<nomodeline>' : ''$/;"	v
+s:nonempty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^let s:nonempty = 2$/;"	v
 s:not_bslash	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^let s:not_bslash = '\\v%(\\\\@<!%(\\\\\\\\)*)@4<=\\m'$/;"	v
 s:nowait	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
 s:nowait	pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
@@ -4333,6 +4443,9 @@ s:populate_floating_win	pack/andymass/start/vim-matchup/autoload/matchup/matchpa
 s:popup	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:popup(opts) abort$/;"	f
 s:popup_support	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:popup_support()$/;"	f
 s:pos	pack/tpope/start/rails/ftplugin/railslog.vim	/^  let s:pos = getpos('.')$/;"	v
+s:position	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! s:position(line, column, context)$/;"	f
+s:prepareRepeat	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:prepareRepeat(typed)$/;"	f
+s:prepareReselect	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:prepareReselect(context)$/;"	f
 s:prepare_env	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:prepare_env = {$/;"	v
 s:prepend_opts	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:prepend_opts(dict, eopts)$/;"	f
 s:present	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:present(dict, ...)$/;"	f
@@ -4355,7 +4468,11 @@ s:pushd	pack/junegunn/start/fzf/plugin/fzf.vim	/^function! s:pushd(dict)$/;"	f
 s:putline	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:putline(how, map) abort$/;"	f
 s:qescape	pack/andymass/start/vim-matchup/autoload/matchup/transmute.vim	/^function! s:qescape(str)$/;"	f
 s:qf_pre	pack/tpope/start/rails/autoload/rails.vim	/^function! s:qf_pre() abort$/;"	f
+s:quoteArgs	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^let s:quoteArgs = {$/;"	v
+s:quoteDir	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! s:quoteDir(quoteDirs, delimiter)$/;"	f
+s:quoteEscape	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! s:quoteEscape(delimiter)$/;"	f
 s:rake2rails	pack/tpope/start/rails/autoload/rails.vim	/^function! s:rake2rails(task) abort$/;"	f
+s:rangeScore	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^function! s:rangeScore(range)$/;"	f
 s:readable_absolute	pack/tpope/start/rails/autoload/rails.vim	/^function! s:readable_absolute() dict abort$/;"	f
 s:readable_alternate	pack/tpope/start/rails/autoload/rails.vim	/^function! s:readable_alternate(...) dict abort$/;"	f
 s:readable_alternate_candidates	pack/tpope/start/rails/autoload/rails.vim	/^function! s:readable_alternate_candidates(...) dict abort$/;"	f
@@ -4397,6 +4514,7 @@ s:reduce_line	pack/junegunn/start/fzf.vim/autoload/fzf/vim/complete.vim	/^functi
 s:ref_header	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:ref_header = '\\%(Merge\\|Rebase\\|Upstream\\|Pull\\|Push\\)'$/;"	v
 s:refreshCurrent	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshCurrent(node) abort$/;"	f
 s:refreshRoot	pack/preservim/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshRoot() abort$/;"	f
+s:registerSources	pack/wellle/start/targets.vim/autoload/targets/sources.vim	/^function! s:registerSources()$/;"	f
 s:reindent	pack/tpope/start/surround/plugin/surround.vim	/^function! s:reindent() " {{{1$/;"	f
 s:relglob	pack/tpope/start/rails/autoload/rails.vim	/^function! s:relglob(...)$/;"	f
 s:reload	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:reload(d)$/;"	f
@@ -4459,6 +4577,8 @@ s:save_cpo	pack/andymass/start/vim-matchup/autoload/matchup/where.vim	/^let s:sa
 s:save_cpo	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	pack/mattn/start/emmet-vim/autoload/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:save_cpo	pack/mattn/start/emmet-vim/plugin/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
+s:save_cpoptions	pack/wellle/start/targets.vim/autoload/targets.vim	/^let s:save_cpoptions = &cpoptions$/;"	v
+s:save_cpoptions	pack/wellle/start/targets.vim/plugin/targets.vim	/^let s:save_cpoptions = &cpoptions$/;"	v
 s:scanlineforuris	pack/tpope/start/rails/autoload/rails.vim	/^function! s:scanlineforuris(line) abort$/;"	f
 s:schemaEdit	pack/tpope/start/rails/autoload/rails.vim	/^function! s:schemaEdit(cmd,...)$/;"	f
 s:schemaList	pack/tpope/start/rails/autoload/rails.vim	/^function! s:schemaList(A,L,P) abort$/;"	f
@@ -4466,6 +4586,10 @@ s:search_history_sink	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^functio
 s:section_commit_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_commit_pattern = s:section_pattern . '\\|^commit '$/;"	v
 s:section_pattern	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_pattern = '^[A-Z][a-z][^:]*$'$/;"	v
 s:seed	pack/mattn/start/emmet-vim/autoload/emmet/util.vim	/^let s:seed = localtime()$/;"	v
+s:select	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! s:select(args, direction)$/;"	f
+s:select	pack/wellle/start/targets.vim/autoload/targets/sources/pair.vim	/^function! s:select(count, trigger)$/;"	f
+s:selectRegion	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:selectRegion(target)$/;"	f
+s:selectTarget	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:selectTarget(context, target, rawTarget)$/;"	f
 s:separator	pack/tpope/start/eunuch/plugin/eunuch.vim	/^function! s:separator()$/;"	f
 s:setup_match_words	pack/andymass/start/vim-matchup/after/ftplugin/tex_matchup.vim	/^function! s:setup_match_words()$/;"	f
 s:setup_paste	pack/tpope/start/unimpaired/plugin/unimpaired.vim	/^function! s:setup_paste() abort$/;"	f
@@ -4492,6 +4616,7 @@ s:snr	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:snr()$/
 s:sortByLength	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:sortByLength(i1, i2)$/;"	f
 s:sort_buffers	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:sort_buffers(...)$/;"	f
 s:sort_by_last	pack/andymass/start/vim-matchup/autoload/matchup/perf.vim	/^function! s:sort_by_last(a, b)$/;"	f
+s:sources	pack/wellle/start/targets.vim/autoload/targets/sources.vim	/^let s:sources = {}$/;"	v
 s:specEdit	pack/tpope/start/rails/autoload/rails.vim	/^function! s:specEdit(cmd,...) abort$/;"	f
 s:specList	pack/tpope/start/rails/autoload/rails.vim	/^function! s:specList(A,L,P)$/;"	f
 s:special	pack/tpope/start/rails/after/syntax/ruby/rails.vim	/^let s:special = {$/;"	v
@@ -4527,6 +4652,16 @@ s:term_marker	pack/junegunn/start/fzf/plugin/fzf.vim	/^  let s:term_marker = '&:
 s:test	pack/andymass/start/vim-matchup/test/issues/15/gc.vim	/^function! s:test()$/;"	f
 s:test	pack/andymass/start/vim-matchup/test/issues/16/any.vim	/^function! s:test()$/;"	f
 s:test	pack/mattn/start/emmet-vim/unittest.vim	/^function! s:test(...)$/;"	f
+s:testBasic	pack/wellle/start/targets.vim/test/test.vim	/^function! s:testBasic()$/;"	f
+s:testEmpty	pack/wellle/start/targets.vim/test/test.vim	/^function s:testEmpty()$/;"	f
+s:testGrow	pack/wellle/start/targets.vim/test/test.vim	/^function s:testGrow()$/;"	f
+s:testModifiers	pack/wellle/start/targets.vim/test/test.vim	/^function s:testModifiers()$/;"	f
+s:testMotionForce	pack/wellle/start/targets.vim/test/test.vim	/^function s:testMotionForce()$/;"	f
+s:testMultiline	pack/wellle/start/targets.vim/test/test.vim	/^function! s:testMultiline()$/;"	f
+s:testQuotes	pack/wellle/start/targets.vim/test/test.vim	/^function s:testQuotes()$/;"	f
+s:testReselect	pack/wellle/start/targets.vim/test/test.vim	/^function s:testReselect()$/;"	f
+s:testSeeking	pack/wellle/start/targets.vim/test/test.vim	/^function s:testSeeking()$/;"	f
+s:testVisual	pack/wellle/start/targets.vim/test/test.vim	/^function s:testVisual()$/;"	f
 s:text_obj_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:text_obj_init_module() " {{{1$/;"	f
 s:textobject	pack/tpope/start/commentary/plugin/commentary.vim	/^function! s:textobject(inner) abort$/;"	f
 s:throw	pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:throw(string) abort$/;"	f
@@ -4561,6 +4696,8 @@ s:transformations.uppercase	pack/tpope/start/rails/autoload/rails.vim	/^function
 s:tree_up_dir_line	pack/preservim/start/nerdtree/syntax/nerdtree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
 s:trees	pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:trees = {}$/;"	v
 s:treesitter_init_module	pack/andymass/start/vim-matchup/autoload/matchup.vim	/^function! s:treesitter_init_module() " {{{1$/;"	f
+s:triggerReselect	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:triggerReselect(context)$/;"	f
+s:triggerUndo	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! s:triggerUndo()$/;"	f
 s:ulen	pack/jiangmiao/start/auto-pairs/plugin/auto-pairs.vim	/^func! s:ulen(s)$/;"	f
 s:undo_ftplugin	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^  let s:undo_ftplugin = b:undo_ftplugin$/;"	v
 s:undo_ftplugin	pack/digitaltoad/start/vim-pug/ftplugin/pug.vim	/^let s:undo_ftplugin = ""$/;"	v
@@ -4690,6 +4827,93 @@ target/$(BINARYARM6)	pack/junegunn/start/fzf/Makefile	/^target\/$(BINARYARM6): $
 target/$(BINARYARM7)	pack/junegunn/start/fzf/Makefile	/^target\/$(BINARYARM7): $(SOURCES)$/;"	t
 target/$(BINARYARM8)	pack/junegunn/start/fzf/Makefile	/^target\/$(BINARYARM8): $(SOURCES)$/;"	t
 target/$(BINARYPPC64LE)	pack/junegunn/start/fzf/Makefile	/^target\/$(BINARYPPC64LE): $(SOURCES)$/;"	t
+targets	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^    augroup targets#mappings#silent$/;"	a
+targets	pack/wellle/start/targets.vim/autoload/targets/sources.vim	/^    augroup targets#sources#silent$/;"	a
+targets#context#new	pack/wellle/start/targets.vim/autoload/targets/context.vim	/^function! targets#context#new(mapmode, trigger, newSelection, visualTarget)$/;"	f
+targets#context#withOldpos	pack/wellle/start/targets.vim/autoload/targets/context.vim	/^function! targets#context#withOldpos(oldpos) dict$/;"	f
+targets#do	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! targets#do()$/;"	f
+targets#e	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! targets#e(mapmode, modifier, original)$/;"	f
+targets#factory#init	pack/wellle/start/targets.vim/autoload/targets/factory.vim	/^function! targets#factory#init(source, factory)$/;"	f
+targets#factory#new	pack/wellle/start/targets.vim/autoload/targets/factory.vim	/^function! targets#factory#new(oldpos, which) dict$/;"	f
+targets#generator#new	pack/wellle/start/targets.vim/autoload/targets/generator.vim	/^function! targets#generator#new(genFunc, modFuncs, source, args, oldpos, which)$/;"	f
+targets#generator#next	pack/wellle/start/targets.vim/autoload/targets/generator.vim	/^function! targets#generator#next(first) dict$/;"	f
+targets#generator#nextN	pack/wellle/start/targets.vim/autoload/targets/generator.vim	/^function! targets#generator#nextN(n, first) dict$/;"	f
+targets#generator#target	pack/wellle/start/targets.vim/autoload/targets/generator.vim	/^function! targets#generator#target() dict$/;"	f
+targets#legacy#addMappings	pack/wellle/start/targets.vim/autoload/targets/legacy.vim	/^function! targets#legacy#addMappings(a, i, A, I, n, l)$/;"	f
+targets#mappings#extend	pack/wellle/start/targets.vim/README.md	/^### targets#mappings#extend$/;"	S	section:Settings
+targets#mappings#extend	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! targets#mappings#extend(mappings)$/;"	f
+targets#mappings#get	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! targets#mappings#get(trigger)$/;"	f
+targets#mappings#list	pack/wellle/start/targets.vim/autoload/targets/mappings.vim	/^function! targets#mappings#list()$/;"	f
+targets#modify#drop	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#drop(target, args)$/;"	f
+targets#modify#dropa	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#dropa(target, args)$/;"	f
+targets#modify#dropr	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#dropr(target, args)$/;"	f
+targets#modify#expand	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#expand(target, args, ...)$/;"	f
+targets#modify#expands	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#expands(target, args)$/;"	f
+targets#modify#innert	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#innert(target, args)$/;"	f
+targets#modify#keep	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#keep(target, args)$/;"	f
+targets#modify#shrink	pack/wellle/start/targets.vim/autoload/targets/modify.vim	/^function! targets#modify#shrink(target, args)$/;"	f
+targets#multigen#add	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^function! targets#multigen#add(factories, ...) dict$/;"	f
+targets#multigen#new	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^function! targets#multigen#new(context, lastRawTarget)$/;"	f
+targets#multigen#next	pack/wellle/start/targets.vim/autoload/targets/multigen.vim	/^function! targets#multigen#next(first) dict$/;"	f
+targets#o	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! targets#o(trigger, typed, count)$/;"	f
+targets#sources#argument#current	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! targets#sources#argument#current(args, opts, state)$/;"	f
+targets#sources#argument#last	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! targets#sources#argument#last(args, opts, state)$/;"	f
+targets#sources#argument#new	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! targets#sources#argument#new(args)$/;"	f
+targets#sources#argument#next	pack/wellle/start/targets.vim/autoload/targets/sources/argument.vim	/^function! targets#sources#argument#next(args, opts, state)$/;"	f
+targets#sources#newFactories	pack/wellle/start/targets.vim/autoload/targets/sources.vim	/^function! targets#sources#newFactories(trigger)$/;"	f
+targets#sources#pair#current	pack/wellle/start/targets.vim/autoload/targets/sources/pair.vim	/^function! targets#sources#pair#current(args, opts, state)$/;"	f
+targets#sources#pair#last	pack/wellle/start/targets.vim/autoload/targets/sources/pair.vim	/^function! targets#sources#pair#last(args, opts, state)$/;"	f
+targets#sources#pair#new	pack/wellle/start/targets.vim/autoload/targets/sources/pair.vim	/^function! targets#sources#pair#new(args)$/;"	f
+targets#sources#pair#next	pack/wellle/start/targets.vim/autoload/targets/sources/pair.vim	/^function! targets#sources#pair#next(args, opts, state)$/;"	f
+targets#sources#quote#current	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! targets#sources#quote#current(args, opts, state)$/;"	f
+targets#sources#quote#last	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! targets#sources#quote#last(args, opts, state)$/;"	f
+targets#sources#quote#new	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! targets#sources#quote#new(args)$/;"	f
+targets#sources#quote#next	pack/wellle/start/targets.vim/autoload/targets/sources/quote.vim	/^function! targets#sources#quote#next(args, opts, state)$/;"	f
+targets#sources#register	pack/wellle/start/targets.vim/autoload/targets/sources.vim	/^function! targets#sources#register(source, newFactoryFunc)$/;"	f
+targets#sources#separator#current	pack/wellle/start/targets.vim/autoload/targets/sources/separator.vim	/^function! targets#sources#separator#current(args, opts, state)$/;"	f
+targets#sources#separator#last	pack/wellle/start/targets.vim/autoload/targets/sources/separator.vim	/^function! targets#sources#separator#last(args, opts, state)$/;"	f
+targets#sources#separator#new	pack/wellle/start/targets.vim/autoload/targets/sources/separator.vim	/^function! targets#sources#separator#new(args)$/;"	f
+targets#sources#separator#next	pack/wellle/start/targets.vim/autoload/targets/sources/separator.vim	/^function! targets#sources#separator#next(args, opts, state)$/;"	f
+targets#sources#tag#new	pack/wellle/start/targets.vim/autoload/targets/sources/tag.vim	/^function! targets#sources#tag#new(args)$/;"	f
+targets#state#empty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#empty()$/;"	f
+targets#state#invalid	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#invalid()$/;"	f
+targets#state#isEmpty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#isEmpty() dict$/;"	f
+targets#state#isInvalid	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#isInvalid() dict$/;"	f
+targets#state#isInvalidOrEmpty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#isInvalidOrEmpty() dict$/;"	f
+targets#state#isNonempty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#isNonempty() dict$/;"	f
+targets#state#isValid	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#isValid() dict$/;"	f
+targets#state#new	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#new(state)$/;"	f
+targets#state#nonempty	pack/wellle/start/targets.vim/autoload/targets/state.vim	/^function! targets#state#nonempty()$/;"	f
+targets#target#copy	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#copy() dict$/;"	f
+targets#target#cursorE	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#cursorE() dict$/;"	f
+targets#target#cursorS	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#cursorS() dict$/;"	f
+targets#target#e	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#e() dict$/;"	f
+targets#target#equal	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#equal(t) dict$/;"	f
+targets#target#fromValues	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#fromValues(sl, sc, el, ec)$/;"	f
+targets#target#fromVisualSelection	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#fromVisualSelection(...)$/;"	f
+targets#target#getcharE	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#getcharE() dict$/;"	f
+targets#target#getcharS	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#getcharS() dict$/;"	f
+targets#target#getposE	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#getposE(...) dict$/;"	f
+targets#target#getposS	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#getposS(...) dict$/;"	f
+targets#target#new	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#new(sl, sc, el, ec, error)$/;"	f
+targets#target#range	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#range(context) dict$/;"	f
+targets#target#s	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#s() dict$/;"	f
+targets#target#searchposE	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#searchposE(...) dict$/;"	f
+targets#target#searchposS	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#searchposS(...) dict$/;"	f
+targets#target#select	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#select() dict$/;"	f
+targets#target#setE	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#setE(...) dict$/;"	f
+targets#target#setS	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#setS(...) dict$/;"	f
+targets#target#state	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#state() dict$/;"	f
+targets#target#string	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#string() dict$/;"	f
+targets#target#withError	pack/wellle/start/targets.vim/autoload/targets/target.vim	/^function! targets#target#withError(error)$/;"	f
+targets#undo	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! targets#undo(lastseq)$/;"	f
+targets#util#debug	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#debug(message)$/;"	f
+targets#util#fail	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#fail(message, ...)$/;"	f
+targets#util#print	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#print(...)$/;"	f
+targets#util#printpos	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#printpos()$/;"	f
+targets#util#search	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#search(pattern, flags, ...)$/;"	f
+targets#util#select	pack/wellle/start/targets.vim/autoload/targets/util.vim	/^function! targets#util#select(opening, closing, direction)$/;"	f
+targets#x	pack/wellle/start/targets.vim/autoload/targets.vim	/^function! targets#x(trigger, typed, count)$/;"	f
 teardown	pack/junegunn/start/fzf/test/test_go.rb	/^  def teardown$/;"	f	class:TestGoFZF
 teardown	pack/junegunn/start/fzf/test/test_go.rb	/^  def teardown$/;"	f	module:TestShell
 template	pack/junegunn/start/fzf/src/terminal.go	/^	template string$/;"	m	struct:fzf.previewRequest	typeref:typename:string
@@ -4710,6 +4934,7 @@ test	pack/andymass/start/vim-matchup/test/new/test-delim/Makefile	/^test:$/;"	t
 test	pack/andymass/start/vim-matchup/test/new/test-loader/Makefile	/^test:$/;"	t
 test	pack/junegunn/start/fzf/Makefile	/^test: $(SOURCES)$/;"	t
 test	pack/mattn/start/emmet-vim/Makefile	/^test:$/;"	t
+test	pack/wellle/start/targets.vim/test/Makefile	/^test: clean$/;"	t
 test/*	pack/andymass/start/vim-matchup/.projections.json	/^  "test\/*": {"type": "test"}$/;"	o
 testParserReference	pack/junegunn/start/fzf/src/ansi_test.go	/^func testParserReference(t testing.TB, str string) {$/;"	f	package:fzf
 test_accept_non_empty	pack/junegunn/start/fzf/test/test_go.rb	/^  def test_accept_non_empty$/;"	f	class:TestGoFZF

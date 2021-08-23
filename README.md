@@ -22,6 +22,7 @@ Pre-installed plugins using Git's submodules include:
 * [Vim Repeat][vim-repeat]
 * [Vim Surround][vim-surround]
 * [Vim Unimpaired][vim-unimpaired]
+* [Targets.vim][targets-vim]
 
 [vim-matchup]: https://github.com/andymass/vim-matchup
 [vim-pug]: https://github.com/digitaltoad/vim-pug
@@ -38,3 +39,4 @@ Pre-installed plugins using Git's submodules include:
 [vim-repeat]: https://github.com/tpope/vim-repeat
 [vim-surround]: https://github.com/tpope/vim-surround
 [vim-unimpaired]: https://github.com/tpope/vim-unimpaired
+[targets-vim]: https://github.com/wellle/targets.vim

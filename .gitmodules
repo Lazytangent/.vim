@@ -49,3 +49,6 @@
 [submodule "pack/tpope/start/rails"]
 	path = pack/tpope/start/rails
 	url = git@github.com:tpope/vim-rails.git
+[submodule "pack/wellle/start/targets.vim"]
+	path = pack/wellle/start/targets.vim
+	url = git@github.com:wellle/targets.vim.git
