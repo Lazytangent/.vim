@@ -86,7 +86,9 @@ set ttyfast
 set laststatus=2
 
 set statusline=\ %f%m
+set statusline+=\ %{FugitiveStatusline()}
 set statusline+=\ %y
+
 set statusline+=%=
 set statusline+=%q
 set statusline+=\ %k
