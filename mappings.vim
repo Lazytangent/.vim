@@ -37,6 +37,7 @@ nnoremap d* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgn
 nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
 
 nnoremap <leader>l :ls<cr>:b<space>
+nnoremap <localleader>m :marks<cr>:normal! `
 
 " Plugin Mappings {{{
 

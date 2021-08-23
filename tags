@@ -232,6 +232,7 @@ $(TESTS)	pack/andymass/start/vim-matchup/test/new/Makefile	/^$(TESTS):$/;"	t
 <localleader>gp	mappings.vim	/^nnoremap <localleader>gp <cmd>Git push<cr>$/;"	m
 <localleader>gs	mappings.vim	/^nnoremap <localleader>gs <cmd>Git<cr>$/;"	m
 <localleader>gw	mappings.vim	/^nnoremap <localleader>gw <cmd>Gwrite<cr>$/;"	m
+<localleader>m	mappings.vim	/^nnoremap <localleader>m :marks<cr>:normal! `$/;"	m
 <localleader>wq	mappings.vim	/^nnoremap <localleader>wq :wq<cr>$/;"	m
 <plug>(-fzf-/)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-\/) \/$/;"	m
 <plug>(-fzf-:)	pack/junegunn/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-:) :$/;"	m
