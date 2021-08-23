@@ -51,27 +51,6 @@ vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
 
 " }}}
 
-" Operator Pending Mappings {{{
-onoremap in( :<C-u>normal! f(vi(<cr>
-onoremap il( :<C-u>normal! F)vi(<cr>
-onoremap in) :<C-u>normal! f(vi(<cr>
-onoremap il) :<C-u>normal! F)vi(<cr>
-onoremap inb :<C-u>normal! f(vi(<cr>
-onoremap ilb :<C-u>normal! F)vi(<cr>
-
-onoremap in{ :<C-u>normal! f{vi{<cr>
-onoremap il{ :<C-u>normal! F}vi{<cr>
-onoremap in} :<C-u>normal! f{vi{<cr>
-onoremap il} :<C-u>normal! F}vi{<cr>
-onoremap inB :<C-u>normal! f{vi{<cr>
-onoremap ilB :<C-u>normal! F}vi{<cr>
-
-onoremap in[ :<C-u>normal! f[vi[<cr>
-onoremap il[ :<C-u>normal! F]vi[<cr>
-onoremap in] :<C-u>normal! f[vi[<cr>
-onoremap il] :<C-u>normal! F]vi[<cr>
-" }}}
-
 " NERDTree Mappings {{{
 nnoremap <leader>nn :NERDTreeFocus<cr>
 " }}}

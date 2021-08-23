@@ -2758,22 +2758,8 @@ hscrollOff	pack/junegunn/start/fzf/src/terminal.go	/^	hscrollOff   int$/;"	m	str
 htmlcov/index.html	pack/andymass/start/vim-matchup/test/new/Makefile	/^htmlcov\/index.html: env \/tmp\/vim-profile.txt$/;"	t
 ifElseIfElseProg	pack/andymass/start/vim-matchup/test/issues/51/test.f90	/^program ifElseIfElseProg$/;"	p
 ignore	pack/junegunn/start/fzf/src/util/eventbox.go	/^	ignore map[EventType]bool$/;"	m	struct:util.EventBox	typeref:typename:map[EventType]bool
-il(	mappings.vim	/^onoremap il( :<C-u>normal! F)vi(<cr>$/;"	m
-il)	mappings.vim	/^onoremap il) :<C-u>normal! F)vi(<cr>$/;"	m
-ilB	mappings.vim	/^onoremap ilB :<C-u>normal! F}vi{<cr>$/;"	m
-il[	mappings.vim	/^onoremap il[ :<C-u>normal! F]vi[<cr>$/;"	m
-il]	mappings.vim	/^onoremap il] :<C-u>normal! F]vi[<cr>$/;"	m
-ilb	mappings.vim	/^onoremap ilb :<C-u>normal! F)vi(<cr>$/;"	m
-il{	mappings.vim	/^onoremap il{ :<C-u>normal! F}vi{<cr>$/;"	m
-il}	mappings.vim	/^onoremap il} :<C-u>normal! F}vi{<cr>$/;"	m
-in(	mappings.vim	/^onoremap in( :<C-u>normal! f(vi(<cr>$/;"	m
-in)	mappings.vim	/^onoremap in) :<C-u>normal! f(vi(<cr>$/;"	m
-inB	mappings.vim	/^onoremap inB :<C-u>normal! f{vi{<cr>$/;"	m
 inBytes	pack/junegunn/start/fzf/src/util/chars.go	/^	inBytes         bool$/;"	m	struct:util.Chars	typeref:typename:bool
 inHandle	pack/junegunn/start/fzf/src/tui/light.go	/^	inHandle        uintptr$/;"	m	struct:tui.LightRenderer	typeref:typename:uintptr
-in[	mappings.vim	/^onoremap in[ :<C-u>normal! f[vi[<cr>$/;"	m
-in]	mappings.vim	/^onoremap in] :<C-u>normal! f[vi[<cr>$/;"	m
-inb	mappings.vim	/^onoremap inb :<C-u>normal! f(vi(<cr>$/;"	m
 index	pack/junegunn/start/fzf/src/matcher.go	/^	index   int$/;"	m	struct:fzf.partialResult	typeref:typename:int
 indexAt	pack/junegunn/start/fzf/src/algo/algo.go	/^func indexAt(index int, max int, forward bool) int {$/;"	f	package:algo	typeref:typename:int
 infoDefault	pack/junegunn/start/fzf/src/options.go	/^	infoDefault infoStyle = iota$/;"	c	package:fzf	typeref:type:infoStyle
@@ -2803,8 +2789,6 @@ insert_to_path	pack/andymass/start/vim-matchup/lua/treesitter-matchup/third-part
 install	pack/junegunn/start/fzf/Makefile	/^install: bin\/fzf$/;"	t
 interpretCode	pack/junegunn/start/fzf/src/ansi.go	/^func interpretCode(ansiCode string, prevState *ansiState) ansiState {$/;"	f	package:fzf	typeref:typename:ansiState
 inv	pack/junegunn/start/fzf/src/pattern.go	/^	inv           bool$/;"	m	struct:fzf.term	typeref:typename:bool
-in{	mappings.vim	/^onoremap in{ :<C-u>normal! f{vi{<cr>$/;"	m
-in}	mappings.vim	/^onoremap in} :<C-u>normal! f{vi{<cr>$/;"	m
 is24	pack/junegunn/start/fzf/src/tui/tui.go	/^func (c Color) is24() bool {$/;"	f	type:tui.Color	typeref:typename:bool
 isAlphabet	pack/junegunn/start/fzf/src/options.go	/^func isAlphabet(char uint8) bool {$/;"	f	package:fzf	typeref:typename:bool
 isAscii	pack/junegunn/start/fzf/src/algo/algo.go	/^func isAscii(runes []rune) bool {$/;"	f	package:algo	typeref:typename:bool
