@@ -46,3 +46,6 @@
 [submodule "pack/digitaltoad/start/vim-pug"]
 	path = pack/digitaltoad/start/vim-pug
 	url = git@github.com:digitaltoad/vim-pug.git
+[submodule "pack/tpope/start/rails"]
+	path = pack/tpope/start/rails
+	url = git@github.com:tpope/vim-rails.git

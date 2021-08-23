@@ -18,6 +18,7 @@ Pre-installed plugins using Git's submodules include:
 * [Vim Endwise][vim-endwise]
 * [Vim Eunuch][vim-eunuch]
 * [Vim Fugitive][vim-fugitive]
+* [Vim Rails][vim-rails]
 * [Vim Repeat][vim-repeat]
 * [Vim Surround][vim-surround]
 * [Vim Unimpaired][vim-unimpaired]
@@ -33,6 +34,7 @@ Pre-installed plugins using Git's submodules include:
 [vim-endwise]: https://github.com/tpope/vim-endwise
 [vim-eunuch]: https://github.com/tpope/vim-eunuch
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
+[vim-rails]: https://github.com/tpope/vim-rails
 [vim-repeat]: https://github.com/tpope/vim-repeat
 [vim-surround]: https://github.com/tpope/vim-surround
 [vim-unimpaired]: https://github.com/tpope/vim-unimpaired
