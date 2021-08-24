@@ -26,12 +26,12 @@ set matchtime=2
 " set number
 " set relativenumber
 " set numberwidth=5
-set clipboard+=unnamedplus
+set clipboard+=unnamed,unnamedplus
 set list
 set listchars=tab:▶\ ,trail:▦
 
 set mouse=a
-set spell
+" set spell
 set spellfile=~/.vim/spell/en.utf-8.add
 set cursorline
 set modeline
@@ -80,6 +80,29 @@ try
 catch
 endtry
 
+set ttyfast
+
+" Statusline {{{
+set laststatus=2
+
+set statusline=\ %f%m
+set statusline+=\ %{FugitiveStatusline()}
+set statusline+=\ %y
+
+set statusline+=%=
+set statusline+=%q
+set statusline+=\ %k
+set statusline+=\ Column:\ %-4c
+set statusline+=\ Line:\ %l
+set statusline+=\ /\ %-4L
+set statusline+=\ %(%p%%\ %)
+" }}}
+
+" Cursor Settings {{{
+let &t_EI = "\e[0 q"
+let &t_SI = "\e[5 q"
+" }}}
+
 " NERDTree Settings {{{
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeShowHidden = 1
@@ -88,9 +111,31 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 " }}}
 
 " FZF {{{
+" let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.3, 'relative': v:true, 'yoffset': 1.0 } }
+let g:fzf_layout = { 'down': '10%' }
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+let g:fzf_buffers_jump = 1
+let g:fzf_commits_log_options = '--graph --color=always'
+let g:fzf_tags_command = 'ctags -R'
 
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+      \ 'ctrl-q': function('s:build_quickfix_list'),
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-x': 'split',
+      \ 'ctrl-v': 'vsplit',
+      \ }
 " }}}
 
 " Emmet-Vim {{{
 let g:user_emmet_leader_key = '<C-L>'
+" }}}
+
+" Gutentags {{{
+let g:gutentags_ctags_executable = substitute(system("brew --prefix"), '\n', '', 'g') . "/bin/ctags"
 " }}}

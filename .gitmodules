@@ -34,3 +34,21 @@
 [submodule "pack/mattn/start/emmet-vim"]
 	path = pack/mattn/start/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "pack/andymass/start/vim-matchup"]
+	path = pack/andymass/start/vim-matchup
+	url = git@github.com:andymass/vim-matchup.git
+[submodule "pack/ludovicchabant/start/vim-gutentags"]
+	path = pack/ludovicchabant/start/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
+[submodule "pack/tpope/start/endwise"]
+	path = pack/tpope/start/endwise
+	url = git@github.com:tpope/vim-endwise.git
+[submodule "pack/digitaltoad/start/vim-pug"]
+	path = pack/digitaltoad/start/vim-pug
+	url = git@github.com:digitaltoad/vim-pug.git
+[submodule "pack/tpope/start/rails"]
+	path = pack/tpope/start/rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule "pack/wellle/start/targets.vim"]
+	path = pack/wellle/start/targets.vim
+	url = git@github.com:wellle/targets.vim.git

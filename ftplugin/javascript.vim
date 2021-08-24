@@ -12,3 +12,4 @@ endfunction
 call JavaScriptFold()
 setlocal foldenable
 setlocal nocindent
+setlocal suffixesadd+=.js,.jsx

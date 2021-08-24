@@ -21,20 +21,38 @@ nnoremap <C-j> :<C-U>execute "exec 'norm m`' \| move +" . (0+v:count1)<cr>``
 vnoremap <C-k> :<C-U>execute "'<,'>move '<-" . (1+v:count1)<cr>gv
 vnoremap <C-j> :<C-U>execute "'<,'>move '<+" . (0+v:count1)<cr>gv
 
-cnoremap $h e ~/
-cnoremap $d e ~/Desktop/
-cnoremap $j e ./
-cnoremap $c e <C-\>eCurrentFileDir("e")<cr>
-
-cnoremap $q <C-\>eDeleteTillSlash()<cr>
-
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+nnoremap * *``
+nnoremap # #``
+
+nnoremap c* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``cgn
+nnoremap c# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``cgN
+
+nnoremap d* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgn
+nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
+
+nnoremap <leader>j :jumps<cr>
+nnoremap <leader>l :ls<cr>:b<space>
+nnoremap <leader>m :marks<cr>:normal! `
+nnoremap <leader>c :changes<cr>
+
+" Plugin Mappings {{{
+
+" ExecuteFile {{{2
 nnoremap <C-L><C-R> :call ExecuteFile()<cr>
+" }}}
+
+" GrepOperator {{{2
+nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
+" }}}
+
+" }}}
 
 " NERDTree Mappings {{{
 nnoremap <leader>nn :NERDTreeFocus<cr>
