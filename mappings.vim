@@ -8,7 +8,7 @@ nnoremap <localleader>ao o<Esc>
 nnoremap <localleader>aO O<Esc>
 
 nnoremap <localleader>ct :!ctags -R .<cr><cr>
-nnoremap <localleader>cd :cd %h<cr>
+nnoremap <localleader>cd :cd %:h<cr>
 
 nmap j gj
 nmap k gk
