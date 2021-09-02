@@ -1,3 +1,3 @@
 set conceallevel=2
 
-let b:AutoPairs = AutoPairsDefine({ '$': '$' })
+let b:AutoPairs = AutoPairsDefine({ '$': '$', '|': '|' })

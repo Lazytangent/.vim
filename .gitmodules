@@ -55,3 +55,6 @@
 [submodule "pack/joshdick/start/onedark.vim"]
 	path = pack/joshdick/start/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
+[submodule "pack/lervag/start/vimtex"]
+	path = pack/lervag/start/vimtex
+	url = git@github.com:lervag/vimtex.git
