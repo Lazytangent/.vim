@@ -52,3 +52,6 @@
 [submodule "pack/wellle/start/targets.vim"]
 	path = pack/wellle/start/targets.vim
 	url = git@github.com:wellle/targets.vim.git
+[submodule "pack/joshdick/start/onedark.vim"]
+	path = pack/joshdick/start/onedark.vim
+	url = git@github.com:joshdick/onedark.vim.git
