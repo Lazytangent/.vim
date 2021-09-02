@@ -77,6 +77,8 @@ set grepprg=ag
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
 
+call timer_start(1, {-> execute("colorscheme onedark")})
+
 try
   set undodir=~/.vim/temp_dirs/undodir
   set undofile
