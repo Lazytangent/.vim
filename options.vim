@@ -1,6 +1,8 @@
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+if &term == "alacritty"
+  let &term = "xterm"
+endif
 
+set termguicolors
 filetype plugin indent on
 syntax on
 
@@ -77,7 +79,8 @@ set grepprg=ag
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
 
-call timer_start(1, {-> execute("colorscheme onedark")})
+" call timer_start(1, {-> execute("colorscheme onedark")})
+colorscheme torte
 
 try
   set undodir=~/.vim/temp_dirs/undodir
