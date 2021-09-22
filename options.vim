@@ -47,7 +47,6 @@ set foldmethod=marker
 set foldlevelstart=10
 
 set background=dark
-set termguicolors
 set encoding=utf8
 set fileformats=unix,mac,dos
 
@@ -80,7 +79,7 @@ set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
 
 " call timer_start(1, {-> execute("colorscheme onedark")})
-colorscheme torte
+" colorscheme torte
 
 try
   set undodir=~/.vim/temp_dirs/undodir
