@@ -38,7 +38,7 @@ set listchars=tab:▶\ ,trail:▦
 set mouse=a
 " set spell
 set spellfile=~/.vim/spell/en.utf-8.add
-" set cursorline
+set cursorline
 set modeline
 
 set foldenable
@@ -80,7 +80,7 @@ set completeopt=menuone,noselect
 
 " call timer_start(1, {-> execute("colorscheme onedark")})
 " colorscheme torte
-colorscheme default
+colorscheme darkblue
 
 try
   set undodir=~/.vim/temp_dirs/undodir
