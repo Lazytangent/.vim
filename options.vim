@@ -80,6 +80,7 @@ set completeopt=menuone,noselect
 
 " call timer_start(1, {-> execute("colorscheme onedark")})
 " colorscheme torte
+colorscheme default
 
 try
   set undodir=~/.vim/temp_dirs/undodir

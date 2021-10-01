@@ -59,14 +59,14 @@ nnoremap <leader>nn :NERDTreeFocus<cr>
 " }}}
 
 " Fzf.vim Mappings {{{
-nnoremap <leader>fz <cmd>FZF<cr>
-nnoremap <leader>ff <cmd>Files<cr>
-nnoremap <leader>fa :Ag<space>
-nnoremap <leader>fb <cmd>Buffers<cr>
-nnoremap <leader>fr :Rg<space>
-nnoremap <leader>ft :Tags<space>
-nnoremap <leader>fh <cmd>History<cr>
-nnoremap <leader>fc <cmd>Commands<cr>
+nnoremap <localleader>fz <cmd>FZF<cr>
+nnoremap <localleader>ff <cmd>Files<cr>
+nnoremap <localleader>fa :Ag<space>
+nnoremap <localleader>fb <cmd>Buffers<cr>
+nnoremap <localleader>fr :Rg<space>
+nnoremap <localleader>ft :Tags<space>
+nnoremap <localleader>fh <cmd>History<cr>
+nnoremap <localleader>fc <cmd>Commands<cr>
 " }}}
 
 " Fugitive Mappings {{{
