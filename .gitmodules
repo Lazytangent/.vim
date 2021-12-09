@@ -58,3 +58,6 @@
 [submodule "pack/lervag/start/vimtex"]
 	path = pack/lervag/start/vimtex
 	url = git@github.com:lervag/vimtex.git
+[submodule "pack/tpope/start/vinegar"]
+	path = pack/tpope/start/vinegar
+	url = git@github.com:tpope/vim-vinegar.git
