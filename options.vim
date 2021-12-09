@@ -121,11 +121,6 @@ set statusline+=\ /\ %-4L
 set statusline+=\ %(%p%%\ %)
 " }}}
 
-" Cursor Settings {{{
-let &t_EI = "\e[0 q"
-let &t_SI = "\e[5 q"
-" }}}
-
 " NERDTree Settings {{{
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeShowHidden = 1
