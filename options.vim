@@ -25,8 +25,8 @@ set hlsearch
 set incsearch
 set lazyredraw
 set magic
-set showmatch
-set matchtime=2
+" set showmatch
+" set matchtime=2
 
 " set number
 " set relativenumber
@@ -130,7 +130,7 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
 
 " FZF {{{
 " let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.3, 'relative': v:true, 'yoffset': 1.0 } }
-let g:fzf_layout = { 'down': '10%' }
+let g:fzf_layout = { 'down': '20%' }
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_buffers_jump = 1
 let g:fzf_commits_log_options = '--graph --color=always'
