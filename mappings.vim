@@ -1,11 +1,11 @@
-let mapleader = ","
-let maplocalleader = " "
+let mapleader = " "
+let maplocalleader = " m"
 noremap \ ,
 
-nnoremap <localleader>wq :wq<cr>
-nnoremap <localleader>fs :w<cr>
-nnoremap <localleader>ao o<Esc>
-nnoremap <localleader>aO O<Esc>
+nnoremap <leader>wq :wq<cr>
+nnoremap <leader>fs :w<cr>
+nnoremap <leader>ao o<Esc>
+nnoremap <leader>aO O<Esc>
 
 nnoremap <localleader>ct :!ctags -R .<cr><cr>
 nnoremap <localleader>cd :cd %:h<cr>
@@ -13,7 +13,7 @@ nnoremap <localleader>cd :cd %:h<cr>
 nmap j gj
 nmap k gk
 
-map <silent> <leader><cr> :nohlsearch<cr>
+map <silent> <localleader><cr> :nohlsearch<cr>
 
 nnoremap <C-k> :<C-U>execute "exec 'norm m`' \| move -" . (1+v:count1)<cr>``
 nnoremap <C-j> :<C-U>execute "exec 'norm m`' \| move +" . (0+v:count1)<cr>``
@@ -40,6 +40,8 @@ nnoremap <leader>j :jumps<cr>
 nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>m :marks<cr>:normal! `
 nnoremap <leader>c :changes<cr>
+nnoremap <leader>p :cexpr system('pre-commit run -a')<cr>:copen<cr>
+nnoremap <localleader>p :cexpr system('pre-commit run --files' . shellescape(expand('%')))<cr>:copen<cr>
 
 " Plugin Mappings {{{
 
