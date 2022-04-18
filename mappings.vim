@@ -41,7 +41,8 @@ nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>m :marks<cr>:normal! `
 nnoremap <leader>c :changes<cr>
 nnoremap <leader>p :cexpr system('pre-commit run -a')<cr>:copen<cr>
-nnoremap <localleader>p :cexpr system('pre-commit run --files' . shellescape(expand('%')))<cr>:copen<cr>
+nnoremap <localleader>p :25split | term pre-commti run --files %<cr>
+nnoremap <leader>,p :cexpr system('pre-commit run --files' . shellescape(expand('%')))<cr>:copen<cr>
 
 " Plugin Mappings {{{
 
@@ -54,10 +55,6 @@ nnoremap <leader><leader>g :set operatorfunc=GrepOperator<cr>g@
 vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
 " }}}
 
-" }}}
-
-" NERDTree Mappings {{{
-nnoremap <leader>nn :NERDTreeFocus<cr>
 " }}}
 
 " Fzf.vim Mappings {{{
