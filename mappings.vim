@@ -41,7 +41,7 @@ nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>m :marks<cr>:normal! `
 nnoremap <leader>c :changes<cr>
 nnoremap <leader>p :cexpr system('pre-commit run -a')<cr>:copen<cr>
-nnoremap <localleader>p :25split | term pre-commti run --files %<cr>
+" nnoremap <localleader>p :25split | term pre-commti run --files %<cr>
 nnoremap <leader>,p :cexpr system('pre-commit run --files' . shellescape(expand('%')))<cr>:copen<cr>
 
 " Plugin Mappings {{{
@@ -59,6 +59,7 @@ vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
 
 " Fzf.vim Mappings {{{
 nnoremap <localleader>fz <cmd>FZF<cr>
+nnoremap <localleader>ff <cmd>FZF<cr>
 nnoremap <localleader>ff <cmd>Files<cr>
 nnoremap <localleader>fa :Ag<space>
 nnoremap <localleader>fb <cmd>Buffers<cr>
