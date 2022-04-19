@@ -58,23 +58,23 @@ vnoremap <leader><leader>g :<C-u>call GrepOperator(visualmode())<cr>
 " }}}
 
 " Fzf.vim Mappings {{{
-nnoremap <localleader>fz <cmd>FZF<cr>
-nnoremap <localleader>ff <cmd>FZF<cr>
-nnoremap <localleader>ff <cmd>Files<cr>
-nnoremap <localleader>fa :Ag<space>
-nnoremap <localleader>fb <cmd>Buffers<cr>
-nnoremap <localleader>fr :Rg<space>
-nnoremap <localleader>ft :Tags<space>
-nnoremap <localleader>fh <cmd>History<cr>
-nnoremap <localleader>fc <cmd>Commands<cr>
+nnoremap <leader>fz <cmd>FZF<cr>
+nnoremap <leader>ff <cmd>FZF<cr>
+nnoremap <leader>ff <cmd>Files<cr>
+nnoremap <leader>fa :Ag<space>
+nnoremap <leader>fb <cmd>Buffers<cr>
+nnoremap <leader>fr :Rg<space>
+nnoremap <leader>ft :Tags<space>
+nnoremap <leader>fh <cmd>History<cr>
+nnoremap <leader>fc <cmd>Commands<cr>
 " }}}
 
 " Fugitive Mappings {{{
-nnoremap <localleader>gs <cmd>Git<cr>
-nnoremap <localleader>gw <cmd>Gwrite<cr>
-nnoremap <localleader>gc <cmd>Git commit<cr>
-nnoremap <localleader>gp <cmd>Git push<cr>
-nnoremap <localleader>gl <cmd>Git pull<cr>
+nnoremap <leader>gs <cmd>Git<cr>
+nnoremap <leader>gw <cmd>Gwrite<cr>
+nnoremap <leader>gc <cmd>Git commit<cr>
+nnoremap <leader>gp <cmd>Git push<cr>
+nnoremap <leader>gl <cmd>Git pull<cr>
 " }}}
 
 " Emmet Vim Mappings {{{
