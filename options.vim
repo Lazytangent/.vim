@@ -73,7 +73,7 @@ set textwidth=80
 set formatoptions+=t
 
 set shiftround
-set grepprg=ag
+set grepprg=rg\ --vimgrep\ --smart-case\ --no-heading
 
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
