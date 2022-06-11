@@ -25,25 +25,18 @@ set hlsearch
 set incsearch
 set lazyredraw
 set magic
-" set showmatch
-" set matchtime=2
 
-" set number
-" set relativenumber
-" set numberwidth=5
 set clipboard+=unnamed,unnamedplus
 set list
 set listchars=tab:▶\ ,trail:▦
 
 set mouse=a
-" set spell
 set spellfile=~/.vim/spell/en.utf-8.add
 set cursorline
 set modeline
 
 set foldenable
 set foldmethod=marker
-" set foldcolumn=1
 set foldlevelstart=10
 
 set background=dark
@@ -117,15 +110,7 @@ set statusline+=\ /\ %-4L
 set statusline+=\ %(%p%%\ %)
 " }}}
 
-" NERDTree Settings {{{
-let g:NERDTreeWinPos = "right"
-let g:NERDTreeShowHidden = 1
-let g:NERDTreeMinimalUI = 1
-let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', '.git']
-" }}}
-
 " FZF {{{
-" let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.3, 'relative': v:true, 'yoffset': 1.0 } }
 let g:fzf_layout = { 'down': '20%' }
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_buffers_jump = 1
