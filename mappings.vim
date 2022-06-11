@@ -58,8 +58,8 @@ nnoremap <C-L><C-R> :call ExecuteFile()<cr>
 " }}}
 
 " GrepOperator {{{2
-nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
-vnoremap <leader>g :<C-u>call GrepOperator(visualmode())<cr>
+nnoremap <leader>gr :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader>gr :<C-u>call GrepOperator(visualmode())<cr>
 " }}}
 
 " }}}
