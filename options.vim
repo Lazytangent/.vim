@@ -71,6 +71,8 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --no-heading\ --with-filename\ --line-n
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
 
+colorscheme catppuccin_mocha
+
 try
   set undodir=~/.vim/temp_dirs/undodir
   set undofile
