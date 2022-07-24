@@ -73,6 +73,7 @@ nnoremap <leader>fg <cmd>Rg<cr>
 
 " Fugitive Mappings {{{
 nnoremap <leader>gs <cmd>Git<cr>
+nnoremap <leader>gg <cmd>Git<cr>
 nnoremap <leader>gp <cmd>Git push<cr>
 nnoremap <leader>gl <cmd>Git pull<cr>
 " }}}
