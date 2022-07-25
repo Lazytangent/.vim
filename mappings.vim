@@ -49,7 +49,7 @@ nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
 
 nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>m :marks<cr>:normal! `
-nnoremap <leader>,p :cexpr system('pre-commit run --files' . shellescape(expand('%')))<cr>:copen<cr>
+nnoremap <leader>,p :cexpr system('pre-commit run --files ' . shellescape(expand('%')))<cr>:copen<cr>
 
 " Plugin Mappings {{{
 
