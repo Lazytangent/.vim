@@ -118,6 +118,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_buffers_jump = 1
 let g:fzf_commits_log_options = '--graph --color=always'
 let g:fzf_tags_command = 'ctags -R'
+let g:fzf_preview_window = []
 
 function! s:build_quickfix_list(lines)
   call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
