@@ -26,12 +26,6 @@ nmap k gk
 
 map <silent> <localleader><cr> :nohlsearch<cr>
 
-nnoremap <C-k> :<C-U>execute "exec 'norm m`' \| move -" . (1+v:count1)<cr>``
-nnoremap <C-j> :<C-U>execute "exec 'norm m`' \| move +" . (0+v:count1)<cr>``
-
-vnoremap <C-k> :<C-U>execute "'<,'>move '<-" . (1+v:count1)<cr>gv
-vnoremap <C-j> :<C-U>execute "'<,'>move '<+" . (0+v:count1)<cr>gv
-
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>

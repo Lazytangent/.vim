@@ -114,7 +114,6 @@ set statusline+=\ %(%p%%\ %)
 
 " FZF {{{
 let g:fzf_layout = { 'down': '20%' }
-let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_buffers_jump = 1
 let g:fzf_commits_log_options = '--graph --color=always'
 let g:fzf_tags_command = 'ctags -R'
