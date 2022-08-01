@@ -1,1 +1,1 @@
-setlocal makeprg=rustc\ %
+setlocal makeprg=cargo\ run
