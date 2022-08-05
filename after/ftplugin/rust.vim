@@ -1,3 +1,3 @@
-iab <buffer> pln println!
+iabbrev <buffer> pln println!
 
 command! CargoRun !cargo run .
