@@ -11,7 +11,7 @@ set scrolloff=7
 
 set wildmenu
 set wildmode=longest:full,list:full
-set wildignore=*.o,*~,*.pyc,*/.git/*,*/.gh/*,*/.svn/*,*/.DS_Store,*/__pycache__/*,*/targets/*
+set wildignore=*.o,*~,*.pyc,*/.git/*,*/.gh/*,*/.svn/*,*/.DS_Store,*/__pycache__/*,*/target/*
 
 set showcmd
 set cmdheight=1
