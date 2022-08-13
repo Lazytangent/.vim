@@ -4,7 +4,7 @@ noremap \ ,
 
 " Commands {{{
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-command! MakeTags !ctags -R .
+command! Ctags !ctags -R .
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
@@ -44,6 +44,8 @@ nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
 nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>m :marks<cr>:normal! `
 nnoremap <leader>,p :cexpr system('pre-commit run --files ' . shellescape(expand('%')))<cr>:copen<cr>
+
+nnoremap <leader>ct :!ctags -R .<cr>
 
 " Plugin Mappings {{{
 
