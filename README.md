@@ -11,7 +11,6 @@ Pre-installed plugins using Git's submodules include:
 * [Vim Pug][vim-pug]
 * [Auto Pairs][vim-auto-pairs]
 * [Fzf][vim-fzf]
-* [Vim Gutentags][vim-gutentags]
 * [Emmet Vim][emmet-vim]
 * [NERDTree][nerdtree]
 * [Vim Commentary][vim-commentary]
@@ -28,7 +27,6 @@ Pre-installed plugins using Git's submodules include:
 [vim-pug]: https://github.com/digitaltoad/vim-pug
 [vim-auto-pairs]: https://github.com/jiangmiao/auto-pairs
 [vim-fzf]: https://github.com/junegunn/fzf.vim
-[vim-gutentags]: https://github.com/ludovicchabant/vim-gutentags
 [emmet-vim]: https://github.com/mattn/emmet-vim
 [nerdtree]: https://github.com/preservim/nerdtree
 [vim-commentary]: https://github.com/tpope/vim-commentary
