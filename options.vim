@@ -36,7 +36,7 @@ set cursorline
 set modeline
 
 set foldenable
-set foldmethod=marker
+set foldmethod=syntax
 set foldlevelstart=10
 
 set background=dark
