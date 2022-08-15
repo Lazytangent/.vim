@@ -71,3 +71,4 @@ emacs
 config
 Struct
 enum
+sdk
