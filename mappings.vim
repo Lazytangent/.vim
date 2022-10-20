@@ -5,10 +5,6 @@ noremap \ ,
 " Commands {{{
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! Ctags !ctags -R .
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
-  \ fzf#vim#with_preview(), <bang>0)
 command! Jq %!jq
 " }}}
 
@@ -57,15 +53,6 @@ nnoremap <C-L><C-R> :call ExecuteFile()<cr>
 " GrepOperator {{{2
 nnoremap <leader>gr :set operatorfunc=GrepOperator<cr>g@
 vnoremap <leader>gr :<C-u>call GrepOperator(visualmode())<cr>
-" }}}
-
-" }}}
-
-" Fzf.vim Mappings {{{
-nnoremap <leader>fz <cmd>FZF<cr>
-nnoremap <leader>ff <cmd>Files<cr>
-nnoremap <leader>fb <cmd>Buffers<cr>
-nnoremap <leader>fg <cmd>Rg<cr>
 " }}}
 
 " Fugitive Mappings {{{
