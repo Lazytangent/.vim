@@ -81,21 +81,6 @@ endtry
 
 set ttyfast
 
-let g:vimtex_compiler_latexmk = {
-      \ 'build_dir': '',
-      \ 'callback': 1,
-      \ 'continuous': 1,
-      \ 'executable': 'latexmk',
-      \ 'hooks': [],
-      \ 'options': [
-        \ '-verbose',
-        \ '-file-line-error',
-        \ '-synctex=1',
-        \ '-interaction=nonstopmode',
-        \ '-shell-escape',
-      \ ],
-   \ }
-
 " Statusline {{{
 set laststatus=2
 
@@ -110,27 +95,6 @@ set statusline+=\ Column:\ %-4c
 set statusline+=\ Line:\ %l
 set statusline+=\ /\ %-4L
 set statusline+=\ %(%p%%\ %)
-" }}}
-
-" FZF {{{
-let g:fzf_layout = { 'down': '20%' }
-let g:fzf_buffers_jump = 1
-let g:fzf_commits_log_options = '--graph --color=always'
-let g:fzf_tags_command = 'ctags -R'
-let g:fzf_preview_window = []
-
-function! s:build_quickfix_list(lines)
-  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
-  copen
-  cc
-endfunction
-
-let g:fzf_action = {
-      \ 'ctrl-q': function('s:build_quickfix_list'),
-      \ 'ctrl-t': 'tab split',
-      \ 'ctrl-x': 'split',
-      \ 'ctrl-v': 'vsplit',
-      \ }
 " }}}
 
 " Emmet-Vim {{{
