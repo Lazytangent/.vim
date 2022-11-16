@@ -1,3 +1,3 @@
-runtime! **/mappings.vim
-runtime! **/options.vim
-runtime! **/autocmds.vim
+source mappings.vim
+source options.vim
+source autocmds.vim
