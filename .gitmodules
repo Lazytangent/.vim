@@ -53,5 +53,5 @@
 	path = pack/rust-lang/start/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
 [submodule "pack/junegunn/vim-easy-align"]
-	path = pack/junegunn/vim-easy-align
+	path = pack/junegunn/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
