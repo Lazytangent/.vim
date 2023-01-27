@@ -61,3 +61,8 @@ nnoremap <leader>gg <cmd>Git<cr>
 nnoremap <leader>gp <cmd>Git push<cr>
 nnoremap <leader>gl <cmd>Git pull<cr>
 " }}}
+
+" Easy-Align {{{
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+" }}}
