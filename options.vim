@@ -28,7 +28,7 @@ set magic
 
 set clipboard+=unnamed,unnamedplus
 set list
-set listchars=tab:▶\ ,trail:▦
+" set listchars=tab:▶\ ,trail:▦
 
 set mouse=a
 set spellfile=~/.vim/spell/en.utf-8.add
