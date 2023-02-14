@@ -32,7 +32,6 @@ set listchars=tab:▶\ ,trail:▦
 
 set mouse=a
 set spellfile=~/.vim/spell/en.utf-8.add
-set cursorline
 set modeline
 
 set foldenable
@@ -70,8 +69,6 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --no-heading\ --with-filename\ --line-n
 
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noselect
-
-colorscheme catppuccin_mocha
 
 try
   set undodir=~/.vim/temp_dirs/undodir
