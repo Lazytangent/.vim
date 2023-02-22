@@ -61,3 +61,43 @@ nnoremap <leader>gg <cmd>Git<cr>
 nnoremap <leader>gp <cmd>Git push<cr>
 nnoremap <leader>gl <cmd>Git pull<cr>
 " }}}
+
+" Netrw {{{
+nnoremap <leader>dd :Lexplore %:p:h<cr>
+nnoremap <leader>da :Lexplore<cr>
+
+function! NetrwMapping()
+  nmap <buffer> . gh
+  nmap <buffer> P <C-w>z
+
+  nmap <buffer> <TAB> mf
+  nmap <buffer> <S-TAB> mF
+  nmap <buffer> <leader><TAB> mu
+
+  nmap <buffer> bb mb
+  nmap <buffer> bd mB
+
+  nmap <buffer> FF :call NetrwRemoveRecursive()<CR>
+endfunction
+
+function! NetrwRemoveRecursive()
+  if &filetype ==# 'netrw'
+    cnoremap <buffer> <CR> rm -r<CR>
+    normal mu
+    normal mf
+
+    try
+      normal mx
+    catch
+      echo "Canceled"
+    endtry
+
+    cunmap <buffer> <CR>
+  endif
+endfunction
+
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+" }}}
