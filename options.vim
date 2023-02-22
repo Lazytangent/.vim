@@ -97,3 +97,7 @@ set statusline+=\ %(%p%%\ %)
 " Emmet-Vim {{{
 let g:user_emmet_leader_key = '<C-L>'
 " }}}
+
+" Netrw {{{
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" }}}
