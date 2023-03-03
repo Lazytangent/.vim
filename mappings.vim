@@ -101,3 +101,8 @@ augroup netrw_mapping
   autocmd filetype netrw call NetrwMapping()
 augroup END
 " }}}
+
+" EasyAlign {{{
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+" }}}
