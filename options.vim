@@ -51,6 +51,7 @@ set smarttab
 set shiftwidth=2
 set tabstop=8
 set softtabstop=2
+set shortmess-=S
 
 set linebreak
 set wrap
