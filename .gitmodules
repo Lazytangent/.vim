@@ -55,3 +55,6 @@
 [submodule "pack/junegunn/start/vim-easy-align"]
 	path = pack/junegunn/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "pack/udalov/start/kotlin-vim"]
+	path = pack/udalov/start/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim.git
