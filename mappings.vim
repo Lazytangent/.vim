@@ -6,6 +6,7 @@ noremap \ ,
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! Ctags !ctags -R .
 command! Jq %!jq
+command! Messages :new <bar> put = execute('messages')
 " }}}
 
 " File operations
