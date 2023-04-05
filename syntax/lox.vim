@@ -50,6 +50,9 @@ highlight default link loxBraces Function
 highlight default link loxIdentifier Identifier
 highlight default link loxRepeat Repeat
 highlight default link loxStatement Statement
+highlight default link loxStringS String
+highlight default link loxStringD String
+highlight default link loxStringT String
 
 let b:current_syntax = "lox"
 if main_syntax == "lox"
