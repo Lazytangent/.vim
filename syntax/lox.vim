@@ -11,6 +11,8 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 syn match   loxSpecial	       "\\\d\d\d\|\\."
+
+syn region  loxComment	       start="/\*"  end="\*/" contains=@Spell
 syn region  loxStringD	       start=+"+  skip=+\\\\\|\\"+  end=+"\|$+	contains=loxSpecial
 syn region  loxStringS	       start=+'+  skip=+\\\\\|\\'+  end=+'\|$+	contains=loxSpecial
 syn region  loxStringT	       start=+`+  skip=+\\\\\|\\`+  end=+`+	contains=loxSpecial,loxEmbed
@@ -19,8 +21,9 @@ syntax keyword loxBoolean true false
 syntax keyword loxConditional if else
 syntax keyword loxFunction fun
 syntax keyword loxIdentifier this var
-syntax keyword loxStatement return print
 syntax keyword loxRepeat for while
+syntax keyword loxStatement return print
+syntax keyword loxNull null
 
 syntax match loxBraces "[{}\[\]]"
 syntax match loxParens "[()]"
@@ -53,6 +56,7 @@ highlight default link loxStatement Statement
 highlight default link loxStringS String
 highlight default link loxStringD String
 highlight default link loxStringT String
+highlight default link loxNull Keyword
 
 let b:current_syntax = "lox"
 if main_syntax == "lox"
