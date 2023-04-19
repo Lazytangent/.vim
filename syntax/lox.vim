@@ -24,7 +24,7 @@ syntax keyword loxIdentifier  this var
 syntax keyword loxRepeat      for while
 syntax keyword loxStatement   return print
 syntax keyword loxNull        null
-syntax keyword loxReserved    class
+syntax keyword loxReserved    class super
 
 syntax match loxBraces "[{}\[\]]"
 syntax match loxParens "[()]"
