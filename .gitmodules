@@ -61,3 +61,6 @@
 [submodule "pack/hashivim/start/vim-terraform"]
 	path = pack/hashivim/start/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule "pack/neovimhaskell/start/haskell-vim"]
+	path = pack/neovimhaskell/start/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim.git
