@@ -64,3 +64,6 @@
 [submodule "pack/vim-scripts/start/velocity.vim"]
 	path = pack/vim-scripts/start/velocity.vim
 	url = git@github.com:vim-scripts/velocity.vim.git
+[submodule "pack/neovimhaskell/start/haskell-vim"]
+	path = pack/neovimhaskell/start/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim.git
