@@ -61,3 +61,6 @@
 [submodule "pack/hashivim/start/vim-terraform"]
 	path = pack/hashivim/start/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule "pack/vim-scripts/start/velocity.vim"]
+	path = pack/vim-scripts/start/velocity.vim
+	url = git@github.com:vim-scripts/velocity.vim.git
