@@ -67,3 +67,6 @@
 [submodule "pack/neovimhaskell/start/haskell-vim"]
 	path = pack/neovimhaskell/start/haskell-vim
 	url = git@github.com:neovimhaskell/haskell-vim.git
+[submodule "pack/sealemar/start/vtl"]
+	path = pack/sealemar/start/vtl
+	url = git@github.com:sealemar/vtl.git
