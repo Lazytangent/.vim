@@ -103,3 +103,7 @@ let g:netrw_keepdir = 0
 let g:netrw_localcopydircmd = "cp -r"
 highlight link netrwMarkFile Search
 " }}}
+
+" FZF {{{
+set runtimepath+=/usr/local/opt/fzf
+" }}}
