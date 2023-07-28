@@ -107,3 +107,7 @@ augroup END
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 " }}}
+
+" FZF {{{
+nnoremap <leader>ff <cmd>Files<cr>
+" }}}
