@@ -13,10 +13,6 @@ command! Messages :new <bar> put = execute('messages')
 nnoremap <leader>wq :wq<cr>
 nnoremap <leader>fs :w<cr>
 
-" Convenience
-nnoremap <leader>ao o<Esc>
-nnoremap <leader>aO O<Esc>
-
 nnoremap <localleader>cd :cd %:h<cr>
 
 nmap j gj
